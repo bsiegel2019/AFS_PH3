@@ -6,7 +6,7 @@ import com.drones.model.Drone;
 
 public interface DroneService {
 
-	void addDrone(Drone drone);
+	Drone addDrone(Drone drone);
 
 	List<Drone> findAllDrones();
 	

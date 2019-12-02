@@ -12,21 +12,23 @@ import com.drones.model.Drone;
 @Service("droneService")
 public class DroneServiceImpl implements DroneService {
 
-	private static final AtomicLong counter = new AtomicLong();
+	private static final AtomicLong counter = new AtomicLong(); // tobe deleted by ph2
 
-	private static List<Drone> drones;
+	private static List<Drone> drones; // tobe deleted by ph2
 	
 	static {
-		drones = populateDummyDrones();
+		drones = populateDummyDrones(); // tobe deleted by ph2
 	}
 
 	public List<Drone> findAllDrones() {
 		return drones;
 	}
 
-	public void addDrone(Drone drone) {
-		drone.setDroneId(counter.incrementAndGet());
-		drones.add(drone);
+	public Drone addDrone(Drone drone) {
+		drone.setDroneId(counter.incrementAndGet()); // tobe deleted by ph2
+		drones.add(drone); // this is the call to dao layer
+		
+		return drone; // need since ph2 does db add and it sets ID
 	}
 
 	private static List<Drone> populateDummyDrones() {

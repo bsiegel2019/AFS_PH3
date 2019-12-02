@@ -12,13 +12,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.drones.model.Drone;
-import com.drones.service.DroneService;
+import com.drones.manager.DroneManager;
 
 @Controller
 public class DroneController {
 
 	@Autowired
-	DroneService droneService;
+	private DroneManager droneManager;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndexPage() {
@@ -27,7 +27,7 @@ public class DroneController {
 
 	@RequestMapping(value = "/droneManagement", method = RequestMethod.GET)
 	public ModelAndView showForm() {
-		return new ModelAndView("droneManagement", "drone", droneService.findAllDrones());
+		return new ModelAndView("droneManagement", "drone", droneManager.findAllDrones());
 	}
 
 	@RequestMapping(value = "/droneAdd", method = RequestMethod.GET)
@@ -48,7 +48,7 @@ public class DroneController {
 		model.addAttribute("droneSpan", drone.getDroneSpan());
 		model.addAttribute("droneStatus", drone.getDroneStatus());
 		model.addAttribute("droneImage", drone.getDroneImage());
-		droneService.addDrone(drone);
+		droneManager.addDrone(drone);
 		return "droneConfirmation";
 	}
 
