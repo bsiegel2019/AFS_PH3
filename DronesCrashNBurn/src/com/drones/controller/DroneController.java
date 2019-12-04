@@ -4,7 +4,6 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,20 +35,9 @@ public class DroneController {
 	}
 
 	@RequestMapping(value = "/droneConfirmation", method = RequestMethod.POST)
-	public String submit(@Valid @ModelAttribute("drone") Drone drone, BindingResult result, ModelMap model) {
-		if (result.hasErrors()) {
-			return "error";
-		}
-
-		model.addAttribute("droneId", drone.getDroneId());
-		model.addAttribute("droneOwnerName", drone.getDroneOwnerName());
-		model.addAttribute("droneName", drone.getDroneName());
-		model.addAttribute("droneType", drone.getDroneType());
-		model.addAttribute("droneSpan", drone.getDroneSpan());
-		model.addAttribute("droneStatus", drone.getDroneStatus());
-		model.addAttribute("droneImage", drone.getDroneImage());
+	public ModelAndView submitDrone(@Valid @ModelAttribute("drone") Drone drone, BindingResult result) {
 		droneManager.addDrone(drone);
-		return "droneConfirmation";
+		return new ModelAndView("droneConfirmation", "drone", drone);
 	}
 
 }

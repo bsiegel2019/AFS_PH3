@@ -61,6 +61,5 @@ INDEX VERSION 1.131+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugi
 2429463309.index
 42487097.index
 2027763745.index
-2245056809.index
 2642649259.index
 2082560552.index

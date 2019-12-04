@@ -8,27 +8,27 @@
 	<table>
 		<tr>
 			<td>Drone Owner Name:</td>
-			<td>${droneOwnerName}</td>
+			<td>${drone.droneOwnerName}</td>
 		</tr>
 		<tr>
 			<td>Drone Name:</td>
-			<td>${droneName}</td>
+			<td>${drone.droneName}</td>
 		</tr>
 		<tr>
 			<td>Drone Type:</td>
-			<td>${droneType}</td>
+			<td>${drone.droneType}</td>
 		</tr>
 		<tr>
 			<td>Drone Span (Wing or Rotor):</td>
-			<td>${droneSpan}</td>
+			<td>${drone.droneSpan}</td>
 		</tr>
 		<tr>
 			<td>Drone Status:</td>
-			<td>${droneStatus}</td>
+			<td>${drone.droneStatus}</td>
 		</tr>
 		<tr>
 			<td>Drone Image:</td>
-			<td>${droneImage}</td>
+			<td>${drone.droneImage}</td>
 		</tr>
 		<tr>
 			<td><a href="droneManagement">Back to the Drones!</a></td>
