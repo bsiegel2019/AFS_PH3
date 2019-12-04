@@ -93,7 +93,7 @@ public class Drone {
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (obj == null)
+		if (null == obj)
 			return false;
 		if (!(obj instanceof Drone))
 			return false;

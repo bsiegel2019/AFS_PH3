@@ -9,9 +9,9 @@ public interface DroneService {
 	Drone addDrone(Drone drone);
 
 	List<Drone> findAllDrones();
-	
+
 	Drone findDroneById(Long id);
-	
+
 	void deleteDroneById(Long id);
 
 }

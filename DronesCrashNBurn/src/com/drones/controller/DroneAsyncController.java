@@ -37,7 +37,7 @@ public class DroneAsyncController {
 
 		Drone drone = droneService.findDroneById(id);
 
-		if (drone == null) {
+		if (null == drone) {
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}
 

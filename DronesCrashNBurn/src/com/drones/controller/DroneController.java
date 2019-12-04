@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.drones.model.Drone;
 import com.drones.manager.DroneManager;
+import com.drones.model.Drone;
 
 @Controller
 public class DroneController {

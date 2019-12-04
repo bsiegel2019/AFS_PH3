@@ -14,10 +14,10 @@ public class DroneServiceImpl implements DroneService {
 
 	private static final AtomicLong counter = new AtomicLong(); // tobe deleted by ph2
 
-	private static List<Drone> drones; // tobe deleted by ph2
-	
+	private static List<Drone> drones; // todo deleted by ph2
+
 	static {
-		drones = populateDummyDrones(); // tobe deleted by ph2
+		drones = populateDummyDrones(); // todo deleted by ph2
 	}
 
 	public List<Drone> findAllDrones() {
@@ -27,17 +27,18 @@ public class DroneServiceImpl implements DroneService {
 	public Drone addDrone(Drone drone) {
 		drone.setDroneId(counter.incrementAndGet()); // tobe deleted by ph2
 		drones.add(drone); // this is the call to dao layer
-		
+
 		return drone; // need since ph2 does db add and it sets ID
 	}
 
 	private static List<Drone> populateDummyDrones() {
 		List<Drone> drones = new ArrayList<Drone>();
-		drones.add(new Drone(counter.incrementAndGet(), "Owner1", "Super Sportster", "Sport", "60 in", "crashed, not fixable",
+		drones.add(new Drone(counter.incrementAndGet(), "Owner1", "Super Sportster", "Sport", "60 in",
+				"crashed, not fixable", "future feature"));
+		drones.add(new Drone(counter.incrementAndGet(), "Bernard", "Clound Bound", "Glider", "4 meter", "repaired",
 				"future feature"));
-		drones.add(new Drone(counter.incrementAndGet(), "Bernard", "Clound Bound", "Glider", "4 meter", "repaired", "future feature"));
-		drones.add(new Drone(counter.incrementAndGet(), "None", "Lawn Dart", "Rotorcraft", "4x12 in", "Flying ballistically",
-				"future feature"));
+		drones.add(new Drone(counter.incrementAndGet(), "None", "Lawn Dart", "Rotorcraft", "4x12 in",
+				"Flying ballistically", "future feature"));
 		return drones;
 	}
 
