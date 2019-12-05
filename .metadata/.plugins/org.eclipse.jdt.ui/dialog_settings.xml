@@ -4,7 +4,7 @@
 	</section>
 	<section name="RefactoringWizard.preview">
 		<item key="width" value="790"/>
-		<item key="height" value="400"/>
+		<item key="height" value="390"/>
 	</section>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item key="updateSimilarElements" value="false"/>

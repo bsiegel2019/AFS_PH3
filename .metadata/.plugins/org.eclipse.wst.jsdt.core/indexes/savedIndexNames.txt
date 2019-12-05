@@ -1,11 +1,1 @@
 INDEX VERSION 1.4+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-104943012.index
-2254752725.index
-2956908574.index
-872096073.index
-4094198240.index
-970271065.index
-2887133384.index
-1336118593.index
-2159059977.index
-2519746284.index

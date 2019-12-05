@@ -3,5 +3,7 @@ C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\mode
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneServiceImpl.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\controller\DroneController.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\manager\DroneManagerImpl.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\config\DroneWebAppConfig.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\config\DroneWebAppInitializer.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\controller\DroneAsyncController.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneService.java
