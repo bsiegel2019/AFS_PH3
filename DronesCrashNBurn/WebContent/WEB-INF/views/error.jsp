@@ -3,7 +3,7 @@
 <title>DronesCrashNBurn Error</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/crashnburn_page2.jpg"); 
+ 	background-image: url("resources/images/crashnburn_background2.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;

@@ -10,7 +10,7 @@
 	href="<c:url value="/resources/css/app.css" />" />
 <style type="text/css">
 body {
- 	background-image: url("resources/images/dronemgmt_page.jpg"); 
+ 	background-image: url("resources/images/dronemgmt_background.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -49,7 +49,7 @@ body {
 							<td><span ng-bind="drone.droneImage"></span></td>
 							<td>
 								<button type="button" ng-click="ctrl.remove(drone.droneId)"
-									class="btn btn-danger custom-width">Remove</button>
+									class="btn btn-danger custom-width">Scrap</button>
 							</td>
 						</tr>
 					</tbody>
