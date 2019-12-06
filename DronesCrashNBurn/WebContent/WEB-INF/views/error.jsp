@@ -5,8 +5,10 @@
 body {
  	background-image: url("resources/images/crashnburn_background2.jpg"); 
 	background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
 }
 </style>
 </head>

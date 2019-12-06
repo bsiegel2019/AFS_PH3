@@ -6,7 +6,8 @@ body {
  	background-image: url("resources/images/crashnburn_page.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
 }
 </style>
 </head>
@@ -22,7 +23,7 @@ body {
 		<h4>
 			<a href="droneManagement">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 flames! YES !!! SPRING 4 remove this demo mssg
+		<h6>Phase2 flames! YES !!! SAESTHICTICS MATTER TGIF  this demo mssg
 			begin</h6>
 	</div>
 

@@ -20,6 +20,15 @@
 <html>
 <head>
 <title>Drone Confirmation</title>
+<style type="text/css">
+body {
+ 	background-image: url("resources/images/droneconfirm_background.jpg"); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
+}
+</style>
 </head>
 <body>
 	<h3>Enjoy the Drone!</h3>

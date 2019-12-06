@@ -13,7 +13,8 @@ body {
  	background-image: url("resources/images/dronemgmt_background.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
 }
 </style>
 </head>

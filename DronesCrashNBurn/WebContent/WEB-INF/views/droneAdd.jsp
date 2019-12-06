@@ -3,6 +3,15 @@
 <html>
 <head>
 <title>Drone Info</title>
+<style type="text/css">
+body {
+ 	background-image: url("resources/images/droneadd_background.jpg"); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
+}
+</style>
 </head>
 
 <body>
