@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_J4SyQRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_J4SyQhLlEeqZJ6NMVHfQMQ" bindingContexts="_J4SySxLlEeqZJ6NMVHfQMQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/index.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/index.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;NOTUSED_drones-servlet.xml&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/NOTUSED_drones-servlet.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/NOTUSED_drones-servlet.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneAdd.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;drones-servlet.xml&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/drones-servlet.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/drones-servlet.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;DronesCrashNBurn/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;NOTUSED_web.xml&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/NOTUSED_web.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/NOTUSED_web.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart&quot; name=&quot;web.xml&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/web.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/web.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneWebConfig.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/config/DroneWebConfig.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/config/DroneWebConfig.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneInitializer.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/config/DroneInitializer.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/config/DroneInitializer.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneManagement.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneManagement.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneManagement.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Drone.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/model/Drone.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/model/Drone.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneConfirmation.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneConfirmation.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneConfirmation.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneAsyncController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneAsyncController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneAsyncController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneManagerImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/manager/DroneManagerImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/manager/DroneManagerImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneService.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneServiceImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/service/DroneServiceImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/service/DroneServiceImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneManager.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/manager/DroneManager.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/manager/DroneManager.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneRestController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneRestController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneRestController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;index.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/index.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/index.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneServiceImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/service/DroneServiceImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/service/DroneServiceImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneService.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Drone.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/model/Drone.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/model/Drone.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneManagerImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/manager/DroneManagerImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/manager/DroneManagerImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneManager.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/manager/DroneManager.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/manager/DroneManager.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneAsyncController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneAsyncController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneAsyncController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneWebAppInitializer.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/config/DroneWebAppInitializer.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/config/DroneWebAppInitializer.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneWebAppConfig.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/config/DroneWebAppConfig.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/config/DroneWebAppConfig.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;DronesCrashNBurn/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;glider_silhouette.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/glider_silhouette.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/glider_silhouette.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;comments_page.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/comments_page.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/comments_page.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;droneconfirm_page.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/droneconfirm_page.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/droneconfirm_page.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;droneadd_page.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/droneadd_page.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/droneadd_page.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;dronemgmt_page.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/dronemgmt_page.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/dronemgmt_page.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;app.css&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/css/app.css&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/css/app.css&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;error.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/error.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/error.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneManagement.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneManagement.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneManagement.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.browser.editor&quot; name=&quot;crashnburn_page2.jpg&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/images/crashnburn_page2.jpg&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/images/crashnburn_page2.jpg&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_J4SyQhLlEeqZJ6NMVHfQMQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_KNJn-BLlEeqZJ6NMVHfQMQ" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_J4SyQhLlEeqZJ6NMVHfQMQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_KNJn-BLlEeqZJ6NMVHfQMQ" label="%trimmedwindow.label.eclipseSDK" x="3719" y="380" width="1024" height="768">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -74,28 +74,36 @@
           <tags>persp.showIn:org.eclipse.eclemma.ui.CoverageView</tags>
           <tags>persp.newWizSC:org.eclipse.jpt.jpa.ui.wizard.newJpaProject</tags>
           <tags>persp.perspSC:org.eclipse.jpt.ui.jpaPerspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsQxLlEeqZJ6NMVHfQMQ" selectedElement="_KZjsRBLlEeqZJ6NMVHfQMQ" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_KZjsRBLlEeqZJ6NMVHfQMQ" elementId="topLeft" containerData="2500" selectedElement="_KZjsRRLlEeqZJ6NMVHfQMQ">
-              <tags>active</tags>
-              <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_KVQbEBLlEeqZJ6NMVHfQMQ" closeable="true">
-                <tags>View</tags>
-                <tags>categoryTag:General</tags>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsQxLlEeqZJ6NMVHfQMQ" selectedElement="_EN6qMBeXEeqwktfbaiDApQ" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_EN6qMBeXEeqwktfbaiDApQ" containerData="2500" selectedElement="_KZjsRBLlEeqZJ6NMVHfQMQ">
+              <children xsi:type="basic:PartStack" xmi:id="_KZjsRBLlEeqZJ6NMVHfQMQ" elementId="topLeft" containerData="9000" selectedElement="_KZjsRRLlEeqZJ6NMVHfQMQ">
+                <tags>active</tags>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_KVQbEBLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_KVQbERLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_KVQbEhLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Java</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsSBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_KZgB4BLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Java Browsing</tags>
+                </children>
               </children>
-              <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_KVQbERLlEeqZJ6NMVHfQMQ" closeable="true">
-                <tags>View</tags>
-                <tags>categoryTag:General</tags>
-              </children>
-              <children xsi:type="advanced:Placeholder" xmi:id="_KZjsRxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_KVQbEhLlEeqZJ6NMVHfQMQ" closeable="true">
-                <tags>View</tags>
-                <tags>categoryTag:Java</tags>
-              </children>
-              <children xsi:type="advanced:Placeholder" xmi:id="_KZjsSBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_KZgB4BLlEeqZJ6NMVHfQMQ" closeable="true">
-                <tags>View</tags>
-                <tags>categoryTag:Java Browsing</tags>
+              <children xsi:type="basic:PartStack" xmi:id="__cpOMReDEeqrj6hBL0Gx0g" elementId="PartStack@6856c711" containerData="1000" selectedElement="_KZjsUxLlEeqZJ6NMVHfQMQ">
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsUxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.wst.server.ui.ServersView" ref="_KZgB4xLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Server</tags>
+                </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsSRLlEeqZJ6NMVHfQMQ" containerData="7500" selectedElement="__cpOMBeDEeqrj6hBL0Gx0g">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsShLlEeqZJ6NMVHfQMQ" containerData="7000" selectedElement="_KZjsSxLlEeqZJ6NMVHfQMQ" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsSRLlEeqZJ6NMVHfQMQ" containerData="7500" selectedElement="_KZjsUBLlEeqZJ6NMVHfQMQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_KZjsShLlEeqZJ6NMVHfQMQ" containerData="7327" selectedElement="_KZjsSxLlEeqZJ6NMVHfQMQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_KZjsSxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.editorss" containerData="8307" ref="_KVEN0BLlEeqZJ6NMVHfQMQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_KZjsTBLlEeqZJ6NMVHfQMQ" elementId="topRight" containerData="1693" selectedElement="_KZjsTRLlEeqZJ6NMVHfQMQ">
                   <children xsi:type="advanced:Placeholder" xmi:id="_KZjsTRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_KZgB7BLlEeqZJ6NMVHfQMQ" closeable="true">
@@ -112,54 +120,46 @@
                   </children>
                 </children>
               </children>
-              <children xsi:type="basic:PartSashContainer" xmi:id="__cpOMBeDEeqrj6hBL0Gx0g" containerData="3000" selectedElement="__cpOMReDEeqrj6hBL0Gx0g" horizontal="true">
-                <children xsi:type="basic:PartStack" xmi:id="__cpOMReDEeqrj6hBL0Gx0g" elementId="PartStack@6856c711" containerData="5000" selectedElement="_KZjsUxLlEeqZJ6NMVHfQMQ">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsUxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.wst.server.ui.ServersView" ref="_KZgB4xLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:Server</tags>
-                  </children>
+              <children xsi:type="basic:PartStack" xmi:id="_KZjsUBLlEeqZJ6NMVHfQMQ" elementId="bottomRight" containerData="2673" selectedElement="_KZjsWBLlEeqZJ6NMVHfQMQ">
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsURLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.AllMarkersView" ref="_KZgB4RLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
                 </children>
-                <children xsi:type="basic:PartStack" xmi:id="_KZjsUBLlEeqZJ6NMVHfQMQ" elementId="bottomRight" containerData="5000" selectedElement="_KZjsWBLlEeqZJ6NMVHfQMQ">
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsURLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.AllMarkersView" ref="_KZgB4RLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsUhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_KZgB4hLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_KZgB5BLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:Data Management</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ref="_KZgB5RLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_KZgB5hLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.TaskList" ref="_KZgB5xLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_KZgB6BLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_KZgB6RLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_KZgB6hLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.search.ui.views.SearchView" ref="_KZgB6xLlEeqZJ6NMVHfQMQ" closeable="true">
-                    <tags>View</tags>
-                    <tags>categoryTag:General</tags>
-                  </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsUhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_KZgB4hLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ref="_KZgB5BLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Data Management</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" ref="_KZgB5RLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ProblemView" toBeRendered="false" ref="_KZgB5hLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsVxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.TaskList" ref="_KZgB5xLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_KZgB6BLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_KZgB6RLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_KZgB6hLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_KZjsWxLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.search.ui.views.SearchView" ref="_KZgB6xLlEeqZJ6NMVHfQMQ" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:General</tags>
                 </children>
               </children>
             </children>
@@ -382,7 +382,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KQ77whLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8gIx4BdkEeqrj6hBL0Gx0g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_J48TLRLlEeqZJ6NMVHfQMQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x3IupxgvEeqtUoVntScOZQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_J48TLRLlEeqZJ6NMVHfQMQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KQ77wxLlEeqZJ6NMVHfQMQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -422,7 +422,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KQ77yhLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_8gIx7RdkEeqrj6hBL0Gx0g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_J48S0RLlEeqZJ6NMVHfQMQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_x3R4mBgvEeqtUoVntScOZQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_J48S0RLlEeqZJ6NMVHfQMQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_KQ77yxLlEeqZJ6NMVHfQMQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -3101,7 +3101,7 @@
   <addons xmi:id="_J4SyVxLlEeqZJ6NMVHfQMQ" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_J4SyWBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_J4Y44BLlEeqZJ6NMVHfQMQ" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_xL29ARgvEeqtUoVntScOZQ" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_J4xTYBLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.ui.category.edit" name="Edit"/>
   <categories xmi:id="_J4xTYRLlEeqZJ6NMVHfQMQ" elementId="org.eclipse.mylyn.wikitext.ui.editor.category" name="WikiText Markup Editing Commands" description="commands for editing lightweight markup"/>

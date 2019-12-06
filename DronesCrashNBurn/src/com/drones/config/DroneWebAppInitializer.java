@@ -13,7 +13,7 @@ public class DroneWebAppInitializer implements WebApplicationInitializer {
 
 	@Override
 	public void onStartup(ServletContext container) throws ServletException {
-		
+
 		// Create the 'root' Spring application context
 		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
 		rootContext.scan("com.drones");
@@ -25,4 +25,5 @@ public class DroneWebAppInitializer implements WebApplicationInitializer {
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("/");
 	}
+
 }

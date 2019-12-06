@@ -31,12 +31,12 @@
 		<item key="WHOLE_WORD" value="false"/>
 		<item key="SEARCH_DERIVED" value="false"/>
 		<item key="SEARCH_IN_BINARIES" value="false"/>
-		<item key="HISTORY_SIZE" value="7"/>
+		<item key="HISTORY_SIZE" value="10"/>
 		<section name="HISTORY0">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="null"/>
+			<item key="textPattern" value="requestMappingHandlerMapping"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,7 +51,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="rest"/>
+			<item key="textPattern" value="crashnburn_"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -63,7 +63,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="UTF-8"/>
+			<item key="textPattern" value="crash_"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -75,6 +75,42 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="null"/>
+			<item key="scope" value="1"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="rest"/>
+			<item key="scope" value="1"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY5">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="UTF-8"/>
+			<item key="scope" value="1"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY6">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
 			<item key="textPattern" value="friday"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
@@ -83,7 +119,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY4">
+		<section name="HISTORY7">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -95,7 +131,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY5">
+		<section name="HISTORY8">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -107,7 +143,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY6">
+		<section name="HISTORY9">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -124,7 +160,7 @@
 		<item key="scope" value="1"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item key="DIALOG_X_ORIGIN" value="919"/>
+		<item key="DIALOG_X_ORIGIN" value="866"/>
 		<item key="DIALOG_Y_ORIGIN" value="356"/>
 		<item key="DIALOG_WIDTH" value="1065"/>
 		<item key="DIALOG_HEIGHT" value="653"/>

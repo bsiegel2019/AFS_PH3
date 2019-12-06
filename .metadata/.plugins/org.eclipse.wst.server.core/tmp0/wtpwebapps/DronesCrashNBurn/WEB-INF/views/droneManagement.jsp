@@ -6,7 +6,16 @@
 <title>Drone Management</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link href="<c:url value='/resources/css/app.css' />" rel="stylesheet"></link>
+<link rel="stylesheet" 
+	href="<c:url value="/resources/css/app.css" />" />
+<style type="text/css">
+body {
+ 	background-image: url("resources/images/dronemgmt_page.jpg"); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+</style>
 </head>
 <body ng-app="myApp" class="ng-cloak">
 	<div class="generic-container" ng-controller="DroneController as ctrl">

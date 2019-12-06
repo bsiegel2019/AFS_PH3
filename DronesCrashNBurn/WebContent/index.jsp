@@ -3,7 +3,10 @@
 <title>DronesCrashNBurn</title>
 <style type="text/css">
 body {
-	background-image: url('https://cdn.crunchify.com/bg.png');
+ 	background-image: url("resources/images/crashnburn_page.jpg"); 
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 </style>
 </head>
@@ -13,25 +16,15 @@ body {
 		<h2>
 			Welcome to Drones Crash and Burn Home!<br> <br>
 		</h2>
-		<br> <img src="resources/images/crash_and_burn.jpg"
-			alt="Oopsie! where's the pic?" />
+		<h3>
+			If you aren't FLYING, you aren't CRASHING<br> <br>
+		</h3>
 		<h4>
-			<a href="droneManagement">Click here for Drone Fun!</a>
+			<a href="droneManagement">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 flames! YES !!! JAVA FOREVER   remove this demo mssg begin</h6>
+		<h6>Phase2 flames! YES !!! SPRING 4 remove this demo mssg
+			begin</h6>
 	</div>
 
-	<div>
-		<table>
-			<tr>
-				<td><img src="resources/images/glider_example.jpg"
-					alt="Oopsie! where's the glider pic?" /></td>
-				<td><img src="resources/images/sport_example.jpg"
-					alt="Oopsie! where's the sport pic?" /></td>
-				<td><img src="resources/images/rotor_example.jpg"
-					alt="Oopsie! where's the rotor pic?" /></td>
-			</tr>
-		</table>
-	</div>
 </body>
 </html>
