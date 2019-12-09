@@ -1,8 +1,7 @@
+<!DOCTYPE html>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
 <c:choose>
-<%-- 	<c:when test="${ ${drone.droneType} eq 'Glider'}"> --%>
 	<c:when test="${drone.droneType eq 'Glider'}">
 		<c:set var="droneTypePic"
 			value="resources/images/glider_silhouette.jpg" />
@@ -16,21 +15,35 @@
 			value="resources/images/rotorcraft_silhouette.jpg" />
 	</c:when>
 </c:choose>
-  
+
 <html>
+<link rel="stylesheet" href="<c:url value="/resources/css/app.css" />" />
 <head>
 <title>Drone Confirmation</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/droneconfirm_background.jpg"); 
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.5)),
+		url("resources/images/droneconfirm_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	background-color: DeepSkyBlue;
 }
+
+html {
+	display: table;
+	margin: auto;
+}
+
+body {
+	display: table-cell;
+	vertical-align: middle;
+}
 </style>
 </head>
 <body>
+	<br>
 	<h3>Enjoy the Drone!</h3>
 
 	<table>
@@ -61,7 +74,7 @@ body {
 			<td>${drone.droneImage}</td>
 		</tr>
 		<tr>
-			<td><a href="droneManagement">Back to Drone Central!</a></td>
+			<td><br><a href="droneManagement">Safe landing at Drone Central!</a></td>
 		</tr>
 	</table>
 </body>

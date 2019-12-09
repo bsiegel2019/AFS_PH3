@@ -1,9 +1,12 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>DronesCrashNBurn Error</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/crashnburn_background2.jpg"); 
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.5)),
+		url("resources/images/crashnburn_background2.jpg");
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

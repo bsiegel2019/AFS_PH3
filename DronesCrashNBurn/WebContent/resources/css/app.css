@@ -47,3 +47,10 @@ body, {
 .custom-width {
     width: 80px !important;
 }
+
+body, {
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-color: DeepSkyBlue;
+}

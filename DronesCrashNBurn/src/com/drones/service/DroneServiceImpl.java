@@ -44,7 +44,7 @@ public class DroneServiceImpl implements DroneService {
 
 	public Drone findDroneById(Long id) {
 		for (Drone drone : drones) {
-			if (drone.getDroneId() == id) {
+			if (drone.getDroneId().equals(id)) {
 				return drone;
 			}
 		}
@@ -55,7 +55,7 @@ public class DroneServiceImpl implements DroneService {
 
 		for (Iterator<Drone> iterator = drones.iterator(); iterator.hasNext();) {
 			Drone drone = iterator.next();
-			if (drone.getDroneId() == id) {
+			if (drone.getDroneId().equals(id)) {
 				iterator.remove();
 			}
 		}
