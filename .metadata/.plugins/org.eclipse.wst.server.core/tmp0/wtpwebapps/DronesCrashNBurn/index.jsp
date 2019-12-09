@@ -3,7 +3,7 @@
 <title>DronesCrashNBurn</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/crashnburn_page.jpg"); 
+ 	background-image: url("resources/images/crashnburn_background.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
