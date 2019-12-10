@@ -2,7 +2,7 @@
 //IIFE
 'use strict';
 
-angular.module('myDronesCrashNBurnApp')
+angular.module('myApp')
 		.controller('DroneController',
 				['$scope','DroneService',
 

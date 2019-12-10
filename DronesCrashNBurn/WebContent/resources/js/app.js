@@ -1,5 +1,5 @@
 'use strict';
 
-var DronesCRashNBurnApp = angular.module('myDronesCrashNBurnApp',[]);
+var App = angular.module('myApp',[]);
 
 

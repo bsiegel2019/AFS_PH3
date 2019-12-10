@@ -2,7 +2,7 @@
 //IIFE
 'use strict';
 
-angular.module('myDronesCrashNBurnApp').factory('DroneService', ['$http', function($http){
+angular.module('myApp').factory('DroneService', ['$http', function($http){
 		
      var BASE_REST_URI='/DronesCrashNBurn/drones';
 

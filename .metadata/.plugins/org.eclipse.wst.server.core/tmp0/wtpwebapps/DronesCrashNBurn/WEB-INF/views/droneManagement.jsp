@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -7,10 +6,11 @@
 <title>Drone Management</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="<c:url value="/resources/css/app.css" />" />
+<link rel="stylesheet" 
+	href="<c:url value="/resources/css/app.css" />" />
 <style type="text/css">
 body {
-	background-image: url("resources/images/dronemgmt_background.jpg");
+ 	background-image: url("resources/images/dronemgmt_background.jpg"); 
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -18,7 +18,7 @@ body {
 }
 </style>
 </head>
-<body ng-app="myApp" ng-cloak>
+<body ng-app="myApp" class="ng-cloak">
 	<div class="generic-container" ng-controller="DroneController as ctrl">
 
 		<div class="panel panel-default">
@@ -60,7 +60,6 @@ body {
 
 		<div>
 			<h4>
-				<br>
 				<a href="droneAdd">Click here to Add a New Drone!</a>
 			</h4>
 		</div>
