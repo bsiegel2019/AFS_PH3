@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>DronesCrashNBurn</title>
@@ -23,7 +24,7 @@ body {
 		<h4>
 			<a href="droneManagement">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 flames! YES !!! gas passing all around   this demo mssg
+		<h6>Phase2 flames! YES !!! passing all around   this demo mssg
 			begin</h6>
 	</div>
 
