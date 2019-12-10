@@ -4,7 +4,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
-<title>Drone Management</title>
+<title>Drone Central</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" 
@@ -19,7 +19,7 @@ body {
 }
 </style>
 </head>
-<body ng-app="myApp" class="ng-cloak">
+<body ng-app="myApp" class="ng-cloak" ng-cloak>
 	<div class="generic-container" ng-controller="DroneController as ctrl">
 
 		<div class="panel panel-default">

@@ -31,7 +31,7 @@
 			<td>${drone.droneImage}</td>
 		</tr>
 		<tr>
-			<td><a href="droneManagement">Back to the Drones!</a></td>
+			<td><a href="droneCentral">Back to the Drones!</a></td>
 		</tr>
 	</table>
 </body>

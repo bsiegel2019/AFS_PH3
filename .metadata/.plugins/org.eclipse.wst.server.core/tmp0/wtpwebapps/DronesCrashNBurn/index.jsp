@@ -22,9 +22,9 @@ body {
 			If you aren't FLYING, you aren't CRASHING<br> <br>
 		</h3>
 		<h4>
-			<a href="droneManagement">Click here for Drone Central!</a>
+			<a href="droneCentral">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 flames! YES !!! passing all around   this demo mssg
+		<h6>Phase2 flames! YES !!! MAssing  all around   this demo mssg
 			begin</h6>
 	</div>
 

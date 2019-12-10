@@ -16,7 +16,7 @@ body {
 		<br> <img src="resources/images/crash_and_burn.jpg"
 			alt="Oopsie! where's the pic?" />
 		<h4>
-			<a href="droneManagement">Click here for Drone Fun!</a>
+			<a href="droneCentral">Click here for Drone Fun!</a>
 		</h4>
 		<h6>Phase2 flames! GASPABBBBB   remove this demo mssg begin</h6>
 	</div>

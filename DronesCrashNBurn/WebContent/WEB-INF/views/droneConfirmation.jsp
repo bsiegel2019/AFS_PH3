@@ -62,7 +62,7 @@ body {
 			<td>${drone.droneImage}</td>
 		</tr>
 		<tr>
-			<td><a href="droneManagement">Back to Drone Central!</a></td>
+			<td><a href="droneCentral">Back to Drone Central!</a></td>
 		</tr>
 	</table>
 </body>

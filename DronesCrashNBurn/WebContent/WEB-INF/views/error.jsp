@@ -19,7 +19,7 @@ body {
 	<div style="text-align: center">
 		<h3>Crash and Burn!</h3>
 		<h3>Please enter the correct drone information</h3>
-		<a href="droneManagement">ReLaunch</a>
+		<a href="droneCentral">ReLaunch</a>
 	</div>
 </body>
 </html>

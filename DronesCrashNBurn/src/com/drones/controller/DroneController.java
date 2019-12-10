@@ -24,9 +24,9 @@ public class DroneController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/droneManagement", method = RequestMethod.GET)
+	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
 	public ModelAndView showForm() {
-		return new ModelAndView("droneManagement", "drone", droneManager.findAllDrones());
+		return new ModelAndView("droneCentral", "drone", droneManager.findAllDrones());
 	}
 
 	@RequestMapping(value = "/droneAdd", method = RequestMethod.GET)
