@@ -3,18 +3,22 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <c:choose>
-	<%-- 	<c:when test="${ ${drone.droneType} eq 'Glider'}"> --%>
 	<c:when test="${drone.droneType eq 'Glider'}">
 		<c:set var="droneTypePic"
 			value="resources/images/glider_silhouette.jpg" />
+		<c:set var="droneThumbNail"
+			value="resources/images/glider_example.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Sport'}">
 		<c:set var="droneTypePic"
 			value="resources/images/sport_silhouette.jpg" />
+		<c:set var="droneThumbNail" value="resources/images/sport_example.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Rotorcraft'}">
 		<c:set var="droneTypePic"
 			value="resources/images/rotorcraft_silhouette.jpg" />
+		<c:set var="droneThumbNail"
+			value="resources/images/rotorcraft_example.jpg" />
 	</c:when>
 </c:choose>
 
@@ -28,6 +32,7 @@ body {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	background-color: DeepSkyBlue;
+	background-opacity: 0.5 !important;
 }
 </style>
 </head>
@@ -52,7 +57,7 @@ body {
 					width="100" height="40"></td>
 			</tr>
 			<tr>
-				<td>Drone Span (Wing or Rotor):</td>
+				<td>Drone Span (Wing/Rotor):</td>
 				<td>${drone.droneSpan}</td>
 			</tr>
 			<tr>
@@ -66,10 +71,16 @@ body {
 			<tr>
 			</tr>
 
-			<tr>
-				<td><a href="droneCentral">Back to Drone Central!</a></td>
-			</tr>
 		</table>
+		
+		<br> <a href="droneCentral">Land at Drone Central</a> <br> 
+		<br>
+		
+		<img
+			height=auto width=500 src="${droneThumbNail}"
+			class="img-thumbnail img-responsive"
+			alt="OOPSIE! Whereis the thumbnail image?">
+
 	</div>
 </body>
 </html>

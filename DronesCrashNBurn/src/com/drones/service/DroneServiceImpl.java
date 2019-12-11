@@ -25,7 +25,7 @@ public class DroneServiceImpl implements DroneService {
 	}
 
 	public Drone addDrone(Drone drone) {
-		drone.setDroneId(counter.incrementAndGet()); // tobe deleted by ph2
+		drone.setDroneId(counter.incrementAndGet()); // todo deleted by ph2
 		drones.add(drone); // this is the call to dao layer
 
 		return drone; // need since ph2 does db add and it sets ID
