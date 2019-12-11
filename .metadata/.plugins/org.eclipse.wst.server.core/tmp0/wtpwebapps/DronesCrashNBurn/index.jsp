@@ -4,7 +4,7 @@
 <title>DronesCrashNBurn</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/crashnburn_background.jpg"); 
+	background-image: url("resources/images/crashnburn_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -24,8 +24,7 @@ body {
 		<h4>
 			<a href="droneCentral">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 flames! YES !!! MAssing  all around   this demo mssg
-			begin</h6>
+		<h6>Phase2 working on this demo mess</h6>
 	</div>
 
 </body>

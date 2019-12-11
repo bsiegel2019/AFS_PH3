@@ -7,17 +7,17 @@
 <title>Drone Central</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" 
-	href="<c:url value="/resources/css/app.css" />" />
+<link rel="stylesheet" href="<c:url value="/resources/css/app.css" />" />
 <style type="text/css">
 body {
- 	background-image: url("resources/images/dronemgmt_background.jpg"); 
+	background-image: url("resources/images/dronemgmt_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	background-color: DeepSkyBlue;
 }
 </style>
+
 </head>
 <body ng-app="myApp" class="ng-cloak" ng-cloak>
 	<div class="generic-container" ng-controller="DroneController as ctrl">
@@ -51,7 +51,10 @@ body {
 							<td><span ng-bind="drone.droneImage"></span></td>
 							<td>
 								<button type="button" ng-click="ctrl.remove(drone.droneId)"
-									class="btn btn-danger custom-width">Scrap</button>
+									class="btn btn-danger custom-width">Scrap</button> 
+								<button type="button" class="btn btn-info">
+									<a ng-href="droneComments">Comments</a>
+								</button>
 							</td>
 						</tr>
 					</tbody>

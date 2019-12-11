@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <c:choose>
-<%-- 	<c:when test="${ ${drone.droneType} eq 'Glider'}"> --%>
+	<%-- 	<c:when test="${ ${drone.droneType} eq 'Glider'}"> --%>
 	<c:when test="${drone.droneType eq 'Glider'}">
 		<c:set var="droneTypePic"
 			value="resources/images/glider_silhouette.jpg" />
@@ -17,13 +17,13 @@
 			value="resources/images/rotorcraft_silhouette.jpg" />
 	</c:when>
 </c:choose>
-  
+
 <html>
 <head>
 <title>Drone Confirmation</title>
 <style type="text/css">
 body {
- 	background-image: url("resources/images/droneconfirm_background.jpg"); 
+	background-image: url("resources/images/droneconfirm_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -32,38 +32,44 @@ body {
 </style>
 </head>
 <body>
-	<h3>Enjoy the Drone!</h3>
+	<div align="center">
 
-	<table>
-		<tr>
-			<td>Drone Owner Name:</td>
-			<td>${drone.droneOwnerName}</td>
-		</tr>
-		<tr>
-			<td>Drone Name:</td>
-			<td>${drone.droneName}</td>
-		</tr>
-		<tr>
-			<td>Drone Type:</td>
-			<td>${drone.droneType}</td>
-			<td><img src="${droneTypePic}" alt="OOPSIE! Whereis the image?"
-				width="100" height="40"></td>
-		</tr>
-		<tr>
-			<td>Drone Span (Wing or Rotor):</td>
-			<td>${drone.droneSpan}</td>
-		</tr>
-		<tr>
-			<td>Drone Status:</td>
-			<td>${drone.droneStatus}</td>
-		</tr>
-		<tr>
-			<td>Drone Image:</td>
-			<td>${drone.droneImage}</td>
-		</tr>
-		<tr>
-			<td><a href="droneCentral">Back to Drone Central!</a></td>
-		</tr>
-	</table>
+		<h2>Airborne!</h2>
+
+		<table>
+			<tr>
+				<td>Drone Owner Name:</td>
+				<td>${drone.droneOwnerName}</td>
+			</tr>
+			<tr>
+				<td>Drone Name:</td>
+				<td>${drone.droneName}</td>
+			</tr>
+			<tr>
+				<td>Drone Type:</td>
+				<td>${drone.droneType}</td>
+				<td><img src="${droneTypePic}" alt="OOPSIE! Whereis the image?"
+					width="100" height="40"></td>
+			</tr>
+			<tr>
+				<td>Drone Span (Wing or Rotor):</td>
+				<td>${drone.droneSpan}</td>
+			</tr>
+			<tr>
+				<td>Drone Status:</td>
+				<td>${drone.droneStatus}</td>
+			</tr>
+			<tr>
+				<td>Drone Image:</td>
+				<td>${drone.droneImage}</td>
+			</tr>
+			<tr>
+			</tr>
+
+			<tr>
+				<td><a href="droneCentral">Back to Drone Central!</a></td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>

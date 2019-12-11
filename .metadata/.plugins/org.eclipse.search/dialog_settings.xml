@@ -36,8 +36,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="management"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value=".btn"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -51,8 +51,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="droneManagement"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="#2F3E48"/>
+			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -63,8 +63,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-cloak"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="#DAE8E8"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -75,8 +75,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="IIFE"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="#337AB7"/>
+			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -87,7 +87,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="_page"/>
+			<item key="textPattern" value="custom-width"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -99,8 +99,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="img"/>
-			<item key="scope" value="1"/>
+			<item key="textPattern" value="var App"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -111,8 +111,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="requestMappingHandlerMapping"/>
-			<item key="scope" value="1"/>
+			<item key="textPattern" value="management"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="crashnburn_"/>
-			<item key="scope" value="1"/>
+			<item key="textPattern" value="droneManagement"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,8 +135,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="crash_"/>
-			<item key="scope" value="1"/>
+			<item key="textPattern" value="ng-cloak"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -147,8 +147,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="null"/>
-			<item key="scope" value="1"/>
+			<item key="textPattern" value="IIFE"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -159,7 +159,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="rest"/>
+			<item key="textPattern" value="_page"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -171,7 +171,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="UTF-8"/>
+			<item key="textPattern" value="img"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -181,11 +181,11 @@
 		</section>
 	</section>
 	<section name="SearchDialog.ScopePart">
-		<item key="scope" value="3"/>
+		<item key="scope" value="1"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item key="DIALOG_X_ORIGIN" value="866"/>
-		<item key="DIALOG_Y_ORIGIN" value="356"/>
+		<item key="DIALOG_X_ORIGIN" value="920"/>
+		<item key="DIALOG_Y_ORIGIN" value="347"/>
 		<item key="DIALOG_WIDTH" value="1065"/>
 		<item key="DIALOG_HEIGHT" value="653"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -196,12 +196,12 @@
 	<section name="org.eclipse.search.text.FileSearchResultPage">
 		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
-	<section name="">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
-	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
 			<item value="droneCentral"/>
 		</list>
+	</section>
+	<section name="">
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 </section>

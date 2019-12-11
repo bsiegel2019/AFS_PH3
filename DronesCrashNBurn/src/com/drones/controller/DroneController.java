@@ -24,6 +24,11 @@ public class DroneController {
 		return "index";
 	}
 
+	@RequestMapping(value = "/droneComments", method = RequestMethod.GET)
+	public String getCommentPage() {
+		return "droneComments";
+	}
+
 	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
 	public ModelAndView showForm() {
 		return new ModelAndView("droneCentral", "drone", droneManager.findAllDrones());
