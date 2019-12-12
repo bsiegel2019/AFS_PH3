@@ -20,60 +20,74 @@ body {
 
 </head>
 <body ng-app="myApp" class="ng-cloak" ng-cloak>
-	<div class="generic-container" ng-controller="DroneController as ctrl">
+	<center>
+		<div class="generic-container" ng-controller="DroneController as ctrl">
 
-		<div class="panel panel-default">
-			<div class="panel-heading">
-				<span class="lead">Drone Central</span>
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+						<span class="lead text-center">Drone Central</span>
+				</div>
+
+				<div class="tablecontainer">
+					<table class="table table-hover table-striped">
+						<thead>
+							<tr>
+								<th>Drone ID</th>
+								<th>Drone Owner</th>
+								<th>Drone Name</th>
+								<th>Drone Type</th>
+								<th>Wing/Rotor Span</th>
+								<th>Drone Status</th>
+								<th>Drone Image</th>
+								<th width="20%"></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr ng-repeat="drone in ctrl.drones">
+								<td><span ng-bind="drone.droneId"></span></td>
+								<td><span ng-bind="drone.droneOwnerName"></span></td>
+								<td><span ng-bind="drone.droneName"></span></td>
+								<td><span ng-bind="drone.droneType"></span></td>
+								<td><span ng-bind="drone.droneSpan"></span></td>
+								<td><span ng-bind="drone.droneStatus"></span></td>
+								<td><span ng-bind="drone.droneImage"></span></td>
+								<td>
+									<button type="button" ng-click="ctrl.remove(drone.droneId)"
+										class="btn btn-danger custom-width">Scrap</button>
+									<button type="button" class="btn btn-info">
+										<strong><a ng-href="droneComments">Comments</a></strong>
+									</button>
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
+
+				</div>
+
+				<div>
+					<h4>
+						<center>
+							<button type="button" class="btn btn-info">
+								<strong><a ng-href="droneAdd">Add a New Drone!</a></strong>
+							</button>
+						</center>
+					</h4>
+				</div>
+
 			</div>
-			<div class="tablecontainer">
-				<table class="table table-hover">
-					<thead>
-						<tr>
-							<th>Drone ID</th>
-							<th>Drone Owner</th>
-							<th>Drone Name</th>
-							<th>Drone Type</th>
-							<th>Wing/Rotor Span</th>
-							<th>Drone Status</th>
-							<th>Drone Image</th>
-							<th width="20%"></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr ng-repeat="drone in ctrl.drones">
-							<td><span ng-bind="drone.droneId"></span></td>
-							<td><span ng-bind="drone.droneOwnerName"></span></td>
-							<td><span ng-bind="drone.droneName"></span></td>
-							<td><span ng-bind="drone.droneType"></span></td>
-							<td><span ng-bind="drone.droneSpan"></span></td>
-							<td><span ng-bind="drone.droneStatus"></span></td>
-							<td><span ng-bind="drone.droneImage"></span></td>
-							<td>
-								<button type="button" ng-click="ctrl.remove(drone.droneId)"
-									class="btn btn-danger custom-width">Scrap</button> 
-								<button type="button" class="btn btn-info">
-									<a ng-href="droneComments">Comments</a>
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-		</div>
 
-		<div>
-			<h4>
-				<a href="droneAdd">Click here to Add a New Drone!</a>
-			</h4>
+			<script
+				src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+			<script src="<c:url value='/resources/js/app.js' />"></script>
+			<script
+				src="<c:url value='/resources/js/service/drone_service.js' />"></script>
+			<script
+				src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
 		</div>
+	</center>
 
-		<script
-			src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-		<script src="<c:url value='/resources/js/app.js' />"></script>
-		<script src="<c:url value='/resources/js/service/drone_service.js' />"></script>
-		<script
-			src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
-	</div>
 </body>
 </html>

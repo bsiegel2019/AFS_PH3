@@ -52,4 +52,9 @@ body, {
     background-color: #fff !important;
 }
 
+.btn-custom {
+    @include button-variant(pink, red, red, #444, #333, red);
+    color: #fff;
+}
+
 

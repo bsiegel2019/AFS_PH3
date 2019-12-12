@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html>
 <head>
@@ -11,6 +12,7 @@ body {
 	background-attachment: fixed;
 	background-size: 100% 100%;
 	background-color: DeepSkyBlue;
+	background-opacity: 0.5 !important;
 }
 </style>
 </head>
