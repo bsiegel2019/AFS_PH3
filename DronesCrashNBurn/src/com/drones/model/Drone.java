@@ -2,6 +2,8 @@ package com.drones.model;
 
 public class Drone {
 
+	public static final String ERRONEOUS_DRONE_TYPE_IMAGE = "resources/images/crashnburn_background2.jpg";
+
 	private Long droneId;
 	private String droneOwnerName;
 	private String droneName;

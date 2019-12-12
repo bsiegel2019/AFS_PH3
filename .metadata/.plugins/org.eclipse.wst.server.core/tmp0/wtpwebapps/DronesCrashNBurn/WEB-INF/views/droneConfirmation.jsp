@@ -3,23 +3,24 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <c:choose>
+
 	<c:when test="${drone.droneType eq 'Glider'}">
 		<c:set var="droneTypePic"
 			value="resources/images/glider_silhouette.jpg" />
-		<c:set var="droneThumbNail"
-			value="resources/images/glider_example.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Sport'}">
 		<c:set var="droneTypePic"
 			value="resources/images/sport_silhouette.jpg" />
-		<c:set var="droneThumbNail" value="resources/images/sport_example.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Rotorcraft'}">
 		<c:set var="droneTypePic"
 			value="resources/images/rotorcraft_silhouette.jpg" />
-		<c:set var="droneThumbNail"
-			value="resources/images/rotorcraft_example.jpg" />
 	</c:when>
+	<c:otherwise>
+		<c:set var="droneTypePic"
+			value="resources/images/crashnburn_background2" />
+	</c:otherwise>
+
 </c:choose>
 
 <html>
@@ -72,12 +73,10 @@ body {
 			</tr>
 
 		</table>
-		
-		<br> <a href="droneCentral">Land at Drone Central</a> <br> 
-		<br>
-		
-		<img
-			height=auto width=500 src="${droneThumbNail}"
+
+		<br> <a href="droneCentral">Land at Drone Central</a> <br> <br>
+
+		<img height=auto width=500 src="${drone.droneImage}"
 			class="img-thumbnail img-responsive"
 			alt="OOPSIE! Whereis the thumbnail image?">
 

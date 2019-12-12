@@ -25,7 +25,28 @@ public class DroneServiceImpl implements DroneService {
 	}
 
 	public Drone addDrone(Drone drone) {
+
 		drone.setDroneId(counter.incrementAndGet()); // todo deleted by ph2
+
+		String tmpDroneType = drone.getDroneType();
+		if (tmpDroneType == null) {
+			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
+		} else {
+			switch (tmpDroneType) {
+			case "Glider":
+				drone.setDroneImage("resources/images/glider_example.jpg");
+				break;
+			case "Sport":
+				drone.setDroneImage("resources/images/sport_example.jpg");
+				break;
+			case "Rotorcraft":
+				drone.setDroneImage("resources/images/rotorcraft_example.jpg");
+				break;
+			default:
+				drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
+				break;
+			}
+		}
 		drones.add(drone); // this is the call to dao layer
 
 		return drone; // need since ph2 does db add and it sets ID
