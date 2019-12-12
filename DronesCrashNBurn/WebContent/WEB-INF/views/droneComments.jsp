@@ -18,9 +18,16 @@ body {
 </head>
 
 <body>
-	<h3>Welcome, Enter The Drone Comments</h3>
+	<div align="center">
 
-	<a href="droneCentral">Back to Drone Central!</a>
+		<h3>Welcome, Enter The Drone Comments</h3>
 
+		<h1>display passed in droneId here - SOMEHOW</h1>
+		GASX<h2>{drone.droneId}</h2>XSAG
+
+
+		<a href="droneCentral">Back to Drone Central!</a>
+
+	</div>
 </body>
 </html>

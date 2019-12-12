@@ -24,7 +24,6 @@ body {
 		<h4>
 			<a href="droneCentral">Click here for Drone Central!</a>
 		</h4>
-		<h6>Phase2 working on this demo mess</h6>
 	</div>
 
 </body>

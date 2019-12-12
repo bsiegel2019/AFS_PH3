@@ -30,12 +30,6 @@ public class DroneController {
 		return "index";
 	}
 
-	@RequestMapping(value = "/droneComments", method = RequestMethod.GET)
-	public String getCommentPage() {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneComments\", method = RequestMethod.GET)");
-		return "droneComments";
-	}
-
 	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
 	public ModelAndView showForm() {
 		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneCentral\", method = RequestMethod.GET)");
@@ -44,7 +38,7 @@ public class DroneController {
 
 	@RequestMapping(value = "/droneAdd", method = RequestMethod.GET)
 	public ModelAndView showForm1() {
-		LOGGER.log(Level.INFO, "equestMapping(value = \"/droneAdd\", method = RequestMethod.GET)");
+		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneAdd\", method = RequestMethod.GET)");
 		return new ModelAndView("droneAdd", "drone", new Drone());
 	}
 

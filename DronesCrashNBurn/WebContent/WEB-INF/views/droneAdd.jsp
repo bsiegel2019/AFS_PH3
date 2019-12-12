@@ -20,8 +20,7 @@ body {
 	<div align="center">
 		<h3>Welcome, Enter The Drone Details</h3>
 
-		<form:form method="POST" action="droneConfirmation"
-			modelAttribute="drone">
+		<form:form method=POST" action="droneConfirmation" modelAttribute="drone">
 
 			<form:input type="hidden" path="droneId" />
 
