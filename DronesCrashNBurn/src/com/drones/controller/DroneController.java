@@ -27,7 +27,13 @@ public class DroneController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndexPage() {
 		LOGGER.log(Level.INFO, "RequestMapping(value = \"/\", method = RequestMethod.GET)");
-		return "index";
+		return "redirect:droneCrashPage";
+	}
+
+	@RequestMapping(value = "/droneCrashPage", method = RequestMethod.GET)
+	public String getCrashPage() {
+		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneCrashPage\", method = RequestMethod.GET)");
+		return "droneCrashPage";
 	}
 
 	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
