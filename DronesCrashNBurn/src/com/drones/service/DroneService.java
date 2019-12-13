@@ -12,6 +12,6 @@ public interface DroneService {
 
 	Drone findDroneById(Long id);
 
-	void deleteDroneById(Long id);
+	void deleteDroneById(Long id); // TODO return something
 
 }

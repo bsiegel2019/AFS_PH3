@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <html>
 <head>
 <title>Drone Info</title>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
 <style type="text/css">
 body {
-	background-image: url("resources/images/droneadd_background.jpg");
+	background-image: url("${contextPath}/resources/images/droneadd_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -73,7 +78,7 @@ body {
 			</table>
 
 			<br>
-			<a href="droneCentral">Abort back to Drone Central</a>
+			<a href="${contextPath}/droneCentral">Abort back to Drone Central</a>
 
 		</form:form>
 

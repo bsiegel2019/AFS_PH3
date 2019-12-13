@@ -32,20 +32,16 @@ public class DroneController {
 
 	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
 	public ModelAndView showForm() {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneCentral\", method = RequestMethod.GET)");
 		return new ModelAndView("droneCentral", "drone", droneManager.findAllDrones());
 	}
 
 	@RequestMapping(value = "/droneAdd", method = RequestMethod.GET)
 	public ModelAndView showForm1() {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneAdd\", method = RequestMethod.GET)");
 		return new ModelAndView("droneAdd", "drone", new Drone());
 	}
 
 	@RequestMapping(value = "/droneConfirmation", method = RequestMethod.POST)
 	public ModelAndView submitDrone(@Valid @ModelAttribute("drone") Drone drone, BindingResult result) {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneConfirmation\", method = RequestMethod.POST)" + "Drone="
-				+ drone.toString());
 		droneManager.addDrone(drone);
 		return new ModelAndView("droneConfirmation", "drone", drone);
 	}

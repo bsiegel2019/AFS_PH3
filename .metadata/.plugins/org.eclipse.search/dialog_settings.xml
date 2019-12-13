@@ -36,8 +36,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value=".btn"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="deleteDroneById"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -51,6 +51,54 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="findDroneBy"/>
+			<item key="scope" value="3"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="+ &quot;/&quot;"/>
+			<item key="scope" value="3"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value="droneComments"/>
+			<item key="scope" value="3"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY4">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
+			<item key="textPattern" value=".btn"/>
+			<item key="scope" value="0"/>
+			<list key="fileNamePatterns">
+				<item value="*"/>
+			</list>
+			<list key="workingSets">
+			</list>
+		</section>
+		<section name="HISTORY5">
+			<item key="ignoreCase" value="true"/>
+			<item key="isRegExSearch" value="false"/>
+			<item key="isWholeWord" value="false"/>
 			<item key="textPattern" value="#2F3E48"/>
 			<item key="scope" value="1"/>
 			<list key="fileNamePatterns">
@@ -59,7 +107,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY2">
+		<section name="HISTORY6">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -71,7 +119,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY3">
+		<section name="HISTORY7">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -83,7 +131,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY4">
+		<section name="HISTORY8">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -95,7 +143,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY5">
+		<section name="HISTORY9">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -107,7 +155,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY6">
+		<section name="HISTORY10">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -119,7 +167,7 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY7">
+		<section name="HISTORY11">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
@@ -131,57 +179,9 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="HISTORY8">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-cloak"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY9">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="IIFE"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY10">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="_page"/>
-			<item key="scope" value="1"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY11">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="img"/>
-			<item key="scope" value="1"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
 	</section>
 	<section name="SearchDialog.ScopePart">
-		<item key="scope" value="1"/>
+		<item key="scope" value="3"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
 		<item key="DIALOG_X_ORIGIN" value="920"/>
@@ -198,6 +198,7 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
+			<item value="droneComment"/>
 			<item value="droneCentral"/>
 		</list>
 	</section>

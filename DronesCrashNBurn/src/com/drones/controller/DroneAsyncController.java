@@ -11,19 +11,19 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.drones.manager.DroneManager;
 import com.drones.model.Drone;
-import com.drones.service.DroneService;
 
 @Controller
 public class DroneAsyncController {
 
 	@Autowired
-	DroneService droneService; // Service which will do all data retrieval/manipulation work
+	DroneManager droneManager; // Service which will do all data retrieval/manipulation work
 
 	// -------------------Retrieve All Drones----------
 	@RequestMapping(value = "/drones", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Drone>> listAllDrones() {
-		List<Drone> drones = droneService.findAllDrones();
+		List<Drone> drones = droneManager.findAllDrones();
 		if (drones.isEmpty()) {
 			// You many decide to return HttpStatus.NOT_FOUND
 			return new ResponseEntity<List<Drone>>(HttpStatus.NO_CONTENT);
@@ -35,13 +35,13 @@ public class DroneAsyncController {
 	@RequestMapping(value = "/drones/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Drone> deleteDrones(@PathVariable("id") Long id) {
 
-		Drone drone = droneService.findDroneById(id);
+		Drone drone = droneManager.findDroneById(id);
 
 		if (null == drone) {
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}
 
-		droneService.deleteDroneById(id);
+		droneManager.deleteDroneById(id);
 		return new ResponseEntity<Drone>(HttpStatus.NO_CONTENT);
 	}
 

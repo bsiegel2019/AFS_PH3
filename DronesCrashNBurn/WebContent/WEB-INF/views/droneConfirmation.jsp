@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -26,9 +28,12 @@
 <html>
 <head>
 <title>Drone Confirmation</title>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
+
 <style type="text/css">
 body {
-	background-image: url("resources/images/droneconfirm_background.jpg");
+	background-image: url("${contextPath}/resources/images/droneconfirm_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -37,6 +42,7 @@ body {
 }
 </style>
 </head>
+
 <body>
 	<div align="center">
 
@@ -74,7 +80,7 @@ body {
 
 		</table>
 
-		<br> <a href="droneCentral">Land at Drone Central</a> <br> <br>
+		<br> <a href="${contextPath}/droneCentral">Land at Drone Central</a> <br> <br>
 
 		<img height=auto width=500 src="${drone.droneImage}"
 			class="img-thumbnail img-responsive"
