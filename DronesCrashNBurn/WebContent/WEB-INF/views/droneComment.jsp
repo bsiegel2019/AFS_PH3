@@ -32,57 +32,122 @@ body {
 
 	<div align="center">
 
-		<h2>Welcome to Drone Comment</h2>
-		<div>
+		<div class="generic-container" ng-controller="DroneController as droneCtrl">
 
-			<h1>
+			<div class="panel panel-default">
 
-				<table>
-					<tr>
-						<td>Long:</td>
-						<td>${id}</td>
-					</tr>
-				</table>
-			</h1>
+				<div class="panel-heading">
+					<span class="lead text-center">Welcome to Drone Comment</span>
+				</div>
 
+				<div class="tablecontainer">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Drone ID</th>
+								<th>Drone Owner</th>
+								<th>Drone Name</th>
+								<th>Drone Type</th>
+								<th>Wing/Rotor Span</th>
+								<th>Drone Status</th>
+								<th>Drone Image</th>
+								<th width="20%"></th>
+							</tr>
+						</thead>
 
-			<div class="tablecontainer">
-				<table class="table table-hover table-striped">
-					<thead>
-						<tr>
-							<th>Drone ID</th>
-							<th>Drone Owner</th>
-							<th>Drone Name</th>
-							<th>Drone Type</th>
-							<th>Wing/Rotor Span</th>
-							<th>Drone Status</th>
-							<th>Drone Image</th>
-							<th width="20%"></th>
-						</tr>
-					</thead>
+						<tbody ng-init="droneCtrl.fetchDroneByDroneId(${id})"> 
 
-					<tbody>
-						<tr>
-							<td><span ng-bind="drone.droneId"></span></td>
-							<td><span ng-bind="drone.droneOwnerName"></span></td>
-							<td><span ng-bind="drone.droneName"></span></td>
-							<td><span ng-bind="drone.droneType"></span></td>
-							<td><span ng-bind="drone.droneSpan"></span></td>
-							<td><span ng-bind="drone.droneStatus"></span></td>
-							<td><span ng-bind="drone.droneImage"></span></td>
-						</tr>
-					</tbody>
+							<tr ng-repeat="drone in droneCtrl.drone">
+								<td><span ng-bind="drone.droneId"></span></td>
+								<td><span ng-bind="drone.droneOwnerName"></span></td>
+								<td><span ng-bind="drone.droneName"></span></td>
+								<td><span ng-bind="drone.droneType"></span></td>
+								<td><span ng-bind="drone.droneSpan"></span></td>
+								<td><span ng-bind="drone.droneStatus"></span></td>
+								<td><span ng-bind="drone.droneImage"></span></td>
+								<td>
+									<button type="button" class="btn btn-danger custom-width">Place${id}X</button>
+								</td>
+							</tr>
+						</tbody>
 
-				</table>
+					</table>
+
+				</div>
+
+				<div align="center">
+					<h2>
+						<strong><a href="${contextPath}/droneCentral">Back to
+								Drone Central!</a></strong>
+					</h2>
+				</div>
 
 			</div>
 
-			<h2>
-				<strong><a href="${contextPath}/droneCentral">Back to
-						Drone Central!</a></strong>
-			</h2>
-
+			<script
+				src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+			<script src="<c:url value='/resources/js/app.js' />"></script>
+			<script
+				src="<c:url value='/resources/js/service/drone_service.js' />"></script>
+			<script
+				src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
 		</div>
+
+
+
+
+
+		<!-- 		<h2>Welcome to Drone Comment</h2> -->
+		<!-- 		<div> -->
+
+		<!-- 			<h1> -->
+
+		<!-- 				<table> -->
+		<!-- 					<tr> -->
+		<!-- 						<td>Long:</td> -->
+		<%-- 						<td>${id}</td> --%>
+		<!-- 					</tr> -->
+		<!-- 				</table> -->
+		<!-- 			</h1> -->
+
+
+		<!-- 			<div class="tablecontainer"> -->
+		<!-- 				<table class="table table-hover table-striped"> -->
+		<!-- 					<thead> -->
+		<!-- 						<tr> -->
+		<!-- 							<th>Drone ID</th> -->
+		<!-- 							<th>Drone Owner</th> -->
+		<!-- 							<th>Drone Name</th> -->
+		<!-- 							<th>Drone Type</th> -->
+		<!-- 							<th>Wing/Rotor Span</th> -->
+		<!-- 							<th>Drone Status</th> -->
+		<!-- 							<th>Drone Image</th> -->
+		<!-- 							<th width="20%"></th> -->
+		<!-- 						</tr> -->
+		<!-- 					</thead> -->
+
+		<!-- 					<tbody> -->
+		<!-- 						<tr> -->
+		<!-- 							<td><span ng-bind="drone.droneId"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneOwnerName"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneName"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneType"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneSpan"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneStatus"></span></td> -->
+		<!-- 							<td><span ng-bind="drone.droneImage"></span></td> -->
+		<!-- 						</tr> -->
+		<!-- 					</tbody> -->
+
+		<!-- 				</table> -->
+
+		<!-- 			</div> -->
+
+		<!-- 			<h2> -->
+		<%-- 				<strong><a href="${contextPath}/droneCentral">Back to --%>
+		<!-- 						Drone Central!</a></strong> -->
+		<!-- 			</h2> -->
+
+		<!-- 		</div> -->
 	</div>
 </body>
 </html>

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <html>
 <head>
 <title>Drone Central</title>
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="<c:url value="/resources/css/app.css" />" />
 <link rel="icon" href="data:,">
 
 <style type="text/css">
 body {
-	background-image: url("${contextPath}/resources/images/dronemgmt_background.jpg");
+	background-image:
+		url("${contextPath}/resources/images/dronemgmt_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -24,9 +27,11 @@ body {
 
 </head>
 <body ng-app="myApp" class="ng-cloak" ng-cloak>
+
 	<div align="center">
 
-		<div class="generic-container" ng-controller="DroneController as ctrl">
+		<div class="generic-container"
+			ng-controller="DroneController as droneCtrl">
 
 			<div class="panel panel-default">
 
@@ -50,7 +55,7 @@ body {
 						</thead>
 
 						<tbody>
-							<tr ng-repeat="drone in ctrl.drones">
+							<tr ng-repeat="drone in droneCtrl.drones">
 								<td><span ng-bind="drone.droneId"></span></td>
 								<td><span ng-bind="drone.droneOwnerName"></span></td>
 								<td><span ng-bind="drone.droneName"></span></td>
@@ -59,10 +64,12 @@ body {
 								<td><span ng-bind="drone.droneStatus"></span></td>
 								<td><span ng-bind="drone.droneImage"></span></td>
 								<td>
-									<button type="button" ng-click="ctrl.remove(drone.droneId)"
+									<button type="button"
+										ng-click="droneCtrl.remove(drone.droneId)"
 										class="btn btn-danger custom-width">Scrap</button>
 									<button type="button" class="btn btn-info">
-										<strong><a ng-href="${contextPath}/droneComment/{{drone.droneId}}">Comments</a></strong>
+										<strong><a
+											ng-href="${contextPath}/droneComment/{{drone.droneId}}">Comments</a></strong>
 									</button>
 								</td>
 							</tr>
@@ -75,7 +82,8 @@ body {
 				<div align="center">
 					<h4>
 						<button type="button" class="btn btn-info">
-							<strong><a ng-href="${contextPath}/droneAdd">Add a New Drone!</a></strong>
+							<strong><a ng-href="${contextPath}/droneAdd">Add a
+									New Drone!</a></strong>
 						</button>
 					</h4>
 				</div>

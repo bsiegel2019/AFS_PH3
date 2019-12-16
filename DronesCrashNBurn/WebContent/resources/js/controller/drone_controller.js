@@ -26,6 +26,7 @@ angular.module('myApp')
 	 						
 							self.remove = remove;
 							self.reset = reset;
+							self.fetchDroneByDroneId = fetchDroneByDroneId;
 
 							fetchAllDrones();
 
@@ -39,11 +40,20 @@ angular.module('myApp')
 												});
 							}
 
-							//  this is for the comment page - get 1 drone by id
+							// this is for the comment page - get 1 drone by id
 							function fetchDroneByDroneId(id) {
+								console.log("before get 1");
+								console.log(id);
+								console.log(self.drone);
+								
 								DroneService.fetchDroneByDroneId(id)
 										.then(function(d) {
-													self.comment.drone = d;
+													self.drone = d;
+													
+													console.log(" after get 1");
+													console.log(id);
+													console.log(self.drone);
+
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching a Drone by Id');
