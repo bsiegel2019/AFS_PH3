@@ -31,6 +31,8 @@
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
+<link rel="icon" href="data:,">
+
 <style type="text/css">
 body {
 	background-image: url("${contextPath}/resources/images/droneconfirm_background.jpg");

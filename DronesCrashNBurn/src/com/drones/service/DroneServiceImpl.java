@@ -63,7 +63,7 @@ public class DroneServiceImpl implements DroneService {
 		return drones;
 	}
 
-	public Drone findDroneById(Long id) {
+	public Drone findDroneByDroneId(Long id) {
 		for (Drone drone : drones) {
 			if (drone.getDroneId() == id) {
 				return drone;

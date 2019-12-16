@@ -22,8 +22,8 @@ public class DroneManagerImpl implements DroneManager {
 		return droneService.addDrone(drone);
 	}
 
-	public Drone findDroneById(Long id) {
-		return droneService.findDroneById(id);
+	public Drone findDroneByDroneId(Long id) {
+		return droneService.findDroneByDroneId(id);
 	}
 
 	public void deleteDroneById(Long id) {

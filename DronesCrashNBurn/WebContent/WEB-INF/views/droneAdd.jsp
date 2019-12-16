@@ -5,9 +5,11 @@
 
 <html>
 <head>
-<title>Drone Info</title>
+<title>Drone Add</title>
 
 <c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+
+<link rel="icon" href="data:,">
 
 <style type="text/css">
 body {

@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>DronesCrashNBurn Error</title>
+
+<link rel="icon" href="data:,">
+
 <style type="text/css">
 body {
  	background-image: url("resources/images/crashnburn_background2.jpg"); 

@@ -10,7 +10,7 @@ public interface DroneManager {
 
 	List<Drone> findAllDrones();
 
-	Drone findDroneById(Long id);
+	Drone findDroneByDroneId(Long id);
 
 	void deleteDroneById(Long id);
 

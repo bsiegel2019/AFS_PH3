@@ -13,6 +13,7 @@
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="<c:url value="/resources/css/app.css" />" />
+<link rel="icon" href="data:,">
 
 <style type="text/css">
 body {

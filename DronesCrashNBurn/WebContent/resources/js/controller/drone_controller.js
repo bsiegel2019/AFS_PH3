@@ -1,5 +1,5 @@
 (function() {
-//IIFE
+// IIFE
 'use strict';
 
 angular.module('myApp')
@@ -8,6 +8,9 @@ angular.module('myApp')
 
 						function($scope, DroneService) {
 							var self = this;
+							
+							// this drone is used for the remove function
+							// this drone is used for the comment function
 							self.drone = {
 								droneId : null,
 								droneOwnerName : '',
@@ -18,8 +21,9 @@ angular.module('myApp')
 								droneImage : 'planned future feature'
 							};
 
+							// this is a list of drones for display
 							self.drones = [];
-
+	 						
 							self.remove = remove;
 							self.reset = reset;
 
@@ -32,6 +36,17 @@ angular.module('myApp')
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching Drones');
+												});
+							}
+
+							//  this is for the comment page - get 1 drone by id
+							function fetchDroneByDroneId(id) {
+								DroneService.fetchDroneByDroneId(id)
+										.then(function(d) {
+													self.comment.drone = d;
+												})
+										.catch(function(errResponse) {
+												console.error('Error while fetching a Drone by Id');
 												});
 							}
 

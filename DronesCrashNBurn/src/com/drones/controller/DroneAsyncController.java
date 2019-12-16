@@ -35,7 +35,7 @@ public class DroneAsyncController {
 	@RequestMapping(value = "/drones/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<Drone> deleteDrones(@PathVariable("id") Long id) {
 
-		Drone drone = droneManager.findDroneById(id);
+		Drone drone = droneManager.findDroneByDroneId(id);
 
 		if (null == drone) {
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);

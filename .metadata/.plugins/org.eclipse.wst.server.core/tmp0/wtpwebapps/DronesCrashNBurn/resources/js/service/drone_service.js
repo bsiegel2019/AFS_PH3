@@ -1,5 +1,5 @@
 (function() {
-//IIFE
+// IIFE
 'use strict';
 
 angular.module('myApp').factory('DroneService', ['$http', function($http){
@@ -8,6 +8,7 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
 
     var factory = {
         fetchAllDrones: fetchAllDrones,
+        fetchDroneByDroneId,
         deleteDrones:deleteDrones
    };
 
@@ -25,7 +26,7 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
         });
     }
 
-    // The catch was important to close the promise, otherwise strange things 
+    // The catch was important to close the promise, otherwise strange things
     // happed after sync add
     function deleteDrones(id) {
         return $http.delete(BASE_REST_URI + "/" + id)
@@ -36,7 +37,19 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
                 console.error(error);
             });
     }
-     
+
+    // The catch was important to close the promise, otherwise strange things
+	// happed after sync add
+    function fetchDroneByDroneId(id) {
+      	return $http.get(BASE_REST_URI + "/" + id)
+      		.then(function(resp){
+      			return resp.data;
+        }).catch(function(error){
+            console.error('Error while fetchDroneByDroneId');
+            console.error(error);
+        });
+    }
+   
 }]);
 
 })();
