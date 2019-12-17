@@ -54,11 +54,11 @@ public class DroneServiceImpl implements DroneService {
 
 	private static List<Drone> populateDummyDrones() {
 		List<Drone> drones = new ArrayList<Drone>();
-		drones.add(new Drone(counter.incrementAndGet(), "Owner1", "Super Sportster", "Sport", "60 in",
+		drones.add(new Drone(counter.incrementAndGet(), "Eagle Ed", "Super Sportster", "Sport", "60 in",
 				"crashed, not fixable", "future feature"));
-		drones.add(new Drone(counter.incrementAndGet(), "Bernard", "Clound Bound", "Glider", "4 meter", "repaired",
+		drones.add(new Drone(counter.incrementAndGet(), "Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired",
 				"future feature"));
-		drones.add(new Drone(counter.incrementAndGet(), "None", "Lawn Dart", "Rotorcraft", "4x12 in",
+		drones.add(new Drone(counter.incrementAndGet(), "Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in",
 				"Flying ballistically", "future feature"));
 		return drones;
 	}

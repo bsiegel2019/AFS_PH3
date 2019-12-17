@@ -19,7 +19,7 @@ import com.drones.model.Drone;
 @Controller
 public class DroneAsyncController {
 
-	private static final Logger LOGGER = Logger.getLogger(DroneController.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(DroneAsyncController.class.getName());
 
 	@Autowired
 	DroneManager droneManager; // Service which will do all data retrieval/manipulation work

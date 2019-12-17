@@ -12,12 +12,12 @@ angular.module('myApp')
 							// this drone is used for the remove function
 							// this drone is used for the comment function
 							self.drone = {
-								droneId : null,
-								droneOwnerName : '',
-								droneName : '',
-								droneType : '',
-								droneSpan : '',
-								droneStatus : '',
+								droneId : 2,
+								droneOwnerName : 'A',
+								droneName : 'B',
+								droneType : 'C',
+								droneSpan : 'D',
+								droneStatus : 'E',
 								droneImage : 'planned future feature'
 							};
 

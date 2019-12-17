@@ -41,9 +41,7 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
     // The catch was important to close the promise, otherwise strange things
 	// happed after sync add
     function fetchDroneByDroneId(id) {
-    	console.log("INsdie fetchDroneByDroneId(");
-    	console.log(id);
-      	return $http.get(BASE_REST_URI + "/" + id)
+     	return $http.get(BASE_REST_URI + "/" + id)
       		.then(function(resp){
       			return resp.data;
         }).catch(function(error){

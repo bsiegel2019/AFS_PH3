@@ -28,11 +28,12 @@ body {
 </style>
 </head>
 
-<body>
+<body ng-app="myApp" class="ng-cloak" ng-cloak>
 
 	<div align="center">
 
-		<div class="generic-container" ng-controller="DroneController as droneCtrl">
+		<div class="generic-container"
+			ng-controller="DroneController as droneCtrl">
 
 			<div class="panel panel-default">
 
@@ -40,7 +41,8 @@ body {
 					<span class="lead text-center">Welcome to Drone Comment</span>
 				</div>
 
-				<div class="tablecontainer">
+				<div class="tablecontainer"
+					ng-init="droneCtrl.fetchDroneByDroneId(${id})">
 					<table class="table">
 						<thead>
 							<tr>
@@ -55,24 +57,24 @@ body {
 							</tr>
 						</thead>
 
-						<tbody ng-init="droneCtrl.fetchDroneByDroneId(${id})"> 
-
-							<tr ng-repeat="drone in droneCtrl.drone">
-								<td><span ng-bind="drone.droneId"></span></td>
-								<td><span ng-bind="drone.droneOwnerName"></span></td>
-								<td><span ng-bind="drone.droneName"></span></td>
-								<td><span ng-bind="drone.droneType"></span></td>
-								<td><span ng-bind="drone.droneSpan"></span></td>
-								<td><span ng-bind="drone.droneStatus"></span></td>
-								<td><span ng-bind="drone.droneImage"></span></td>
-								<td>
-									<button type="button" class="btn btn-danger custom-width">Place${id}X</button>
+						<tbody>
+							<tr>
+								<td><span ng-bind="droneCtrl.drone.droneId"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneOwnerName"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneName"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneType"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneSpan"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneStatus"></span></td>
+								<td><span ng-bind="droneCtrl.drone.droneImage"></span></td>
+								<td>					<img height=auto width=500 src="${contextPath}/{{droneCtrl.drone.droneImage}}"
+						class="img-thumbnail img-responsive"
+						alt="OOPSIE! Whereis the thumbnail image?">
 								</td>
 							</tr>
+
 						</tbody>
 
 					</table>
-
 				</div>
 
 				<div align="center">
@@ -84,70 +86,16 @@ body {
 
 			</div>
 
-			<script
-				src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
-			<script src="<c:url value='/resources/js/app.js' />"></script>
-			<script
-				src="<c:url value='/resources/js/service/drone_service.js' />"></script>
-			<script
-				src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
 		</div>
 
-
-
-
-
-		<!-- 		<h2>Welcome to Drone Comment</h2> -->
-		<!-- 		<div> -->
-
-		<!-- 			<h1> -->
-
-		<!-- 				<table> -->
-		<!-- 					<tr> -->
-		<!-- 						<td>Long:</td> -->
-		<%-- 						<td>${id}</td> --%>
-		<!-- 					</tr> -->
-		<!-- 				</table> -->
-		<!-- 			</h1> -->
-
-
-		<!-- 			<div class="tablecontainer"> -->
-		<!-- 				<table class="table table-hover table-striped"> -->
-		<!-- 					<thead> -->
-		<!-- 						<tr> -->
-		<!-- 							<th>Drone ID</th> -->
-		<!-- 							<th>Drone Owner</th> -->
-		<!-- 							<th>Drone Name</th> -->
-		<!-- 							<th>Drone Type</th> -->
-		<!-- 							<th>Wing/Rotor Span</th> -->
-		<!-- 							<th>Drone Status</th> -->
-		<!-- 							<th>Drone Image</th> -->
-		<!-- 							<th width="20%"></th> -->
-		<!-- 						</tr> -->
-		<!-- 					</thead> -->
-
-		<!-- 					<tbody> -->
-		<!-- 						<tr> -->
-		<!-- 							<td><span ng-bind="drone.droneId"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneOwnerName"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneName"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneType"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneSpan"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneStatus"></span></td> -->
-		<!-- 							<td><span ng-bind="drone.droneImage"></span></td> -->
-		<!-- 						</tr> -->
-		<!-- 					</tbody> -->
-
-		<!-- 				</table> -->
-
-		<!-- 			</div> -->
-
-		<!-- 			<h2> -->
-		<%-- 				<strong><a href="${contextPath}/droneCentral">Back to --%>
-		<!-- 						Drone Central!</a></strong> -->
-		<!-- 			</h2> -->
-
-		<!-- 		</div> -->
 	</div>
+
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>
+	<script src="<c:url value='/resources/js/app.js' />"></script>
+	<script src="<c:url value='/resources/js/service/drone_service.js' />"></script>
+	<script
+		src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
+
 </body>
 </html>
