@@ -60,7 +60,7 @@ public class DroneAsyncController {
 	public ResponseEntity<Drone> findDroneByDroneId(@PathVariable("id") Long id) {
 		LOGGER.log(Level.INFO,
 				"inside >RequestMapping(value = \"/drones/{id}\", method = RequestMethod.GET)< with DroneId=" + id);
-		LOGGER.log(Level.INFO, "HERE DroneId=" + id);
+		LOGGER.log(Level.INFO, "DroneAsyncController  HERE DroneId=" + id);
 
 		Drone drone = droneManager.findDroneByDroneId(id);
 

@@ -52,7 +52,6 @@ body {
 								<th>Drone Type</th>
 								<th>Wing/Rotor Span</th>
 								<th>Drone Status</th>
-								<th>Drone Image</th>
 								<th width="20%"></th>
 							</tr>
 						</thead>
@@ -65,11 +64,10 @@ body {
 								<td><span ng-bind="droneCtrl.drone.droneType"></span></td>
 								<td><span ng-bind="droneCtrl.drone.droneSpan"></span></td>
 								<td><span ng-bind="droneCtrl.drone.droneStatus"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneImage"></span></td>
-								<td>					<img height=auto width=500 src="${contextPath}/{{droneCtrl.drone.droneImage}}"
-						class="img-thumbnail img-responsive"
-						alt="OOPSIE! Whereis the thumbnail image?">
-								</td>
+
+								<td><img height=100 width=auto
+									ng-src="${contextPath}/{{droneCtrl.drone.droneImage}}"
+									alt="OOPSIE! Whereis the thumbnail image?"></td>
 							</tr>
 
 						</tbody>

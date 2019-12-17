@@ -20,7 +20,7 @@
 	</c:when>
 	<c:otherwise>
 		<c:set var="droneTypePic"
-			value="resources/images/crashnburn_background2" />
+			value="resources/images/crashnburn_background2.jpg" />
 	</c:otherwise>
 
 </c:choose>
@@ -62,7 +62,7 @@ body {
 			<tr>
 				<td>Drone Type:</td>
 				<td>${drone.droneType}</td>
-				<td><img src="${droneTypePic}" alt="OOPSIE! Whereis the image?"
+				<td><img src="${contextPath}/${droneTypePic}" alt="OOPSIE! Whereis the image?"
 					width="100" height="40"></td>
 			</tr>
 			<tr>
@@ -84,7 +84,7 @@ body {
 
 		<br> <a href="${contextPath}/droneCentral">Land at Drone Central</a> <br> <br>
 
-		<img height=auto width=500 src="${drone.droneImage}"
+		<img height=auto width=500 src="${contextPath}/${drone.droneImage}"
 			class="img-thumbnail img-responsive"
 			alt="OOPSIE! Whereis the thumbnail image?">
 

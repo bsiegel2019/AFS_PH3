@@ -28,6 +28,17 @@ public class DroneServiceImpl implements DroneService {
 
 		drone.setDroneId(counter.incrementAndGet()); // todo deleted by ph2
 
+		// if the optional field was not provided/null, fill with a meaningful string
+		if ("".equals(drone.getDroneSpan())) {
+			drone.setDroneSpan("not provided");
+		}
+
+		// if the optional field was not provided/null, fill with a meaningful string
+		if ("".equals(drone.getDroneStatus())) {
+			drone.setDroneStatus("not provided");
+		}
+
+		// since I don't have a drone image capability - YET
 		String tmpDroneType = drone.getDroneType();
 		if (tmpDroneType == null) {
 			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
@@ -55,11 +66,11 @@ public class DroneServiceImpl implements DroneService {
 	private static List<Drone> populateDummyDrones() {
 		List<Drone> drones = new ArrayList<Drone>();
 		drones.add(new Drone(counter.incrementAndGet(), "Eagle Ed", "Super Sportster", "Sport", "60 in",
-				"crashed, not fixable", "future feature"));
+				"crashed, not fixable", "resources/images/sport_example.jpg"));
 		drones.add(new Drone(counter.incrementAndGet(), "Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired",
-				"future feature"));
+				"resources/images/glider_example.jpg"));
 		drones.add(new Drone(counter.incrementAndGet(), "Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in",
-				"Flying ballistically", "future feature"));
+				"Flying ballistically", "resources/images/rotorcraft_example.jpg"));
 		return drones;
 	}
 

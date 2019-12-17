@@ -12,13 +12,13 @@ angular.module('myApp')
 							// this drone is used for the remove function
 							// this drone is used for the comment function
 							self.drone = {
-								droneId : 2,
-								droneOwnerName : 'A',
-								droneName : 'B',
-								droneType : 'C',
-								droneSpan : 'D',
-								droneStatus : 'E',
-								droneImage : 'planned future feature'
+								droneId : null,
+								droneOwnerName : '',
+								droneName : '',
+								droneType : '',
+								droneSpan : '',
+								droneStatus : '',
+								droneImage : ''
 							};
 
 							// this is a list of drones for display
@@ -42,10 +42,6 @@ angular.module('myApp')
 
 							// this is for the comment page - get 1 drone by id
 							function fetchDroneByDroneId(id) {
-								console.log("before get 1");
-								console.log(id);
-								console.log(self.drone);
-								
 								DroneService.fetchDroneByDroneId(id)
 										.then(function(d) {
 													self.drone = d;
