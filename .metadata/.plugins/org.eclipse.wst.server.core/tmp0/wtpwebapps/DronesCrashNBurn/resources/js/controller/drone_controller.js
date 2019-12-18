@@ -45,11 +45,6 @@ angular.module('myApp')
 								DroneService.fetchDroneByDroneId(id)
 										.then(function(d) {
 													self.drone = d;
-													
-													console.log(" after get 1");
-													console.log(id);
-													console.log(self.drone);
-
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching a Drone by Id');

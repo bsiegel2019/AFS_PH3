@@ -2,15 +2,6 @@ package com.drones.model;
 
 public class DroneComment {
 
-// 	Comments are related to Drones via a 0..n relationship 
-// 	Comments are (Service memory object) 
-//		private static List<Drone> drones;  // todo deleted by ph2
-//	Comments have a unique sequential Id field - this allows
-//	 	"findAllCommentsForDrone(Long commentDroneId)" // returns 0..n comments for that drone, if 0 then empty list
-// 		"deleteAllCommentsForDrone(Long commentDroneId)" // deletes 0..n comments for that drone, returns boolean (only true if delete functioned ok)
-//		"addCommentForDrone(Long commentDroneId, String commentText)" // adds a comment using a unique sequential commentId, returns a Comment with id or null if fail
-//		"updateCommentForDrone(Long commentId, Long commentDroneId, String commentText)" // adds a comment using a unique sequential commentId, returns a Comment or null if fail
-
 	private Long commentId;
 	private Long commentDroneId;
 	private String commentText;

@@ -30,15 +30,17 @@ body {
 
 <body ng-app="myApp" class="ng-cloak" ng-cloak>
 
+	<!-- this is the begin of the center div for all on the page-->
 	<div align="center">
 
+		<!-- ok below here is the drone table space -->
 		<div class="generic-container"
 			ng-controller="DroneController as droneCtrl">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<span class="lead text-center">Welcome to Drone Comment</span>
+					<span class="lead text-center">Welcome to Drone Comment - here is the Drone</span>
 				</div>
 
 				<div class="tablecontainer"
@@ -75,18 +77,71 @@ body {
 					</table>
 				</div>
 
-				<div align="center">
-					<h2>
-						<strong><a href="${contextPath}/droneCentral">Back to
-								Drone Central!</a></strong>
-					</h2>
+			</div>
+
+		</div>
+		<!-- ok ABOVE here is the drone table space -->
+
+		<!-- ok below here is the comment table space -->
+		<div class="generic-container"
+			ng-controller="DroneCommentController as droneCommentCtrl">
+
+			<div class="panel panel-default">
+
+				<div class="panel-heading">
+					<span class="lead text-center">Welcome to Drone Comment - here are the Comments</span>
+				</div>
+
+				<div class="tablecontainer"
+<%-- 					ng-init="droneCtrl.fetchDroneByDroneId(${id})" --%>
+					>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Drone ID</th>
+								<th>Drone Owner</th>
+								<th>Drone Name</th>
+								<th>Drone Type</th>
+								<th>Wing/Rotor Span</th>
+								<th>Drone Status</th>
+								<th width="20%"></th>
+							</tr>
+						</thead>
+
+						<tbody>
+							<tr>
+								<td><span ng-bind="droneCommentCtrl.drone.droneId"></span></td>
+								<td><span ng-bind="droneCommentCtrl.drone.droneOwnerName"></span></td>
+								<td><span ng-bind="droneCommentCtrl.drone.droneName"></span></td>
+								<td><span ng-bind="droneCommentCtrl.drone.droneType"></span></td>
+								<td><span ng-bind="droneCommentCtrl.drone.droneSpan"></span></td>
+								<td><span ng-bind="droneCommentCtrl.drone.droneStatus"></span></td>
+							</tr>
+
+						</tbody>
+
+					</table>
 				</div>
 
 			</div>
 
 		</div>
+		<!-- ok ABOVE here is the comment table space -->
+
+
+
+
+
+
+
+		<!-- ok below here is the href back to drone central -->
+		<h2>
+			<strong><a href="${contextPath}/droneCentral">Back to
+					Drone Central!</a></strong>
+		</h2>
 
 	</div>
+	<!-- this is the _end_ of the center div for all on the page-->
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.js"></script>

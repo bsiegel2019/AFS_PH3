@@ -2,10 +2,13 @@
 // IIFE
 'use strict';
 
-angular.module('myApp').factory('DroneService', ['$http', function($http){
+angular.module('myApp').factory('DroneCommentService', ['$http', function($http){
 		
      var BASE_REST_URI='/DronesCrashNBurn/drones';
 
+   //fix all below for comments TODO 							
+
+     
     var factory = {
         fetchAllDrones: fetchAllDrones,
         fetchDroneByDroneId : fetchDroneByDroneId,
@@ -14,7 +17,8 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
 
     return factory;
 
-    // The catch was important to close the promise, otherwise strange things happed after sync add
+    // The catch was important to close the promise, otherwise strange things
+	// happed after sync add
     function fetchAllDrones() {
     	// Do NOT add a forward slash on the literal after the base uri
     	return $http.get(BASE_REST_URI).then(function(resp){
@@ -25,7 +29,8 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
         });
     }
 
-    // The catch was important to close the promise, otherwise strange things happed after sync add
+    // The catch was important to close the promise, otherwise strange things
+    // happed after sync add
     function deleteDrones(id) {
         return $http.delete(BASE_REST_URI + "/" + id)
             .then(function (response) {
@@ -36,7 +41,8 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
             });
     }
 
-    // The catch was important to close the promise, otherwise strange things happed after sync add
+    // The catch was important to close the promise, otherwise strange things
+	// happed after sync add
     function fetchDroneByDroneId(id) {
      	return $http.get(BASE_REST_URI + "/" + id)
       		.then(function(resp){

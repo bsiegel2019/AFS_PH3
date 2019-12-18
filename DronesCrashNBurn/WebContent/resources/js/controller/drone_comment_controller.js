@@ -3,22 +3,26 @@
 'use strict';
 
 angular.module('myApp')
-		.controller('DroneController',
-				['$scope','DroneService',
+		.controller('DroneCommentController',
+				['$scope','DroneCommentService',
 
-						function($scope, DroneService) {
+						function($scope, DroneCommentService) {
 							var self = this;
+							
+							
+							
+//fix all below for comments TODO 							
 							
 							// this drone is used for the remove function
 							// this drone is used for the comment function
 							self.drone = {
-								droneId : null,
-								droneOwnerName : '',
-								droneName : '',
-								droneType : '',
-								droneSpan : '',
-								droneStatus : '',
-								droneImage : ''
+								droneId : 2,
+								droneOwnerName : 'A',
+								droneName : 'B',
+								droneType : 'C',
+								droneSpan : 'D',
+								droneStatus : 'E',
+								droneImage : '${contextPath}/resources/images/crashnburn_background2.jpg'
 							};
 
 							// this is a list of drones for display
@@ -45,6 +49,11 @@ angular.module('myApp')
 								DroneService.fetchDroneByDroneId(id)
 										.then(function(d) {
 													self.drone = d;
+													
+													console.log(" after get 1");
+													console.log(id);
+													console.log(self.drone);
+
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching a Drone by Id');

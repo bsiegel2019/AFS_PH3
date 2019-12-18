@@ -36,7 +36,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="droneCtrl.drone.droneImage"/>
+			<item key="textPattern" value="fetchAllDrones"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,7 +51,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="HERE DroneId"/>
+			<item key="textPattern" value="addCommentForDrone"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -63,7 +63,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="{droneCtrl.drone.droneImage}"/>
+			<item key="textPattern" value="deleteCommentByCommentId"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -75,7 +75,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="planned"/>
+			<item key="textPattern" value="findCommentForDroneByCommentId"/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -87,8 +87,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="dummy"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="updateCommentForDroneByCommentId"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -99,8 +99,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="contextPath"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="deleteCommentForDroneByCommentId"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -111,7 +111,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="crashnburn_background2"/>
+			<item key="textPattern" value="// expected to have a valid comment drone id"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="HERE DroneId="/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="deleteCommentForDroneByCommentId(Long commentDroneId)"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,7 +135,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="INsdie fetchDroneByDroneId"/>
+			<item key="textPattern" value="updateCommentForDroneByCommentId(Long commentId, Long commentDroneId, String commentText)"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -147,8 +147,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="dummt"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="findAllCommentForDroneByDroneId"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -159,8 +159,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="DroneController"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="ng-src"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -171,8 +171,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="onload"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="addCommentForDroneByDroneId"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -198,10 +198,13 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
-			<item value="findDroneByDroneId"/>
-			<item value="fetchDroneByDroneId"/>
-			<item value="droneComment"/>
-			<item value="droneCentral"/>
+			<item value="addDroneComment"/>
+			<item value="deleteDroneCommentByCommentId"/>
+			<item value="findDroneCommentByCommentId"/>
+			<item value="updateDroneCommentByCommentId"/>
+			<item value="deleteCommentByCommentId"/>
+			<item value="// expected to have a valid comment id"/>
+			<item value="deleteCommentForDroneByCommentId(Long commentId)"/>
 		</list>
 	</section>
 	<section name="">

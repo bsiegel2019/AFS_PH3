@@ -12,12 +12,12 @@ import com.drones.model.Drone;
 @Service("droneService")
 public class DroneServiceImpl implements DroneService {
 
-	private static final AtomicLong counter = new AtomicLong(); // tobe deleted by ph2
+	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
 
-	private static List<Drone> drones; // todo deleted by ph2
+	private static List<Drone> drones; // TODO deleted by ph2
 
 	static {
-		drones = populateDummyDrones(); // todo deleted by ph2
+		drones = populateDummyDrones(); // TODO deleted by ph2
 	}
 
 	public List<Drone> findAllDrones() {
@@ -26,7 +26,7 @@ public class DroneServiceImpl implements DroneService {
 
 	public Drone addDrone(Drone drone) {
 
-		drone.setDroneId(counter.incrementAndGet()); // todo deleted by ph2
+		drone.setDroneId(counter.incrementAndGet()); // TODO deleted by ph2
 
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneSpan())) {
@@ -89,6 +89,7 @@ public class DroneServiceImpl implements DroneService {
 			Drone drone = iterator.next();
 			if (drone.getDroneId() == id) {
 				iterator.remove();
+				break;
 			}
 		}
 	}
