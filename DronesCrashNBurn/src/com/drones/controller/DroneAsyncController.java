@@ -45,14 +45,13 @@ public class DroneAsyncController {
 		Drone drone = droneManager.findDroneByDroneId(id);
 
 		if (null == drone) {
-			LOGGER.log(Level.WARNING,
+			LOGGER.log(Level.SEVERE,
 					this.getClass().getName() + " >No Drone found for deleteDrones(" + id + "). One was expected!");
 
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}
-
 		droneManager.deleteDroneById(id);
-		return new ResponseEntity<Drone>(HttpStatus.OK); // TODO assumed OK, fix this
+		return new ResponseEntity<Drone>(HttpStatus.OK);
 	}
 
 	// ---------- find a Drone by drone id for the comment page

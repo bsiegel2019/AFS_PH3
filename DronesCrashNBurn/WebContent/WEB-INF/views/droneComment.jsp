@@ -28,23 +28,23 @@ body {
 </style>
 </head>
 
-<body ng-app="myApp" class="ng-cloak" ng-cloak>
+<body data-ng-app="myApp" class="data-ng-cloak" data-ng-cloak>
 
 	<!-- this is the begin of the center div for all on the page-->
 	<div align="center">
 
 		<!-- ok below here is the drone table space -->
 		<div class="generic-container"
-			ng-controller="DroneController as droneCtrl">
+			data-ng-controller="DroneController as droneCtrl">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<span class="lead text-center">Welcome to Drone Comment - here is the Drone</span>
+					<span class="lead text-center">Welcome to Drone Comment - Drone</span>
 				</div>
 
 				<div class="tablecontainer"
-					ng-init="droneCtrl.fetchDroneByDroneId(${id})">
+					data-ng-init="droneCtrl.fetchDroneByDroneId(${id})">
 					<table class="table">
 						<thead>
 							<tr>
@@ -60,18 +60,17 @@ body {
 
 						<tbody>
 							<tr>
-								<td><span ng-bind="droneCtrl.drone.droneId"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneOwnerName"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneName"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneType"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneSpan"></span></td>
-								<td><span ng-bind="droneCtrl.drone.droneStatus"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneId"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneOwnerName"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneName"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneType"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneSpan"></span></td>
+								<td><span data-ng-bind="droneCtrl.drone.droneStatus"></span></td>
 
 								<td><img height=100 width=auto
-									ng-src="${contextPath}/{{droneCtrl.drone.droneImage}}"
+									data-ng-src="${contextPath}/{{droneCtrl.drone.droneImage}}"
 									alt="OOPSIE! Whereis the thumbnail image?"></td>
 							</tr>
-
 						</tbody>
 
 					</table>
@@ -84,40 +83,31 @@ body {
 
 		<!-- ok below here is the comment table space -->
 		<div class="generic-container"
-			ng-controller="DroneCommentController as droneCommentCtrl">
+			data-ng-controller="DroneCommentController as droneCommentCtrl">
 
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<span class="lead text-center">Welcome to Drone Comment - here are the Comments</span>
+					<span class="lead text-center">Welcome to Drone Comment - Comments</span>
 				</div>
 
 				<div class="tablecontainer"
-<%-- 					ng-init="droneCtrl.fetchDroneByDroneId(${id})" --%>
-					>
+					data-ng-init="droneCommentCtrl.fetchAllDroneCommentByDroneId(${id})">
 					<table class="table">
 						<thead>
 							<tr>
-								<th>Drone ID</th>
-								<th>Drone Owner</th>
-								<th>Drone Name</th>
-								<th>Drone Type</th>
-								<th>Wing/Rotor Span</th>
-								<th>Drone Status</th>
-								<th width="20%"></th>
+								<th width="10%">Comment ID</th>
+								<th width="10%">Drone ID</th>
+								<th width="60%">Comment</th>
 							</tr>
 						</thead>
 
 						<tbody>
-							<tr>
-								<td><span ng-bind="droneCommentCtrl.drone.droneId"></span></td>
-								<td><span ng-bind="droneCommentCtrl.drone.droneOwnerName"></span></td>
-								<td><span ng-bind="droneCommentCtrl.drone.droneName"></span></td>
-								<td><span ng-bind="droneCommentCtrl.drone.droneType"></span></td>
-								<td><span ng-bind="droneCommentCtrl.drone.droneSpan"></span></td>
-								<td><span ng-bind="droneCommentCtrl.drone.droneStatus"></span></td>
+							<tr data-ng-repeat="comment in droneCommentCtrl.comments">
+								<td><span data-ng-bind="comment.commentId"></span></td>
+								<td><span data-ng-bind="comment.commentDroneId"></span></td>
+								<td><span data-ng-bind="comment.commentText"></span></td>
 							</tr>
-
 						</tbody>
 
 					</table>
@@ -128,17 +118,12 @@ body {
 		</div>
 		<!-- ok ABOVE here is the comment table space -->
 
-
-
-
-
-
-
 		<!-- ok below here is the href back to drone central -->
 		<h2>
 			<strong><a href="${contextPath}/droneCentral">Back to
 					Drone Central!</a></strong>
 		</h2>
+		<!-- ok ABOVE here is the href back to drone central -->
 
 	</div>
 	<!-- this is the _end_ of the center div for all on the page-->
@@ -149,6 +134,10 @@ body {
 	<script src="<c:url value='/resources/js/service/drone_service.js' />"></script>
 	<script
 		src="<c:url value='/resources/js/controller/drone_controller.js' />"></script>
+	<script
+		src="<c:url value='/resources/js/service/drone_comment_service.js' />"></script>
+	<script
+		src="<c:url value='/resources/js/controller/drone_comment_controller.js' />"></script>
 
 </body>
 </html>

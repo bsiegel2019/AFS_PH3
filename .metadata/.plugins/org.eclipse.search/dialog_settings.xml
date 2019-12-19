@@ -36,7 +36,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="fetchAllDrones"/>
+			<item key="textPattern" value="ng-repeat"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,8 +51,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="addCommentForDrone"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-init"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -63,7 +63,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="deleteCommentByCommentId"/>
+			<item key="textPattern" value="ng-href"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -75,8 +75,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="findCommentForDroneByCommentId"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-controller"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -87,8 +87,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="updateCommentForDroneByCommentId"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-cloak"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -99,8 +99,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="deleteCommentForDroneByCommentId"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-click"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -111,7 +111,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="// expected to have a valid comment drone id"/>
+			<item key="textPattern" value="ng-bind"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="deleteCommentForDroneByCommentId(Long commentDroneId)"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="console.log"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,7 +135,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="updateCommentForDroneByCommentId(Long commentId, Long commentDroneId, String commentText)"/>
+			<item key="textPattern" value="System.out"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -147,8 +147,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="findAllCommentForDroneByDroneId"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="Welcome to Drone Comment"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -159,8 +159,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-src"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="after get commentx"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -171,7 +171,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="addCommentForDroneByDroneId"/>
+			<item key="textPattern" value="InSdie B findAllDroneCommentByDroneId where selectedSize="/>
 			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -198,13 +198,13 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
-			<item value="addDroneComment"/>
-			<item value="deleteDroneCommentByCommentId"/>
-			<item value="findDroneCommentByCommentId"/>
-			<item value="updateDroneCommentByCommentId"/>
-			<item value="deleteCommentByCommentId"/>
-			<item value="// expected to have a valid comment id"/>
-			<item value="deleteCommentForDroneByCommentId(Long commentId)"/>
+			<item value="data-ng-repeat"/>
+			<item value="data-ng-init"/>
+			<item value="data-ng-href"/>
+			<item value="data-ng-controller"/>
+			<item value="data-ng-cloak"/>
+			<item value="data-ng-click"/>
+			<item value="data-ng-bind"/>
 		</list>
 	</section>
 	<section name="">

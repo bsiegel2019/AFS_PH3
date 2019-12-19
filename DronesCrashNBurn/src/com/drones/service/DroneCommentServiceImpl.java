@@ -29,13 +29,10 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 
 		for (Iterator<DroneComment> iterator = droneComments.iterator(); iterator.hasNext();) {
 			DroneComment examineDroneComment = iterator.next();
-			System.out.println("InSdie A findAllDroneCommentByDroneId where finderid=" + commentDroneId
-					+ ", this commentid=" + examineDroneComment.getCommentDroneId()); // TODO
 			if (examineDroneComment.getCommentDroneId().equals(commentDroneId)) {
 				selectedDroneComments.add(examineDroneComment);
 			}
 		}
-		System.out.println("InSdie B findAllDroneCommentByDroneId where selectedSize=" + selectedDroneComments.size()); // TODO
 		return selectedDroneComments;
 	}
 
@@ -48,11 +45,8 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 		if ("".equals(droneComment.getCommentText())) {
 			droneComment.setCommentText("ERROR! not provided - you should not be seeing this");
 		}
-
-		System.out.println("InSdie A addDroneComment before ADD where Size=" + droneComments.size()); // TODO
 		droneComments.add(droneComment); // TODO this is the call to dao layer
-		System.out.println("InSdie B addDroneComment  after ADD where Size=" + droneComments.size()); // TODO
-		return droneComment; // TODO need since ph2 does db add and it sets ID
+		return droneComment;
 	}
 
 	private static List<DroneComment> populateDummyDroneComments() {
@@ -66,6 +60,13 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 				"Comment A for drone id 3 Hates this Lawn Mower"));
 		droneComments.add(new DroneComment(counter.incrementAndGet(), new Long(3),
 				"Comment B for drone id 3 Loves this Lawn Mower"));
+		droneComments.add(new DroneComment(counter.incrementAndGet(), new Long(4),
+				"Comment A for drone id 4 LOTS OF TEXT ->\\”Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don't tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist- I really believe he is Antichrist- I will have nothing more to do with you and you are no longer my friend, no longer my 'faithful slave,' as you call yourself! But how do you do? I see I have frightened you- sit down and tell me all the news.\\”\r\n"
+						+ "It was in July, 1805, and the speaker was the well-known Anna Pavlovna Scherer, maid of honor and favorite of the Empress Marya Fedorovna. With these words she greeted Prince Vasili Kuragin, a man of high rank and importance, who was the first to arrive at her reception. Anna Pavlovna had had a cough for some days. She was, as she said, suffering from la grippe; grippe being then a new word in St. Petersburg, used only by the elite.\r\n"
+						+ "All her invitations without exception, written in French, and delivered by a scarlet-liveried footman that morning, ran as follows:\r\n"
+						+ "\\”If you have nothing better to do, Count [or Prince], and if the prospect of spending an evening with a poor invalid is not too terrible, I shall be very charmed to see you tonight between 7 and 10- Annette Scherer.\\”\r\n"
+						+ "\\”Heavens! what a virulent attack!\\” replied the prince, not in the least disconcerted by this reception. He had just entered, wearing an embroidered court uniform, knee breeches, and shoes, and had stars on his breast and a serene expression on his flat face. He spoke in that refined French in which our grandfathers not only spoke but thought, and with the gentle, patronizing intonation natural to a man of importance who had grown old in society and at court. He went up to Anna Pavlovna, kissed her hand, presenting to her his bald, scented, and shining head, and complacently seated himself on the sofa.\r\n"
+						+ "\r\n" + ""));
 		return droneComments;
 	}
 
@@ -73,16 +74,11 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 	// NOTE: returns 1 comment found by the unique comment id, if none/error then null
 	@Override
 	public DroneComment findDroneCommentByCommentId(Long commentId) {
-		System.out.println("InSdie A findDroneCommentByCommentId where finderid=" + commentId); // TODO
 		for (DroneComment droneComment : droneComments) {
 			if (droneComment.getCommentId().equals(commentId)) {
-				System.out.println("InSdie B findDroneCommentByCommentId where finderid=" + commentId
-						+ ", this comment=" + droneComment.toString()); // TODO
 				return droneComment;
 			}
 		}
-		System.out.println("InSdie C findDroneCommentByCommentId where finderid=" + commentId
-				+ ", found nothing ERROR?! returned null"); // TODO
 		return null;
 	}
 
@@ -93,14 +89,9 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 		Boolean returnFlag = false; // only set to true when successful delete
 		long beforeSize = droneComments.size();
 
-		System.out.println("InSdie A deleteDroneCommentByCommentId where commentId=" + commentId + ", return Boolean="
-				+ returnFlag + ", arraylist size=" + beforeSize); // TODO
-
 		for (Iterator<DroneComment> iterator = droneComments.iterator(); iterator.hasNext();) {
 			DroneComment droneComment = iterator.next();
 			if (droneComment.getCommentId().equals(commentId)) {
-				System.out.println("InSdie B deleteDroneCommentByCommentId where finderid=" + commentId
-						+ ", this comment=" + droneComment.toString()); // TODO
 				iterator.remove();
 				break;
 			}
@@ -109,9 +100,6 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 		if (afterSize < beforeSize) {
 			returnFlag = true;
 		}
-		System.out.println("InSdie C deleteDroneCommentByCommentId where commentId=" + commentId + ", return Boolean="
-				+ returnFlag + ", arraylist size was=" + beforeSize + ", aftersize=" + afterSize); // TODO
-
 		return returnFlag;
 	}
 
@@ -121,22 +109,13 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 	public DroneComment updateDroneCommentByCommentId(DroneComment droneComment) {
 		DroneComment returnComment = null; // only set to droneComment when successful update
 
-		System.out.println("InSdie A updateDroneCommentByCommentId where update comment=" + droneComment); // TODO
-
 		for (int commentIndex = 0; commentIndex < droneComments.size(); commentIndex++) {
 			if ((droneComments.get(commentIndex).getCommentId()).equals(droneComment.getCommentId())) {
 				droneComments.set(commentIndex, droneComment);
 				returnComment = droneComment;
-
-				System.out.println("InSdie B updateDroneCommentByCommentId where found old comment="
-						+ droneComments.get(commentIndex) + ", where index=" + commentIndex); // TODO
-
 				break;
 			}
 		}
-
-		System.out.println("InSdie C updateDroneCommentByCommentId where returnComment=" + returnComment); // TODO
-
 		return returnComment;
 	}
 

@@ -35,7 +35,7 @@
 
 <style type="text/css">
 body {
-	background-image: url("${contextPath}/resources/images/droneconfirm_background.jpg");
+	background-image: url("${contextPath}/resources/images/drone_confirm_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;

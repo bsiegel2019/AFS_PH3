@@ -28,9 +28,9 @@ public class DroneCommentAsyncController {
 	public ResponseEntity<List<DroneComment>> findAllDroneCommentByDroneId(@PathVariable("id") Long id) {
 
 		LOGGER.log(Level.INFO,
-				"inside >RequestMapping(value = \"/droneComments/{id}\", method = RequestMethod.GET)< with DroneId="
+				"BUGGER inside >RequestMapping(value = \"/droneComments/{id}\", method = RequestMethod.GET)< with DroneId="
 						+ id);
-		LOGGER.log(Level.INFO, "DroneCommentAsyncController  HEREX DroneId=" + id);
+		LOGGER.log(Level.INFO, "BUGGER DroneCommentAsyncController  HEREX DroneId=" + id);
 
 		List<DroneComment> droneComments = droneCommentManager.findAllDroneCommentByDroneId(id);
 
@@ -39,6 +39,8 @@ public class DroneCommentAsyncController {
 			LOGGER.log(Level.INFO, this.getClass().getName()
 					+ " >No DroneComments found for findAllDroneCommentByDroneId(" + id + ").");
 		}
+
+		LOGGER.log(Level.INFO, "BUGGER DroneCommentAsyncController  HEREZ droneComments=" + droneComments);
 
 		return new ResponseEntity<List<DroneComment>>(droneComments, HttpStatus.OK);
 	}

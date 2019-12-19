@@ -38,7 +38,7 @@ public class DroneServiceImpl implements DroneService {
 			drone.setDroneStatus("not provided");
 		}
 
-		// since I don't have a drone image capability - YET
+		// TODO since I don't have a drone image capability - YET
 		String tmpDroneType = drone.getDroneType();
 		if (tmpDroneType == null) {
 			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
@@ -66,11 +66,13 @@ public class DroneServiceImpl implements DroneService {
 	private static List<Drone> populateDummyDrones() {
 		List<Drone> drones = new ArrayList<Drone>();
 		drones.add(new Drone(counter.incrementAndGet(), "Eagle Ed", "Super Sportster", "Sport", "60 in",
-				"crashed, not fixable", "resources/images/sport_example.jpg"));
-		drones.add(new Drone(counter.incrementAndGet(), "Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired",
-				"resources/images/glider_example.jpg"));
+				"crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg"));
+		drones.add(new Drone(counter.incrementAndGet(), "Crash Siegel", "Clound Bound", "Glider", "4 meter",
+				"repaired - no comment for dummy 2", "resources/images/glider_example.jpg"));
 		drones.add(new Drone(counter.incrementAndGet(), "Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in",
-				"Flying ballistically", "resources/images/rotorcraft_example.jpg"));
+				"Flying ballistically - two comments for dummy 3", "resources/images/rotorcraft_example.jpg"));
+		drones.add(new Drone(counter.incrementAndGet(), "Talker", "Big Text", "Glider", "too much text	",
+				"Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg"));
 		return drones;
 	}
 

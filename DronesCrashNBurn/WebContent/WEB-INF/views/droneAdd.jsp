@@ -13,7 +13,7 @@
 
 <style type="text/css">
 body {
-	background-image: url("${contextPath}/resources/images/droneadd_background.jpg");
+	background-image: url("${contextPath}/resources/images/drone_add_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -48,7 +48,7 @@ body {
 					<td><form:label path="droneType">Drone Type *</form:label></td>
 					<td><form:select path="droneType" class="form-control"
 							required="required" placeholder="Select Drone Type">
-							<option placeholder="Select Drone Type"></option>
+							<option data-placeholder="Select Drone Type"></option>
 							<!-- Note: this empty option with required forces a selection -->
 							<option>Glider</option>
 							<option>Sport</option>

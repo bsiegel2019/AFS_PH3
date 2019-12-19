@@ -17,7 +17,7 @@
 <style type="text/css">
 body {
 	background-image:
-		url("${contextPath}/resources/images/dronemgmt_background.jpg");
+		url("${contextPath}/resources/images/drone_central_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -26,12 +26,12 @@ body {
 </style>
 
 </head>
-<body ng-app="myApp" class="ng-cloak" ng-cloak>
+<body data-ng-app="myApp" class="data-ng-cloak" data-ng-cloak>
 
 	<div align="center">
 
 		<div class="generic-container"
-			ng-controller="DroneController as droneCtrl">
+			data-ng-controller="DroneController as droneCtrl">
 
 			<div class="panel panel-default">
 
@@ -55,22 +55,19 @@ body {
 						</thead>
 
 						<tbody>
-							<tr ng-repeat="drone in droneCtrl.drones">
-								<td><span ng-bind="drone.droneId"></span></td>
-								<td><span ng-bind="drone.droneOwnerName"></span></td>
-								<td><span ng-bind="drone.droneName"></span></td>
-								<td><span ng-bind="drone.droneType"></span></td>
-								<td><span ng-bind="drone.droneSpan"></span></td>
-								<td><span ng-bind="drone.droneStatus"></span></td>
-								<td><span ng-bind="drone.droneImage"></span></td>
+							<tr data-ng-repeat="drone in droneCtrl.drones">
+								<td><span data-ng-bind="drone.droneId"></span></td>
+								<td><span data-ng-bind="drone.droneOwnerName"></span></td>
+								<td><span data-ng-bind="drone.droneName"></span></td>
+								<td><span data-ng-bind="drone.droneType"></span></td>
+								<td><span data-ng-bind="drone.droneSpan"></span></td>
+								<td><span data-ng-bind="drone.droneStatus"></span></td>
+								<td><span data-ng-bind="drone.droneImage"></span></td>
 								<td>
 									<button type="button"
-										ng-click="droneCtrl.remove(drone.droneId)"
-										class="btn btn-danger custom-width">Scrap</button>
-									<button type="button" class="btn btn-info">
-										<strong><a
-											ng-href="${contextPath}/droneComment/{{drone.droneId}}">Comments</a></strong>
-									</button>
+										data-ng-click="droneCtrl.remove(drone.droneId)"
+										class="btn btn-danger custom-width">Scrap</button> 
+									<button type="button" class="btn btn-info"><strong><a data-ng-href="${contextPath}/droneComment/{{drone.droneId}}">Comments</a></strong></button>
 								</td>
 							</tr>
 						</tbody>
@@ -82,8 +79,8 @@ body {
 				<div align="center">
 					<h4>
 						<button type="button" class="btn btn-info">
-							<strong><a ng-href="${contextPath}/droneAdd">Add a
-									New Drone!</a></strong>
+							<strong><a data-ng-href="${contextPath}/droneAdd">Add
+									a New Drone!</a></strong>
 						</button>
 					</h4>
 				</div>
