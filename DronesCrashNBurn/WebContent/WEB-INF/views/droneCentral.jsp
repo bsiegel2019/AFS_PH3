@@ -66,8 +66,12 @@ body {
 								<td>
 									<button type="button"
 										data-ng-click="droneCtrl.remove(drone.droneId)"
-										class="btn btn-danger custom-width">Scrap</button> 
-									<button type="button" class="btn btn-info"><strong><a data-ng-href="${contextPath}/droneComment/{{drone.droneId}}">Comments</a></strong></button>
+										class="btn btn-danger custom-width">Scrap</button>
+										
+									<button type="button" class="btn btn-info">
+										<a
+											data-ng-href="${contextPath}/droneComment/{{drone.droneId}}"><b>Comments</b></a>
+									</button>
 								</td>
 							</tr>
 						</tbody>
@@ -78,9 +82,8 @@ body {
 
 				<div align="center">
 					<h4>
-						<button type="button" class="btn btn-info">
-							<strong><a data-ng-href="${contextPath}/droneAdd">Add
-									a New Drone!</a></strong>
+						<button type="button" class="btn btn-success">
+							<a data-ng-href="${contextPath}/droneAdd"><b>Add a New Drone!</b></a>
 						</button>
 					</h4>
 				</div>

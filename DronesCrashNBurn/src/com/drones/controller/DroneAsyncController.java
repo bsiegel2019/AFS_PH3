@@ -57,14 +57,11 @@ public class DroneAsyncController {
 	// ---------- find a Drone by drone id for the comment page
 	@RequestMapping(value = "/drones/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Drone> findDroneByDroneId(@PathVariable("id") Long id) {
-		LOGGER.log(Level.INFO,
-				"inside >RequestMapping(value = \"/drones/{id}\", method = RequestMethod.GET)< with DroneId=" + id);
-		LOGGER.log(Level.INFO, "DroneAsyncController  HERE DroneId=" + id);
 
 		Drone drone = droneManager.findDroneByDroneId(id);
 
 		if (null == drone) {
-			LOGGER.log(Level.WARNING, this.getClass().getName() + " >No Drone found for findDroneByDroneId(" + id
+			LOGGER.log(Level.SEVERE, this.getClass().getName() + " >No Drone found for findDroneByDroneId(" + id
 					+ "). One was expected!");
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}

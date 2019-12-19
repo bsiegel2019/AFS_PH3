@@ -36,7 +36,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-repeat"/>
+			<item key="textPattern" value="LOGGER"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,8 +51,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-init"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="HERE DroneId"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -63,8 +63,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-href"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="scrap"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -75,8 +75,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-controller"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="BUGGER"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -87,8 +87,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-cloak"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="droneTypePic"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -99,7 +99,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-click"/>
+			<item key="textPattern" value="&quot;Glider&quot;"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -111,7 +111,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-bind"/>
+			<item key="textPattern" value="ng-repeat"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="console.log"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-init"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,7 +135,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="System.out"/>
+			<item key="textPattern" value="ng-href"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -147,8 +147,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="Welcome to Drone Comment"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-controller"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -159,7 +159,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="after get commentx"/>
+			<item key="textPattern" value="ng-cloak"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -171,8 +171,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="InSdie B findAllDroneCommentByDroneId where selectedSize="/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="ng-click"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -184,7 +184,7 @@
 		<item key="scope" value="3"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item key="DIALOG_X_ORIGIN" value="920"/>
+		<item key="DIALOG_X_ORIGIN" value="866"/>
 		<item key="DIALOG_Y_ORIGIN" value="347"/>
 		<item key="DIALOG_WIDTH" value="1065"/>
 		<item key="DIALOG_HEIGHT" value="653"/>
@@ -198,13 +198,13 @@
 	</section>
 	<section name="ReplaceDialog2">
 		<list key="replace_with">
+			<item value="droneTypeSilhouette"/>
 			<item value="data-ng-repeat"/>
 			<item value="data-ng-init"/>
 			<item value="data-ng-href"/>
 			<item value="data-ng-controller"/>
 			<item value="data-ng-cloak"/>
 			<item value="data-ng-click"/>
-			<item value="data-ng-bind"/>
 		</list>
 	</section>
 	<section name="">

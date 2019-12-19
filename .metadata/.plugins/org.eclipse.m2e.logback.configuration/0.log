@@ -8059,3 +8059,203 @@ java.lang.NullPointerException: null
 2019-12-19 14:28:01,254 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
 2019-12-19 14:28:01,254 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-12-19 14:28:01,254 [Worker-172: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:12:11,330 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-12-19 15:12:37,355 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: DronesCrashNBurn:DronesCrashNBurn:0.0.2-SNAPSHOT @ C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\pom.xml.
+2019-12-19 15:12:37,355 [Worker-16: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: DronesCrashNBurn:DronesCrashNBurn:0.0.2-SNAPSHOT @ C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\pom.xml.
+2019-12-19 15:12:41,759 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:12:41,759 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:12:42,089 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:12:42,089 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:12:42,092 [Worker-15: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: DronesCrashNBurn:DronesCrashNBurn:0.0.2-SNAPSHOT @ C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\pom.xml.
+2019-12-19 15:12:43,781 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:12:43,782 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:12:43,787 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:12:43,787 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:13:07,685 [Worker-10: Launching Executing install in C__Users_bernard.siegel_projects_AFS-PH2GIT_DronesCrashNBurn] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn
+2019-12-19 15:13:07,687 [Worker-10: Launching Executing install in C__Users_bernard.siegel_projects_AFS-PH2GIT_DronesCrashNBurn] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-12-19 15:13:13,075 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:13:13,075 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:13:13,078 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:13:13,078 [Worker-2: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:16:51,520 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:16:51,520 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:16:51,522 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:16:51,523 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:21:42,165 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:21:42,165 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:21:42,165 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:21:42,165 [Worker-5: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:31:25,188 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:31:25,188 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:31:25,188 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:31:25,188 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:32:08,535 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:32:08,535 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:32:08,535 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:32:08,535 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:32:22,196 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:32:22,196 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:32:22,196 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:32:22,196 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:36:22,811 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:36:22,811 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:36:22,811 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:36:22,811 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:37:00,396 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:00,396 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:37:00,396 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:00,396 [Worker-31: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:37:14,658 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:14,658 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:37:14,658 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:14,658 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:37:19,674 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:19,674 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:37:19,674 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:19,674 [Worker-28: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:37:42,382 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:42,382 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:37:42,382 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:37:42,382 [Worker-29: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:40:49,120 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:40:49,120 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:40:49,135 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:40:49,135 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:41:22,020 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:41:22,020 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:41:22,035 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:41:22,035 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:41:42,523 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:41:42,523 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:41:42,523 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:41:42,523 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:42:19,553 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:42:19,553 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:42:19,553 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:42:19,553 [Worker-32: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:42:47,396 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:42:47,396 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:42:47,411 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:42:47,411 [Worker-34: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:43:41,507 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:43:41,507 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:43:41,507 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:43:41,507 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:43:57,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:43:57,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:43:57,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:43:57,152 [Worker-25: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:46:30,746 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:46:30,746 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:46:30,761 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:46:30,761 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:48:13,174 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:48:13,174 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:48:13,174 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:48:13,174 [Worker-30: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:48:53,410 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:48:53,410 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:48:53,410 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:48:53,410 [Worker-35: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:49:30,208 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:49:30,208 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:49:30,208 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:49:30,208 [Worker-37: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:51:29,612 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:51:29,612 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:51:29,612 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:51:29,612 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:52:32,741 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:52:32,741 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:52:32,741 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:52:32,741 [Worker-38: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:53:12,924 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:53:12,924 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:53:12,924 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:53:12,924 [Worker-36: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:59:08,532 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:59:08,532 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:59:08,532 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:59:08,532 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 15:59:41,095 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:59:41,095 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 15:59:41,095 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 15:59:41,095 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:00:10,691 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:00:10,691 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:00:10,691 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:00:10,691 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:00:42,299 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:00:42,299 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:00:42,299 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:00:42,299 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:01:02,649 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:01:02,649 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:01:02,649 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:01:02,649 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:01:24,703 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:01:24,703 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:01:24,703 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:01:24,703 [Worker-42: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:02:06,171 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:06,171 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:02:06,171 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:06,171 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:02:20,493 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:20,493 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:02:20,493 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:20,493 [Worker-44: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:02:41,340 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:41,340 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:02:41,340 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:02:41,340 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:03:06,239 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:06,239 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:03:06,239 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:06,239 [Worker-40: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:03:28,529 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:28,529 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:03:28,529 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:28,529 [Worker-43: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:03:50,780 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:50,780 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:03:50,780 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:03:50,780 [Worker-33: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:04:10,762 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:04:10,762 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:04:10,762 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:04:10,762 [Worker-45: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:07:00,360 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:00,360 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:07:00,360 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:00,360 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:07:38,878 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:38,878 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:07:38,878 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:38,878 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:07:53,977 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:53,977 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:07:53,977 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:07:53,977 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:08:44,917 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:08:44,917 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:08:44,917 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:08:44,917 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:09:19,335 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:09:19,335 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:09:19,335 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:09:19,335 [Worker-47: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:09:42,641 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:09:42,641 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:09:42,641 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:09:42,641 [Worker-46: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:10:57,799 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:10:57,799 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:10:57,799 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:10:57,799 [Worker-49: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources
+2019-12-19 16:12:57,234 [Worker-46: Launching Executing install in C__Users_bernard.siegel_projects_AFS-PH2GIT_DronesCrashNBurn] INFO  o.e.m.i.launch.MavenLaunchDelegate - C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn
+2019-12-19 16:12:57,234 [Worker-46: Launching Executing install in C__Users_bernard.siegel_projects_AFS-PH2GIT_DronesCrashNBurn] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B install
+2019-12-19 16:13:09,511 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:13:09,511 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\main\resources
+2019-12-19 16:13:09,511 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-12-19 16:13:09,511 [Worker-48: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\test\resources

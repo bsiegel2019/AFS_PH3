@@ -1,8 +1,5 @@
 package com.drones.controller;
 
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,20 +16,16 @@ import com.drones.model.Drone;
 @Controller
 public class DroneController {
 
-	private static final Logger LOGGER = Logger.getLogger(DroneController.class.getName());
-
 	@Autowired
 	private DroneManager droneManager;
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String getIndexPage() {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/\", method = RequestMethod.GET)");
 		return "redirect:droneCrashPage";
 	}
 
 	@RequestMapping(value = "/droneCrashPage", method = RequestMethod.GET)
 	public String getCrashPage() {
-		LOGGER.log(Level.INFO, "RequestMapping(value = \"/droneCrashPage\", method = RequestMethod.GET)");
 		return "droneCrashPage";
 	}
 

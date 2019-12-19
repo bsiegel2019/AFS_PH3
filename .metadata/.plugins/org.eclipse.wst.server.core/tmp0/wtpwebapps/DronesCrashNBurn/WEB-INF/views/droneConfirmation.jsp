@@ -7,19 +7,19 @@
 <c:choose>
 
 	<c:when test="${drone.droneType eq 'Glider'}">
-		<c:set var="droneTypePic"
+		<c:set var="droneTypeSilhouette"
 			value="resources/images/glider_silhouette.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Sport'}">
-		<c:set var="droneTypePic"
+		<c:set var="droneTypeSilhouette"
 			value="resources/images/sport_silhouette.jpg" />
 	</c:when>
 	<c:when test="${drone.droneType eq 'Rotorcraft'}">
-		<c:set var="droneTypePic"
+		<c:set var="droneTypeSilhouette"
 			value="resources/images/rotorcraft_silhouette.jpg" />
 	</c:when>
 	<c:otherwise>
-		<c:set var="droneTypePic"
+		<c:set var="droneTypeSilhouette"
 			value="resources/images/crashnburn_background2.jpg" />
 	</c:otherwise>
 
@@ -62,7 +62,7 @@ body {
 			<tr>
 				<td>Drone Type:</td>
 				<td>${drone.droneType}</td>
-				<td><img src="${contextPath}/${droneTypePic}" alt="OOPSIE! Whereis the image?"
+				<td><img src="${contextPath}/${droneTypeSilhouette}" alt="OOPSIE! Whereis the image?"
 					width="100" height="40"></td>
 			</tr>
 			<tr>

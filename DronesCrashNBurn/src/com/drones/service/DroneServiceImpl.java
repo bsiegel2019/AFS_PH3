@@ -58,9 +58,9 @@ public class DroneServiceImpl implements DroneService {
 				break;
 			}
 		}
-		drones.add(drone); // this is the call to dao layer
+		drones.add(drone); // TODO this is the call to dao layer
 
-		return drone; // need since ph2 does db add and it sets ID
+		return drone; // TODO need since ph2 does db add and it sets ID
 	}
 
 	private static List<Drone> populateDummyDrones() {

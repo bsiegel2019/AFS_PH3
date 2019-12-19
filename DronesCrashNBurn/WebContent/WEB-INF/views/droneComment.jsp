@@ -40,7 +40,8 @@ body {
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<span class="lead text-center">Welcome to Drone Comment - Drone</span>
+					<span class="lead text-center">Welcome to Drone Comment -
+						Drone</span>
 				</div>
 
 				<div class="tablecontainer"
@@ -88,7 +89,8 @@ body {
 			<div class="panel panel-default">
 
 				<div class="panel-heading">
-					<span class="lead text-center">Welcome to Drone Comment - Comments</span>
+					<span class="lead text-center">Welcome to Drone Comment -
+						Comments</span>
 				</div>
 
 				<div class="tablecontainer"
@@ -99,6 +101,7 @@ body {
 								<th width="10%">Comment ID</th>
 								<th width="10%">Drone ID</th>
 								<th width="60%">Comment</th>
+								<th width="10%"></th>
 							</tr>
 						</thead>
 
@@ -107,10 +110,23 @@ body {
 								<td><span data-ng-bind="comment.commentId"></span></td>
 								<td><span data-ng-bind="comment.commentDroneId"></span></td>
 								<td><span data-ng-bind="comment.commentText"></span></td>
+								<td>
+									<button type="button" data-ng-click=""
+										class="btn btn-warning"><b>Edit</b></button>
+
+									<button type="button" data-ng-click=""
+										class="btn btn-danger"><b>Discard</b></button>
+								</td>
 							</tr>
-						</tbody>
+							</tbody>
 
 					</table>
+				</div>
+				<div align="center">
+					<h4>
+						<button type="button" data-ng-click=""
+										class="btn btn-success"><b>Create a new Comment for this Drone</b></button>
+					</h4>
 				</div>
 
 			</div>
