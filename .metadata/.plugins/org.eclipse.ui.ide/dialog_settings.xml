@@ -2,9 +2,13 @@
 <section name="Workbench">
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\bernard.siegel\Downloads\Spring4HibernateExample"/>
+			<item value="C:\Users\bernard.siegel\projects\AFS-PH2GIT\Spring4HibernateExample"/>
+			<item value="C:\Users\bernard.siegel\projects\AFS-PH2GIT\SpringHibernateExampleMVC"/>
+			<item value="C:\Users\bernard.siegel\projects\AFS-PH2GIT\spring-hibernate-example"/>
 			<item value="C:\Users\bernard.siegel\projects\AFS-PH2GIT"/>
 			<item value="C:\Users\bernard.siegel\projects\eclipse-workspace-ph2git\DronesCrashNBurn"/>
 		</list>

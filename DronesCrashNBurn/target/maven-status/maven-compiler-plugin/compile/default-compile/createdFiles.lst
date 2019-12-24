@@ -1,0 +1,16 @@
+com\drones\service\DroneCommentServiceImpl.class
+com\drones\service\DroneService.class
+com\drones\controller\DroneCommentController.class
+com\drones\config\DroneWebAppInitializer.class
+com\drones\controller\DroneCommentAsyncController.class
+com\drones\manager\DroneCommentManagerImpl.class
+com\drones\controller\DroneAsyncController.class
+com\drones\model\DroneComment.class
+com\drones\manager\DroneCommentManager.class
+com\drones\manager\DroneManager.class
+com\drones\service\DroneServiceImpl.class
+com\drones\model\Drone.class
+com\drones\service\DroneCommentService.class
+com\drones\controller\DroneController.class
+com\drones\config\DroneWebAppConfig.class
+com\drones\manager\DroneManagerImpl.class

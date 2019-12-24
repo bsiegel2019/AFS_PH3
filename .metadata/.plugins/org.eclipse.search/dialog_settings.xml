@@ -36,7 +36,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="LOGGER"/>
+			<item key="textPattern" value="context"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,8 +51,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="HERE DroneId"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="main"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -63,8 +63,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="scrap"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="hibernate4"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -75,8 +75,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="BUGGER"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="jdbc.driverClassName"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -87,8 +87,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="droneTypePic"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="@Bean"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -99,7 +99,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="&quot;Glider&quot;"/>
+			<item key="textPattern" value="http://www.springframework.org/schema/beans"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -111,8 +111,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-repeat"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="beans"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-init"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="&lt;beans"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,7 +135,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-href"/>
+			<item key="textPattern" value="&lt;beans xmlns"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -147,7 +147,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-controller"/>
+			<item key="textPattern" value="com.mysql.jdbc.Driver"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -159,7 +159,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-cloak"/>
+			<item key="textPattern" value="persistence"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -171,7 +171,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="ng-click"/>
+			<item key="textPattern" value="LOGGER"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -207,7 +207,12 @@
 			<item value="data-ng-click"/>
 		</list>
 	</section>
+	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
+		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
+	</section>
 	<section name="">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
 	</section>
 </section>
