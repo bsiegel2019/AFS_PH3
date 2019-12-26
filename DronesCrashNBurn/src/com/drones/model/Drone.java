@@ -1,15 +1,38 @@
 package com.drones.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "DRONE")
 public class Drone {
 
 	public static final String ERRONEOUS_DRONE_TYPE_IMAGE = "resources/images/crashnburn_background2.jpg";
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long droneId;
+
+	@Column(name = "DRONE_OWNER_NAME", nullable = false)
 	private String droneOwnerName;
+
+	@Column(name = "DRONE_NAME", nullable = false)
 	private String droneName;
+
+	@Column(name = "DRONE_TYPE", nullable = false)
 	private String droneType; // pulldown Glider/Sport/Rotor
+
+	@Column(name = "DRONE_SPAN", nullable = true)
 	private String droneSpan;
+
+	@Column(name = "DRONE_STATUS", nullable = true)
 	private String droneStatus;
+
+	@Column(name = "DRONE_IMAGE", nullable = true)
 	private String droneImage; // figure out type later
 
 	public Drone() {
