@@ -36,7 +36,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="context"/>
+			<item key="textPattern" value="DroneAsyncController"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -51,7 +51,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="main"/>
+			<item key="textPattern" value="base"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -63,7 +63,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="hibernate4"/>
+			<item key="textPattern" value="8080"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -75,7 +75,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="jdbc.driverClassName"/>
+			<item key="textPattern" value="localhost"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -87,7 +87,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="@Bean"/>
+			<item key="textPattern" value="context"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -99,7 +99,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="http://www.springframework.org/schema/beans"/>
+			<item key="textPattern" value="main"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -111,8 +111,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="beans"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="hibernate4"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -123,8 +123,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="&lt;beans"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="jdbc.driverClassName"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -135,7 +135,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="&lt;beans xmlns"/>
+			<item key="textPattern" value="@Bean"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -147,7 +147,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="com.mysql.jdbc.Driver"/>
+			<item key="textPattern" value="http://www.springframework.org/schema/beans"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -159,8 +159,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="persistence"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="beans"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -171,8 +171,8 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="LOGGER"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="&lt;beans"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -191,7 +191,8 @@
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
+		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
 	</section>
 	<section name="org.eclipse.search.text.FileSearchResultPage">
 		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
@@ -212,7 +213,6 @@
 		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
 	</section>
 	<section name="">
-		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
-		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
+		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 </section>

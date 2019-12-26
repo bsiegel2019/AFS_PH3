@@ -15,7 +15,6 @@
 		<jackson-databind.version>2.9.4</jackson-databind.version>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
 		<jstl.version>1.2</jstl.version>
-		<taglibs.version>1.2.5</taglibs.version>
 	</properties>
 
 	<build>
@@ -41,14 +40,6 @@
 	</build>
 
 	<dependencies>
-
-		<dependency>
-			<groupId>org.apache.taglibs</groupId>
-			<artifactId>taglibs-standard</artifactId>
-			<version>${taglibs.version}</version>
-			<type>pom</type>
-		</dependency>
-
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
