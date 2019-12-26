@@ -1,8 +1,12 @@
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\configuration\DroneWebAppInitializer.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\dao\DroneDAO.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\manager\DroneCommentManagerImpl.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\model\DroneComment.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\configuration\DroneWebAppConfig.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\controller\DroneCommentController.java
-C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\config\DroneWebAppInitializer.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\configuration\HibernateConfiguration.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneCommentServiceImpl.java
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\configuration\AppConfig.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\manager\DroneManager.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\model\Drone.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneServiceImpl.java
@@ -10,5 +14,4 @@ C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\mana
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\controller\DroneController.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\manager\DroneManagerImpl.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneCommentService.java
-C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\config\DroneWebAppConfig.java
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\DronesCrashNBurn\src\com\drones\service\DroneService.java

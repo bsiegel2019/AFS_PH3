@@ -1,4 +1,4 @@
-package com.drones.config;
+package com.drones.configuration;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;

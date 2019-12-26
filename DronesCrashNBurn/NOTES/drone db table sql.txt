@@ -56,9 +56,6 @@ INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_
 below is original hib example
 
 ASSUME user is root
-[12:24 PM] Grover, Nishant B. [Clarus Group]
-    GRANT ALL PRIVILEGES ON websystique.* TO 'root'@'localhost';
-
 
 Step 7: Create Schema in database
 CREATE TABLE EMPLOYEE(
@@ -69,4 +66,3 @@ CREATE TABLE EMPLOYEE(
     ssn VARCHAR(30) NOT NULL UNIQUE,
     PRIMARY KEY (id)
 );
-Please visit MySQL installation on Local PC in case you are finding difficulties in setting up MySQL locally.
