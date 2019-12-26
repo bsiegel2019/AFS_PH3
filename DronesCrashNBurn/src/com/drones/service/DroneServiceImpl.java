@@ -5,12 +5,27 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.drones.dao.DroneDAO;
 import com.drones.model.Drone;
 
 @Service("droneService")
+@Transactional
 public class DroneServiceImpl implements DroneService {
+
+//BEGIN HIB MODS HERE
+
+	@Autowired
+	private DroneDAO droneDao;
+
+	public List<Drone> findAllDrones() {
+		return droneDao.findAllDrones();
+	}
+
+// END HIB MODS HERE
 
 	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
 
@@ -20,9 +35,9 @@ public class DroneServiceImpl implements DroneService {
 		drones = populateDummyDrones(); // TODO deleted by ph2
 	}
 
-	public List<Drone> findAllDrones() {
-		return drones;
-	}
+//	public List<Drone> findAllDrones() {
+//		return drones;
+//	}
 
 	public Drone addDrone(Drone drone) {
 

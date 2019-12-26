@@ -6,9 +6,9 @@ import com.drones.model.Drone;
 
 public interface DroneService {
 
-	Drone addDrone(Drone drone);
-
 	List<Drone> findAllDrones();
+
+	Drone addDrone(Drone drone);
 
 	Drone findDroneByDroneId(Long id);
 
