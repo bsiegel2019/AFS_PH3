@@ -17,4 +17,5 @@
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate4.LocalSessionFactoryBean"/>
 <fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
 <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
+<fullyQualifiedTypeName name="com.drones.dao.DroneDAO"/>
 </qualifiedTypeNameHistroy>
