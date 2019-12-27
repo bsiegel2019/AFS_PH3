@@ -10,4 +10,6 @@ public interface DroneDAO {
 
 	Drone findDroneByDroneId(Long id);
 
+	Drone addDrone(Drone drone);
+
 }

@@ -31,6 +31,7 @@ public class DroneDAOImpl implements DroneDAO {
 	}
 	// END copied in from abstractdao
 
+	@Override
 	@SuppressWarnings("unchecked") // the cast from List to List<Drone>
 	public List<Drone> findAllDrones() {
 		Criteria criteria = getSession().createCriteria(Drone.class);
@@ -42,6 +43,12 @@ public class DroneDAOImpl implements DroneDAO {
 		Criteria criteria = getSession().createCriteria(Drone.class);
 		criteria.add(Restrictions.eq("droneId", id));
 		return (Drone) criteria.uniqueResult();
+	}
+
+	@Override
+	public Drone addDrone(Drone drone) {
+		persist(drone);
+		return drone;
 	}
 
 }

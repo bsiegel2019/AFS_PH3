@@ -29,35 +29,19 @@ public class DroneServiceImpl implements DroneService {
 		return droneDao.findDroneByDroneId(id);
 	}
 
-// END HIB MODS HERE
-
-	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
-
-	private static List<Drone> drones; // TODO deleted by ph2
-
-	static {
-		drones = populateDummyDrones(); // TODO deleted by ph2
-	}
-
-//	public List<Drone> findAllDrones() {
-//		return drones;
-//	}
-
 	public Drone addDrone(Drone drone) {
-
-		drone.setDroneId(counter.incrementAndGet()); // TODO deleted by ph2
 
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneSpan())) {
-			drone.setDroneSpan("not provided");
+			drone.setDroneSpan("Not provided");
 		}
 
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneStatus())) {
-			drone.setDroneStatus("not provided");
+			drone.setDroneStatus("Not provided");
 		}
 
-		// TODO since I don't have a drone image capability - YET
+		// since I don't have a drone image capability - YET
 		String tmpDroneType = drone.getDroneType();
 		if (tmpDroneType == null) {
 			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
@@ -77,10 +61,23 @@ public class DroneServiceImpl implements DroneService {
 				break;
 			}
 		}
-		drones.add(drone); // TODO this is the call to dao layer
 
-		return drone; // TODO need since ph2 does db add and it sets ID
+		return droneDao.addDrone(drone);
 	}
+
+// END HIB MODS HERE
+
+	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
+
+	private static List<Drone> drones; // TODO deleted by ph2
+
+	static {
+		drones = populateDummyDrones(); // TODO deleted by ph2
+	}
+
+//	public List<Drone> findAllDrones() {
+//		return drones;
+//	}
 
 	private static List<Drone> populateDummyDrones() {
 		List<Drone> drones = new ArrayList<Drone>();

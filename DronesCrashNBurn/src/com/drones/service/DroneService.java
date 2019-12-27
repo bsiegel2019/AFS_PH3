@@ -10,7 +10,7 @@ public interface DroneService {
 
 	Drone findDroneByDroneId(Long id); // TODO hib done
 
-	Drone addDrone(Drone drone);
+	Drone addDrone(Drone drone); // TODO
 
 	void deleteDroneById(Long id); // TODO return something
 

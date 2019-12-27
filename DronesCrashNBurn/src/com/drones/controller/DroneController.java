@@ -44,29 +44,27 @@ public class DroneController {
 		return new ModelAndView("droneCentral", "drone", droneManager.findAllDrones());
 	}
 
+	// -------------------Add a Drone----------
 	@RequestMapping(value = "/droneAdd", method = RequestMethod.GET)
 	public ModelAndView showForm1() {
 		return new ModelAndView("droneAdd", "drone", new Drone());
 	}
 
+	// -------------------Confirmation for Add a Drone----------
 	@RequestMapping(value = "/droneConfirmation", method = RequestMethod.POST)
 	public ModelAndView submitDrone(@Valid @ModelAttribute("drone") Drone drone, BindingResult result) {
-		droneManager.addDrone(drone);
-		return new ModelAndView("droneConfirmation", "drone", drone);
+		return new ModelAndView("droneConfirmation", "drone", droneManager.addDrone(drone));
 	}
 
 	// -------------------Retrieve All Drones----------
 	@RequestMapping(value = "/drones", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<List<Drone>> listAllDrones() {
-		List<Drone> drones = droneManager.findAllDrones();
-		if (drones.isEmpty()) {
-			LOGGER.log(Level.INFO,
-					this.getClass().getName() + " >No Drones found for listAllDrones. Zero, one or more expected!");
-
-			// You many decide to return HttpStatus.NOT_FOUND
+		List<Drone> returnedDrones = droneManager.findAllDrones();
+		if (returnedDrones.isEmpty()) {
 			return new ResponseEntity<List<Drone>>(HttpStatus.NO_CONTENT);
 		}
-		return new ResponseEntity<List<Drone>>(drones, HttpStatus.OK);
+
+		return new ResponseEntity<List<Drone>>(returnedDrones, HttpStatus.OK);
 	}
 
 	// ------------------- Delete a Drone --------------
