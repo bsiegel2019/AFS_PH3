@@ -6,11 +6,11 @@ import com.drones.model.Drone;
 
 public interface DroneService {
 
-	List<Drone> findAllDrones();
+	List<Drone> findAllDrones(); // TODO hib done
+
+	Drone findDroneByDroneId(Long id); // TODO hib done
 
 	Drone addDrone(Drone drone);
-
-	Drone findDroneByDroneId(Long id);
 
 	void deleteDroneById(Long id); // TODO return something
 

@@ -25,6 +25,10 @@ public class DroneServiceImpl implements DroneService {
 		return droneDao.findAllDrones();
 	}
 
+	public Drone findDroneByDroneId(Long id) {
+		return droneDao.findDroneByDroneId(id);
+	}
+
 // END HIB MODS HERE
 
 	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
@@ -89,15 +93,6 @@ public class DroneServiceImpl implements DroneService {
 		drones.add(new Drone(counter.incrementAndGet(), "Talker", "Big Text", "Glider", "too much text	",
 				"Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg"));
 		return drones;
-	}
-
-	public Drone findDroneByDroneId(Long id) {
-		for (Drone drone : drones) {
-			if (drone.getDroneId() == id) {
-				return drone;
-			}
-		}
-		return null;
 	}
 
 	public void deleteDroneById(Long id) {

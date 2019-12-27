@@ -5,6 +5,7 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Restrictions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -30,10 +31,17 @@ public class DroneDAOImpl implements DroneDAO {
 	}
 	// END copied in from abstractdao
 
-	@SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked") // the cast from List to List<Drone>
 	public List<Drone> findAllDrones() {
 		Criteria criteria = getSession().createCriteria(Drone.class);
 		return (List<Drone>) criteria.list();
+	}
+
+	@Override
+	public Drone findDroneByDroneId(Long id) {
+		Criteria criteria = getSession().createCriteria(Drone.class);
+		criteria.add(Restrictions.eq("droneId", id));
+		return (Drone) criteria.uniqueResult();
 	}
 
 }

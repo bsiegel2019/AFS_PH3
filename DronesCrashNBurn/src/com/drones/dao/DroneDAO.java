@@ -8,4 +8,6 @@ public interface DroneDAO {
 
 	List<Drone> findAllDrones();
 
+	Drone findDroneByDroneId(Long id);
+
 }
