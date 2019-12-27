@@ -12,4 +12,6 @@ public interface DroneDAO {
 
 	Drone addDrone(Drone drone);
 
+	Long deleteDroneById(Long id);
+
 }

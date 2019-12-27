@@ -1,9 +1,6 @@
 package com.drones.service;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -65,42 +62,10 @@ public class DroneServiceImpl implements DroneService {
 		return droneDao.addDrone(drone);
 	}
 
+	public Long deleteDroneById(Long id) {
+		return droneDao.deleteDroneById(id);
+	}
+
 // END HIB MODS HERE
-
-	private static final AtomicLong counter = new AtomicLong(); // todo deleted by ph2
-
-	private static List<Drone> drones; // TODO deleted by ph2
-
-	static {
-		drones = populateDummyDrones(); // TODO deleted by ph2
-	}
-
-//	public List<Drone> findAllDrones() {
-//		return drones;
-//	}
-
-	private static List<Drone> populateDummyDrones() {
-		List<Drone> drones = new ArrayList<Drone>();
-		drones.add(new Drone(counter.incrementAndGet(), "Eagle Ed", "Super Sportster", "Sport", "60 in",
-				"crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg"));
-		drones.add(new Drone(counter.incrementAndGet(), "Crash Siegel", "Clound Bound", "Glider", "4 meter",
-				"repaired - no comment for dummy 2", "resources/images/glider_example.jpg"));
-		drones.add(new Drone(counter.incrementAndGet(), "Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in",
-				"Flying ballistically - two comments for dummy 3", "resources/images/rotorcraft_example.jpg"));
-		drones.add(new Drone(counter.incrementAndGet(), "Talker", "Big Text", "Glider", "too much text	",
-				"Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg"));
-		return drones;
-	}
-
-	public void deleteDroneById(Long id) {
-
-		for (Iterator<Drone> iterator = drones.iterator(); iterator.hasNext();) {
-			Drone drone = iterator.next();
-			if (drone.getDroneId() == id) {
-				iterator.remove();
-				break;
-			}
-		}
-	}
 
 }

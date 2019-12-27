@@ -3,6 +3,7 @@ package com.drones.dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
@@ -49,6 +50,13 @@ public class DroneDAOImpl implements DroneDAO {
 	public Drone addDrone(Drone drone) {
 		persist(drone);
 		return drone;
+	}
+
+	@Override
+	public Long deleteDroneById(Long id) {
+		Query query = getSession().createSQLQuery("delete from Drone where droneId = :droneId");
+		query.setString("droneId", String.valueOf(id));
+		return new Long(query.executeUpdate()); // we expect 0 or 1
 	}
 
 }

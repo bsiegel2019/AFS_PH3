@@ -45,10 +45,16 @@ public class DroneManagerImpl implements DroneManager {
 	}
 
 	public Drone findDroneByDroneId(Long id) {
-		return droneService.findDroneByDroneId(id);
+		Drone returnedDrone = droneService.findDroneByDroneId(id);
+		if (null == returnedDrone) {
+			LOGGER.log(Level.INFO, this.getClass().getName()
+					+ " >No Drones found for listAllDrones. Zero may happen but one is expected!");
+		}
+
+		return returnedDrone;
 	}
 
-	public void deleteDroneById(Long id) {
-		droneService.deleteDroneById(id);
+	public Long deleteDroneById(Long id) {
+		return droneService.deleteDroneById(id);
 	}
 }

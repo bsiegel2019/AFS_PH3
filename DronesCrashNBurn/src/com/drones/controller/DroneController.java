@@ -39,6 +39,7 @@ public class DroneController {
 		return "droneCrashPage";
 	}
 
+	// -------------------Find ALL Drones----------
 	@RequestMapping(value = "/droneCentral", method = RequestMethod.GET)
 	public ModelAndView showForm() {
 		return new ModelAndView("droneCentral", "drone", droneManager.findAllDrones());
@@ -76,14 +77,24 @@ public class DroneController {
 		if (null == drone) {
 			LOGGER.log(Level.SEVERE,
 					this.getClass().getName() + " >No Drone found for deleteDrones(" + id + "). One was expected!");
-
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}
-		droneManager.deleteDroneById(id);
-		return new ResponseEntity<Drone>(HttpStatus.OK);
+		Long deleteRowCount = droneManager.deleteDroneById(id);
+
+		if (deleteRowCount == 1) {
+			return new ResponseEntity<Drone>(HttpStatus.OK);
+		} else if (deleteRowCount == 0) {
+			LOGGER.log(Level.WARNING,
+					this.getClass().getName() + " >deleteDrones(" + id + ") did not delete. One was expected!");
+			return new ResponseEntity<Drone>(HttpStatus.BAD_REQUEST);
+		} else {
+			LOGGER.log(Level.SEVERE,
+					this.getClass().getName() + " >deleteDrones(" + id + ") failed rowcount=" + deleteRowCount);
+			return new ResponseEntity<Drone>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 	}
 
-	// ---------- find a Drone by drone id for the comment page
+	// ----------Find a Drone by drone id for the comment page
 	@RequestMapping(value = "/drones/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Drone> findDroneByDroneId(@PathVariable("id") Long id) {
 
