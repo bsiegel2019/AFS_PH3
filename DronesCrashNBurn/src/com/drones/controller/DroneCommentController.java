@@ -17,6 +17,7 @@ import com.drones.manager.DroneCommentManager;
 import com.drones.model.DroneComment;
 
 @Controller
+@RequestMapping("/droneComment")
 public class DroneCommentController {
 
 	private static final Logger LOGGER = Logger.getLogger(DroneCommentController.class.getName());
@@ -24,7 +25,7 @@ public class DroneCommentController {
 	@Autowired
 	DroneCommentManager droneCommentManager; // Service which will do all data retrieval/manipulation work for comment
 
-	@RequestMapping(value = "/droneComment/{id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ModelAndView droneComment(@PathVariable("id") Long id) {
 		return new ModelAndView("droneComment", "DroneComment", id);
 	}
@@ -42,6 +43,21 @@ public class DroneCommentController {
 		}
 
 		return new ResponseEntity<List<DroneComment>>(droneComments, HttpStatus.OK);
+	}
+
+	// -------------------Retrieve a Comment by comment id----------
+	@RequestMapping(value = "/droneComment/{id}", method = RequestMethod.GET)
+	public ResponseEntity<DroneComment> findDroneCommentByCommentId(@PathVariable("id") Long id) {
+
+		DroneComment droneComment = droneCommentManager.findDroneCommentByCommentId(id);
+
+		// no comment (empty, null) is ok
+		if (null == droneComment) {
+			LOGGER.log(Level.INFO,
+					this.getClass().getName() + " >No DroneComment found for findDroneCommentByCommentId(" + id + ").");
+		}
+
+		return new ResponseEntity<DroneComment>(droneComment, HttpStatus.OK);
 	}
 
 }

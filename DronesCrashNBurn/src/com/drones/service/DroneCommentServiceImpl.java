@@ -25,17 +25,14 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 	// NOTE: returns ArrayList of 0..n comments
 	@Override
 	public List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId) {
-
-//		List<DroneComment> selectedDroneComments = new ArrayList<DroneComment>();
-//
-//		for (Iterator<DroneComment> iterator = droneComments.iterator(); iterator.hasNext();) {
-//			DroneComment examineDroneComment = iterator.next();
-//			if (examineDroneComment.getCommentDroneId().equals(commentDroneId)) {
-//				selectedDroneComments.add(examineDroneComment);
-//			}
-//		}
-//		return selectedDroneComments;
 		return droneCommentDao.findAllDroneCommentByDroneId(commentDroneId);
+	}
+
+	// expected to have a valid comment id
+	// NOTE: returns 1 comment found by the unique comment id, if none/error then null
+	@Override
+	public DroneComment findDroneCommentByCommentId(Long commentId) {
+		return droneCommentDao.findDroneCommentByCommentId(commentId);
 	}
 
 	// END HIB MODS HERE
@@ -80,18 +77,6 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 						+ "\\”Heavens! what a virulent attack!\\” replied the prince, not in the least disconcerted by this reception. He had just entered, wearing an embroidered court uniform, knee breeches, and shoes, and had stars on his breast and a serene expression on his flat face. He spoke in that refined French in which our grandfathers not only spoke but thought, and with the gentle, patronizing intonation natural to a man of importance who had grown old in society and at court. He went up to Anna Pavlovna, kissed her hand, presenting to her his bald, scented, and shining head, and complacently seated himself on the sofa.\r\n"
 						+ "\r\n" + ""));
 		return droneComments;
-	}
-
-	// expected to have a valid comment id
-	// NOTE: returns 1 comment found by the unique comment id, if none/error then null
-	@Override
-	public DroneComment findDroneCommentByCommentId(Long commentId) {
-		for (DroneComment droneComment : droneComments) {
-			if (droneComment.getCommentId().equals(commentId)) {
-				return droneComment;
-			}
-		}
-		return null;
 	}
 
 	// expected to have a valid comment id

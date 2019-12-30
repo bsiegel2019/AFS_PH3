@@ -22,7 +22,7 @@ angular.module('myApp')
 							self.reset = reset;
 							self.fetchAllDroneCommentByDroneId = fetchAllDroneCommentByDroneId;
 
-							// this is for the comment page - get 1 drone by id
+							// this is for the comment page - get all comments for a drone id
 							function fetchAllDroneCommentByDroneId(id) {
 								DroneCommentService.fetchAllDroneCommentByDroneId(id)
 										.then(function(d) {
@@ -30,6 +30,17 @@ angular.module('myApp')
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching Comments by Drone Id');
+												});
+							}
+	
+							// this is for the comment page - get a comment by a comment id
+							function fetchDroneCommentByCommentId(id) {
+								DroneCommentService.fetchDroneCommentByCommentId(id)
+										.then(function(d) {
+													self.comment = d;
+												})
+										.catch(function(errResponse) {
+												console.error('Error while fetching Comment by Comment Id');
 												});
 							}
 

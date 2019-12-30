@@ -39,4 +39,11 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 		return (List<DroneComment>) criteria.list();
 	}
 
+	@Override
+	public DroneComment findDroneCommentByCommentId(Long commentId) {
+		Criteria criteria = getSession().createCriteria(DroneComment.class);
+		criteria.add(Restrictions.eq("commentId", commentId));
+		return (DroneComment) criteria.uniqueResult();
+	}
+
 }

@@ -8,4 +8,6 @@ public interface DroneCommentDAO {
 
 	List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId);
 
+	DroneComment findDroneCommentByCommentId(Long commentId);
+
 }
