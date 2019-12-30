@@ -1,9 +1,24 @@
 package com.drones.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "DRONE_COMMENT")
 public class DroneComment {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long commentId;
+
+	@Column(name = "DRONE_ID", nullable = false)
 	private Long commentDroneId;
+
+	@Column(name = "DRONE_COMMENT_TEXT", nullable = false)
 	private String commentText;
 
 	public DroneComment() {

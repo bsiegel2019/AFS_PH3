@@ -5,12 +5,40 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.drones.dao.DroneCommentDAO;
 import com.drones.model.DroneComment;
 
 @Service("droneCommentService")
+@Transactional
 public class DroneCommentServiceImpl implements DroneCommentService {
+
+	// BEGIN HIB MODS HERE
+
+	@Autowired
+	private DroneCommentDAO droneCommentDao;
+
+	// expected to have a valid drone id
+	// NOTE: returns ArrayList of 0..n comments
+	@Override
+	public List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId) {
+
+//		List<DroneComment> selectedDroneComments = new ArrayList<DroneComment>();
+//
+//		for (Iterator<DroneComment> iterator = droneComments.iterator(); iterator.hasNext();) {
+//			DroneComment examineDroneComment = iterator.next();
+//			if (examineDroneComment.getCommentDroneId().equals(commentDroneId)) {
+//				selectedDroneComments.add(examineDroneComment);
+//			}
+//		}
+//		return selectedDroneComments;
+		return droneCommentDao.findAllDroneCommentByDroneId(commentDroneId);
+	}
+
+	// END HIB MODS HERE
 
 	private static final AtomicLong counter = new AtomicLong(); // TODO deleted by ph2
 
@@ -18,22 +46,6 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 
 	static {
 		droneComments = populateDummyDroneComments(); // TODO deleted by ph2
-	}
-
-	// expected to have a valid drone id
-	// NOTE: returns ArrayList of 0..n comments
-	@Override
-	public List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId) {
-
-		List<DroneComment> selectedDroneComments = new ArrayList<DroneComment>();
-
-		for (Iterator<DroneComment> iterator = droneComments.iterator(); iterator.hasNext();) {
-			DroneComment examineDroneComment = iterator.next();
-			if (examineDroneComment.getCommentDroneId().equals(commentDroneId)) {
-				selectedDroneComments.add(examineDroneComment);
-			}
-		}
-		return selectedDroneComments;
 	}
 
 	// expected to have null comment id, entry for drone id and comment text

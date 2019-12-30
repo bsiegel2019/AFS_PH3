@@ -1,0 +1,11 @@
+package com.drones.dao;
+
+import java.util.List;
+
+import com.drones.model.DroneComment;
+
+public interface DroneCommentDAO {
+
+	List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId);
+
+}

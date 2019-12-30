@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Fri Dec 27 15:24:15 CST 2019
+#Mon Dec 30 10:50:10 CST 2019
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\bernard.siegel\\.m2\\repository\\org\\springframework\\spring-web\\4.2.9.RELEASE\\spring-web-4.2.9.RELEASE.jar=WEB-INF/lib/spring-web-4.2.9.RELEASE.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\bernard.siegel\\.m2\\repository\\org\\springframework\\spring-web\\5.2.1.RELEASE\\spring-web-5.2.1.RELEASE.jar=WEB-INF/lib/spring-web-5.2.1.RELEASE.jar

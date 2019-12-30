@@ -16,7 +16,7 @@ public interface DroneCommentService {
 	DroneComment findDroneCommentByCommentId(Long commentId);
 
 	// expected to have a valid drone id
-	List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId);
+	List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId); // TODO HIB FIRST
 
 	// expected to have a valid comment id
 	Boolean deleteDroneCommentByCommentId(Long commentId);
