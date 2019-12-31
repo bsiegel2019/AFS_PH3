@@ -14,6 +14,6 @@ public interface DroneCommentManager {
 
 	List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId);
 
-	Boolean deleteDroneCommentByCommentId(Long commentId);
+	Long deleteDroneCommentByCommentId(Long commentId);
 
 }

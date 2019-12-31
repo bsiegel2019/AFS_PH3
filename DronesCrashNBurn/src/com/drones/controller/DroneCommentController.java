@@ -60,4 +60,44 @@ public class DroneCommentController {
 		return new ResponseEntity<DroneComment>(droneComment, HttpStatus.OK);
 	}
 
+	// TODO NOT PROVEN
+	// -------------------Add a Comment ----------
+	@RequestMapping(value = "/droneComment/{droneComment}", method = RequestMethod.POST)
+	public ResponseEntity<DroneComment> addDroneComment(@PathVariable("droneComment") DroneComment droneComment) {
+
+		System.out.println("CTLR ENTER addDroneComment=" + droneComment.toString());
+		DroneComment returnedDroneComment = droneCommentManager.addDroneComment(droneComment);
+		System.out.println("CTLR  EXIT addDroneComment=" + droneComment.toString());
+
+		// the commentId filed was null on input and should have been set by hibernate on a successful add
+		if (null == returnedDroneComment.getCommentId()) {
+			LOGGER.log(Level.INFO,
+					this.getClass().getName() + " >No DroneCommentId found for addDroneCommentId - ADD failed");
+			return new ResponseEntity<DroneComment>(returnedDroneComment, HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+		return new ResponseEntity<DroneComment>(returnedDroneComment, HttpStatus.OK);
+	}
+
+	// -------------------Delete a Comment by comment id----------
+	@RequestMapping(value = "/droneCommentDelete/{id}", method = RequestMethod.DELETE)
+	public ResponseEntity<DroneComment> deleteDroneCommentByCommentId(@PathVariable("id") Long id) {
+
+		Long returnedCommentDeleteRowCount = droneCommentManager.deleteDroneCommentByCommentId(id);
+
+		// we expect 1, 0 maybe, anything else is bad
+		if (1 == returnedCommentDeleteRowCount) {
+			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.OK);
+		} else if (0 == returnedCommentDeleteRowCount) {
+			LOGGER.log(Level.INFO, this.getClass().getName()
+					+ " >No DroneComment found for deleteDroneCommentByCommentId(" + id + ").");
+			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.NO_CONTENT);
+		} else {
+			LOGGER.log(Level.SEVERE, this.getClass().getName() + " >Failed deleteDroneCommentByCommentId(" + id
+					+ ") with returnedCommentDeleteRowCount=" + returnedCommentDeleteRowCount);
+			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+	}
+
 }

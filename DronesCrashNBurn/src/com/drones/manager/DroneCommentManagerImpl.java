@@ -30,7 +30,7 @@ public class DroneCommentManagerImpl implements DroneCommentManager {
 		return droneCommentService.findAllDroneCommentByDroneId(commentDroneId);
 	}
 
-	public Boolean deleteDroneCommentByCommentId(Long commentId) {
+	public Long deleteDroneCommentByCommentId(Long commentId) {
 		return droneCommentService.deleteDroneCommentByCommentId(commentId);
 	}
 

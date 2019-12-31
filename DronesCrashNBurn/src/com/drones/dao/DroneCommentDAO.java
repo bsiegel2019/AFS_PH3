@@ -10,4 +10,8 @@ public interface DroneCommentDAO {
 
 	DroneComment findDroneCommentByCommentId(Long commentId);
 
+	DroneComment addDroneComment(DroneComment droneComment);
+
+	Long deleteDroneCommentByCommentId(Long commentId);
+
 }

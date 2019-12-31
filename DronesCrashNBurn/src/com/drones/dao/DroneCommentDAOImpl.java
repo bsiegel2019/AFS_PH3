@@ -3,6 +3,7 @@ package com.drones.dao;
 import java.util.List;
 
 import org.hibernate.Criteria;
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Restrictions;
@@ -44,6 +45,22 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 		Criteria criteria = getSession().createCriteria(DroneComment.class);
 		criteria.add(Restrictions.eq("commentId", commentId));
 		return (DroneComment) criteria.uniqueResult();
+	}
+
+	@Override
+	public DroneComment addDroneComment(DroneComment droneComment) {
+		// TODO remove this System.out.println x2
+		System.out.println("ENTER addDroneComment=" + droneComment.toString());
+		persist(droneComment);
+		System.out.println(" EXIT addDroneComment=" + droneComment.toString());
+		return droneComment;
+	}
+
+	@Override
+	public Long deleteDroneCommentByCommentId(Long commentId) {
+		Query query = getSession().createSQLQuery("delete from drone_comment where commentId = :commentId");
+		query.setString("commentId", String.valueOf(commentId));
+		return new Long(query.executeUpdate()); // we expect 0 or 1
 	}
 
 }

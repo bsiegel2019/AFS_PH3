@@ -13,12 +13,12 @@ public interface DroneCommentService {
 	DroneComment findDroneCommentByCommentId(Long commentId); // TODO HIB SECOND
 
 	// expected to have null comment id, entry for drone id and comment text
-	DroneComment addDroneComment(DroneComment droneComment);
+	DroneComment addDroneComment(DroneComment droneComment); // TODO HIB THIRD - not proven
+
+	// expected to have a valid comment id
+	Long deleteDroneCommentByCommentId(Long commentId); // TODO HIB FOURTH
 
 	// expected to have valid comment id entry, entry for drone id and comment text
 	DroneComment updateDroneCommentByCommentId(DroneComment droneComment);
-
-	// expected to have a valid comment id
-	Boolean deleteDroneCommentByCommentId(Long commentId);
 
 }
