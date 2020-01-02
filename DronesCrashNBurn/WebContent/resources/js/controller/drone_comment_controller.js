@@ -19,9 +19,11 @@ angular.module('myApp')
 							// this is a list of drones for display
 							self.comments = [];
 	 						
-							self.reset = reset;
 							self.fetchAllDroneCommentByDroneId = fetchAllDroneCommentByDroneId;
-
+							self.deleteDroneCommentByCommentId = deleteDroneCommentByCommentId;
+//							self.fetchDroneCommentByCommentId = fetchDroneCommentByCommentId;
+//							self.reset = reset;
+							
 							// this is for the comment page - get all comments for a drone id
 							function fetchAllDroneCommentByDroneId(id) {
 								DroneCommentService.fetchAllDroneCommentByDroneId(id)
@@ -33,25 +35,45 @@ angular.module('myApp')
 												});
 							}
 	
-							// this is for the comment page - get a comment by a comment id
-							function fetchDroneCommentByCommentId(id) {
-								DroneCommentService.fetchDroneCommentByCommentId(id)
-										.then(function(d) {
-													self.comment = d;
-												})
-										.catch(function(errResponse) {
-												console.error('Error while fetching Comment by Comment Id');
-												});
-							}
+							function deleteDroneCommentByCommentId(id) {
+								// grab the droneId for the comment we are deleting
+								// since we are on a row the index in the array is 0, lenght 1
+								// needed to fetch any remaining comments (0, 1, many) for this drone
+								var holdDroneId = holdDroneId = self.comments[0].commentDroneId; 
+								
+								// we always expect a null DroneComment object returned from the delete
+								// then we fetch any (0, 1, many) comments remaoning for this drone
+								DroneCommentService.deleteDroneCommentByCommentId(id)
+									.then(function(d) {
+											self.comment = d;
+											self.fetchAllDroneCommentByDroneId(holdDroneId);
+										})
+								.catch(function(errResponse) {
+										console.error('Error while deleting DroneComment');
+										});
+						}
 
-						function reset() {
-							self.comment = {
-									commentId : null,
-									commentDroneId : null,
-									commentText : 'None provided'
-								};
-								$scope.myForm.$setPristine(); // reset Form
-							}
+							
+//							// this is for the comment page - get a comment by a comment id
+//							function fetchDroneCommentByCommentId(id) {
+//								DroneCommentService.fetchDroneCommentByCommentId(id)
+//										.then(function(d) {
+//													self.comment = d;
+//												})
+//										.catch(function(errResponse) {
+//												console.error('Error while fetching Comment by Comment Id');
+//												});
+//							}
+
+//						function reset() {
+//							console.log("    INSIDE RESET");
+//							self.comment = {
+//									commentId : null,
+//									commentDroneId : null,
+//									commentText : 'None provided'
+//								};
+//							$scope.myForm.$setPristine(); // reset Form
+//							}
 
 						} ]);
 

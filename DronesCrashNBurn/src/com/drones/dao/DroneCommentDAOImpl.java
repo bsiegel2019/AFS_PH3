@@ -49,10 +49,7 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 
 	@Override
 	public DroneComment addDroneComment(DroneComment droneComment) {
-		// TODO remove this System.out.println x2
-		System.out.println("ENTER addDroneComment=" + droneComment.toString());
 		persist(droneComment);
-		System.out.println(" EXIT addDroneComment=" + droneComment.toString());
 		return droneComment;
 	}
 

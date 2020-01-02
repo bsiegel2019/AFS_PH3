@@ -84,7 +84,7 @@ body {
 
 		<!-- ok below here is the comment table space -->
 		<div class="generic-container"
-			data-ng-controller="DroneCommentController as droneCommentCtrl">
+			data-ng-controller="DroneCommentController as droneCommentCtrl" data-ng-init="droneCommentCtrl.fetchAllDroneCommentByDroneId(${id})">
 
 			<div class="panel panel-default">
 
@@ -94,7 +94,7 @@ body {
 				</div>
 
 				<div class="tablecontainer"
-					data-ng-init="droneCommentCtrl.fetchAllDroneCommentByDroneId(${id})">
+					>
 					<table class="table">
 						<thead>
 							<tr>
@@ -114,8 +114,8 @@ body {
 									<button type="button" data-ng-click=""
 										class="btn btn-warning"><b>Edit</b></button>
 
-									<button type="button" data-ng-click=""
-										class="btn btn-danger"><b>Discard</b></button>
+									<button type="button" data-ng-click="droneCommentCtrl.deleteDroneCommentByCommentId(comment.commentId)"
+										class="btn btn-danger custom-width"><b>Discard</b></button>
 								</td>
 							</tr>
 							</tbody>

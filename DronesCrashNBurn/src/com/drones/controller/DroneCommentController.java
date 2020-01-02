@@ -65,9 +65,7 @@ public class DroneCommentController {
 	@RequestMapping(value = "/droneComment/{droneComment}", method = RequestMethod.POST)
 	public ResponseEntity<DroneComment> addDroneComment(@PathVariable("droneComment") DroneComment droneComment) {
 
-		System.out.println("CTLR ENTER addDroneComment=" + droneComment.toString());
 		DroneComment returnedDroneComment = droneCommentManager.addDroneComment(droneComment);
-		System.out.println("CTLR  EXIT addDroneComment=" + droneComment.toString());
 
 		// the commentId filed was null on input and should have been set by hibernate on a successful add
 		if (null == returnedDroneComment.getCommentId()) {
