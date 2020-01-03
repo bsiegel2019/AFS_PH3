@@ -44,7 +44,7 @@ body {
 						Drone</span>
 				</div>
 
-				<div class="tablecontainer"
+				<div class="tablecontainer" 
 					data-ng-init="droneCtrl.fetchDroneByDroneId(${id})">
 					<table class="table">
 						<thead>
@@ -118,21 +118,60 @@ body {
 										class="btn btn-danger custom-width"><b>Discard</b></button>
 								</td>
 							</tr>
-							</tbody>
+						</tbody>
 
 					</table>
-				</div>
-				<div align="center">
 					<h4>
-						<button type="button" data-ng-click=""
+						<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true"
 										class="btn btn-success"><b>Create a new Comment for this Drone</b></button>
 					</h4>
-				</div>
 
+					<div data-ng-if="droneCommentCtrl.isNewCommentVisible" >
+<!-- 						<td><input type="text" name="droneCommentCtrl.newComment.newCommentText" ></td> -->
+<!-- 						<td><input type="text" name="droneCommentCtrl.newComment.newCommentText" required="required" -->
+<!-- 							placeholder="Enter new Drone Comment here" /></td> -->
+						<td><textarea name="newCommentText" cols="60" rows="5"></textarea></td>
+					
+						<td><button type="button" data-ng-click="droneCommentCtrl.addDroneComment()" class="btn btn-primary"><b>Add the New Comment</b></button></td>
+	
+						<td><button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=false" class="btn btn-danger custom-width"><b>Cancel</b></button></td>
+					</div>
+
+					
+				</div>
+				
 			</div>
 
 		</div>
 		<!-- ok ABOVE here is the comment table space -->
+
+		<!-- OK, below this is begin the comment edit area -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+<!-- 		<textarea name="txtDescEd" cols="60" rows="10"></textarea> -->
+<!-- 		<label>Click me: <input type="checkbox" data-ng-model="checked" data-ng-init="checked=false" /></label><br/> -->
+<!-- Show when checked: -->
+<!-- <span data-ng-if="checked" class="animate-if"> -->
+<!--   This is removed when the checkbox is unchecked. -->
+<!-- </span> -->
+<!-- <button data-ng-click="count = count + 1" data-ng-init="count=0"> -->
+<!--   Increment -->
+<!-- </button> -->
+<!-- <span> -->
+<!--   count: {{count}} -->
+<!-- </span> -->
+
+
+		
+		<!-- OK, above this is begin the comment edit area -->
+
 
 		<!-- ok below here is the href back to drone central -->
 		<h2>

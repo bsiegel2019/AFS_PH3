@@ -9,7 +9,8 @@ angular.module('myApp').factory('DroneCommentService', ['$http', function($http)
      var factory = {
         fetchAllDroneCommentByDroneId : fetchAllDroneCommentByDroneId,
         fetchDroneCommentByCommentId : fetchDroneCommentByCommentId,
-        deleteDroneCommentByCommentId : deleteDroneCommentByCommentId
+        deleteDroneCommentByCommentId : deleteDroneCommentByCommentId,
+        addDroneComment : addDroneComment
      };
     return factory;
 
@@ -49,6 +50,26 @@ angular.module('myApp').factory('DroneCommentService', ['$http', function($http)
             });
     }
  
+    // the commentId field was null on input and should have been set by hibernate on a successful add
+    function addDroneComment(droneComment) {
+    	console.log("ADD   before=>");
+    	console.log(droneComment);
+        return $http.post(BASE_REST_URI + "/" + droneComment)
+            .then(function (response) {
+            	console.log("ADD    after=>");
+            	console.log(droneComment);
+                 return response.data;
+            }).catch( function(errResponse){
+                console.error('Error while adding DroneComment');
+                console.error(errResponse);
+            });
+    }
+
+    
+    
+    
+    
+    
 }]);
 
 })();

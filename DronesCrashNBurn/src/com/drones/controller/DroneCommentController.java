@@ -60,21 +60,20 @@ public class DroneCommentController {
 		return new ResponseEntity<DroneComment>(droneComment, HttpStatus.OK);
 	}
 
-	// TODO NOT PROVEN
 	// -------------------Add a Comment ----------
-	@RequestMapping(value = "/droneComment/{droneComment}", method = RequestMethod.POST)
+	@RequestMapping(value = "/{droneComment}", method = RequestMethod.POST)
 	public ResponseEntity<DroneComment> addDroneComment(@PathVariable("droneComment") DroneComment droneComment) {
 
-		DroneComment returnedDroneComment = droneCommentManager.addDroneComment(droneComment);
+		DroneComment addReturnedDroneComment = droneCommentManager.addDroneComment(droneComment);
 
-		// the commentId filed was null on input and should have been set by hibernate on a successful add
-		if (null == returnedDroneComment.getCommentId()) {
+		// the commentId field was null on input and should have been set by hibernate on a successful add
+		if (null == addReturnedDroneComment.getCommentId()) {
 			LOGGER.log(Level.INFO,
 					this.getClass().getName() + " >No DroneCommentId found for addDroneCommentId - ADD failed");
-			return new ResponseEntity<DroneComment>(returnedDroneComment, HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
-		return new ResponseEntity<DroneComment>(returnedDroneComment, HttpStatus.OK);
+		return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.OK);
 	}
 
 	// -------------------Delete a Comment by comment id----------
