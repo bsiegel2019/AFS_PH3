@@ -58,10 +58,13 @@ INSERT INTO `drone_comment`(drone_id, drone_comment_text)
 drop table DRONE_COMMENT;
 commit;
 				
-7. select by drone id
+7. select by drone id:
 select * from drone_comment
 where drone_comment.drone_id
 in (select droneId from drone)
 order by drone_comment.drone_id;
 
-
+8. detect (count) dangling comments - should never happen:
+select count(*) from drone_comment 
+where drone_comment.drone_id 
+not in (select droneId from drone);

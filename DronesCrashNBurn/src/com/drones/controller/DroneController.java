@@ -79,18 +79,15 @@ public class DroneController {
 					this.getClass().getName() + " >No Drone found for deleteDrones(" + id + "). One was expected!");
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);
 		}
+
 		Long deleteRowCount = droneManager.deleteDroneById(id);
 
 		if (deleteRowCount == 1) {
 			return new ResponseEntity<Drone>(HttpStatus.OK);
-		} else if (deleteRowCount == 0) {
+		} else {
 			LOGGER.log(Level.WARNING,
 					this.getClass().getName() + " >deleteDrones(" + id + ") did not delete. One was expected!");
-			return new ResponseEntity<Drone>(HttpStatus.BAD_REQUEST);
-		} else {
-			LOGGER.log(Level.SEVERE,
-					this.getClass().getName() + " >deleteDrones(" + id + ") failed rowcount=" + deleteRowCount);
-			return new ResponseEntity<Drone>(HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<Drone>(HttpStatus.UNPROCESSABLE_ENTITY);
 		}
 	}
 

@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -60,22 +61,6 @@ public class DroneCommentController {
 		return new ResponseEntity<DroneComment>(droneComment, HttpStatus.OK);
 	}
 
-	// -------------------Add a Comment ----------
-	@RequestMapping(value = "/{droneComment}", method = RequestMethod.POST)
-	public ResponseEntity<DroneComment> addDroneComment(@PathVariable("droneComment") DroneComment droneComment) {
-
-		DroneComment addReturnedDroneComment = droneCommentManager.addDroneComment(droneComment);
-
-		// the commentId field was null on input and should have been set by hibernate on a successful add
-		if (null == addReturnedDroneComment.getCommentId()) {
-			LOGGER.log(Level.INFO,
-					this.getClass().getName() + " >No DroneCommentId found for addDroneCommentId - ADD failed");
-			return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.INTERNAL_SERVER_ERROR);
-		}
-
-		return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.OK);
-	}
-
 	// -------------------Delete a Comment by comment id----------
 	@RequestMapping(value = "/droneCommentDelete/{id}", method = RequestMethod.DELETE)
 	public ResponseEntity<DroneComment> deleteDroneCommentByCommentId(@PathVariable("id") Long id) {
@@ -85,16 +70,28 @@ public class DroneCommentController {
 		// we expect 1, 0 maybe, anything else is bad
 		if (1 == returnedCommentDeleteRowCount) {
 			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.OK);
-		} else if (0 == returnedCommentDeleteRowCount) {
+		} else {
 			LOGGER.log(Level.INFO, this.getClass().getName()
 					+ " >No DroneComment found for deleteDroneCommentByCommentId(" + id + ").");
 			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.NO_CONTENT);
-		} else {
-			LOGGER.log(Level.SEVERE, this.getClass().getName() + " >Failed deleteDroneCommentByCommentId(" + id
-					+ ") with returnedCommentDeleteRowCount=" + returnedCommentDeleteRowCount);
-			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.INTERNAL_SERVER_ERROR);
 		}
 
+	}
+
+	// -------------------Add a Comment ----------
+	@RequestMapping(value = "/addComment", method = RequestMethod.POST)
+	public ResponseEntity<DroneComment> addDroneComment(@RequestBody DroneComment droneComment) {
+
+		DroneComment addReturnedDroneComment = droneCommentManager.addDroneComment(droneComment);
+
+		// the commentId field was null on input and should have been set by hibernate on a successful add
+		if (null == addReturnedDroneComment.getCommentId()) {
+			LOGGER.log(Level.INFO,
+					this.getClass().getName() + " >No DroneCommentId found for addDroneCommentId - ADD failed");
+			return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.UNPROCESSABLE_ENTITY);
+		}
+
+		return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.OK);
 	}
 
 }
