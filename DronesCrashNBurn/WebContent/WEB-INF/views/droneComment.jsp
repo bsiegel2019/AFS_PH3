@@ -122,16 +122,28 @@ body {
 
 					</table>
 					<h4>
-						<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true; self.commentId=null"
+						<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true; self.commentId=null; self.commentText=null"
 										class="btn btn-success"><b>Create a new Comment for this Drone</b></button>
 					</h4>
 
 					<div data-ng-if="droneCommentCtrl.isNewCommentVisible" >
-						<td><textarea name="newCommentText" cols="60" rows="5" required="required" placeholder="Enter new Drone Comment here"></textarea></td>
 					
-						<td><button type="button" data-ng-click="droneCommentCtrl.addDroneComment(); droneCommentCtrl.isNewCommentVisible=false" class="btn btn-primary"><b>Add the New Comment</b></button></td>
+						<td><strong>Write Comment here: *</strong></td>
+						
+						<td>
+						<textarea cols="60" rows="5" data-type="text" class="form-control" 
+						name="confused" 
+						id="newCommentText" 
+						data-ng-model="droneCommentCtrl.comment.commentText" 
+						data-ng-required="true" 
+						placeholder="Enter new Drone Comment here"></textarea>
+						</td>
+
+						<td>
+						<button type="submit" data-ng-click="droneCommentCtrl.addDroneComment(); droneCommentCtrl.isNewCommentVisible=false" class="btn btn-primary"><b>Add the New Comment</b></button>
+						</td>
 	
-						<td><button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=false" class="btn btn-danger custom-width"><b>Cancel</b></button></td>
+						<td><button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=false; droneCommentCtrl.reset()" class="btn btn-danger custom-width"><b>Cancel</b></button></td>
 					</div>
 					
 				</div>

@@ -27,11 +27,13 @@ public class DroneController {
 	private static final Logger LOGGER = Logger.getLogger(DroneController.class.getName());
 
 	@Autowired
-	private DroneManager droneManager; // Service which will do all data retrieval/manipulation work
+	private DroneManager droneManager;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = { "/", "/index", "/home", "/droneCrashPage" }, method = RequestMethod.GET)
 	public String getIndexPage() {
-		return "redirect:droneCrashPage";
+
+		return "droneCrashPage";
+
 	}
 
 	@RequestMapping(value = "/droneCrashPage", method = RequestMethod.GET)
