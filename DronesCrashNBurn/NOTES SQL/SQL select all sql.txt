@@ -11,5 +11,3 @@ select
 from drone d, DRONE_COMMENT dc
 where d.droneId = dc.drone_id
 order by d.droneId;
-
-
