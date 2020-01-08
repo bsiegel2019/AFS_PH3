@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_Xl6YMBqNEeqM9e_wLhXVnA" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Xl6YMRqNEeqM9e_wLhXVnA" bindingContexts="_Xl8NzxqNEeqM9e_wLhXVnA">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;drone_comment_controller.js&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/js/controller/drone_comment_controller.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/js/controller/drone_comment_controller.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneComment.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneComment.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneComment.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Drone.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/model/Drone.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/model/Drone.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HibernateConfiguration.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/configuration/HibernateConfiguration.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/configuration/HibernateConfiguration.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;DronesCrashNBurn/resources/application.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/resources/application.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone db table sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone db table sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone db table sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone comment db table sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone comment db table sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone comment db table sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone and comment table reset sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone and comment table reset sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone and comment table reset sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneCommentController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneCommentController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentDAOImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/dao/DroneCommentDAOImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/dao/DroneCommentDAOImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentDAO.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/dao/DroneCommentDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/dao/DroneCommentDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneComment.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/model/DroneComment.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/model/DroneComment.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;drone_comment_service.js&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/js/service/drone_comment_service.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/js/service/drone_comment_service.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneAdd.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneCentral.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneCentral.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneCentral.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;drone_controller.js&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/js/controller/drone_controller.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/js/controller/drone_controller.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;drone_service.js&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/js/service/drone_service.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/js/service/drone_service.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentManager.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/manager/DroneCommentManager.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/manager/DroneCommentManager.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneService.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/service/DroneService.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneComment.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneComment.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneComment.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneCrashPage.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneCrashPage.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneCrashPage.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;DronesCrashNBurn/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneAdd.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneAdd.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneConfirmation.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneConfirmation.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneConfirmation.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.jsp.core.jspsource.source&quot; name=&quot;droneCentral.jsp&quot; tooltip=&quot;DronesCrashNBurn/WebContent/WEB-INF/views/droneCentral.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/WEB-INF/views/droneCentral.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;hibernate.properties&quot; tooltip=&quot;DronesCrashNBurn/resources/hibernate.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/resources/hibernate.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;SQL select all sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/SQL select all sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/SQL select all sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone and comment table reset sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone and comment table reset sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone and comment table reset sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone comment db table sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone comment db table sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone comment db table sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;drone db table sql.txt&quot; tooltip=&quot;DronesCrashNBurn/NOTES SQL/drone db table sql.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/NOTES SQL/drone db table sql.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;drone_comment_controller.js&quot; tooltip=&quot;DronesCrashNBurn/WebContent/resources/js/controller/drone_comment_controller.js&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/WebContent/resources/js/controller/drone_comment_controller.js&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Drone.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/model/Drone.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/model/Drone.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HibernateConfiguration.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/configuration/HibernateConfiguration.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/configuration/HibernateConfiguration.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.PropertiesFileEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;DronesCrashNBurn/resources/application.properties&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/resources/application.properties&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentController.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/controller/DroneCommentController.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/controller/DroneCommentController.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentDAOImpl.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/dao/DroneCommentDAOImpl.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/dao/DroneCommentDAOImpl.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;DroneCommentDAO.java&quot; tooltip=&quot;DronesCrashNBurn/src/com/drones/dao/DroneCommentDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/DronesCrashNBurn/src/com/drones/dao/DroneCommentDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_Xl6YMRqNEeqM9e_wLhXVnA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Xl6YMhqNEeqM9e_wLhXVnA" label="%trimmedwindow.label.eclipseSDK" x="2869" y="0" width="1462" height="1571">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_Xl6YMRqNEeqM9e_wLhXVnA" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_Xl6YMhqNEeqM9e_wLhXVnA" label="%trimmedwindow.label.eclipseSDK" x="2869" y="0" width="1462" height="1372">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
     <persistedState key="workingSets" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workingSets/>"/>
     <persistedState key="aggregateWorkingSetId" value="Aggregate for window 1575058608939"/>
-    <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time/>"/>
+    <persistedState key="show_in_time" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;show_in_time>&#xD;&#xA;&lt;id IMemento.internal.id=&quot;org.eclipse.ui.navigator.ProjectExplorer&quot;/>&#xD;&#xA;&lt;/show_in_time>"/>
     <tags>topLevel</tags>
     <tags>shellMaximized</tags>
     <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YMhqNEeqM9e_wLhXVnA" selectedElement="_Xl6YMxqNEeqM9e_wLhXVnA" horizontal="true">
@@ -75,7 +75,7 @@
           <tags>persp.newWizSC:org.eclipse.jpt.jpa.ui.wizard.newJpaProject</tags>
           <tags>persp.perspSC:org.eclipse.jpt.ui.jpaPerspective</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YNRqNEeqM9e_wLhXVnA" selectedElement="_Xl6YNhqNEeqM9e_wLhXVnA" horizontal="true">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YNhqNEeqM9e_wLhXVnA" containerData="1543" selectedElement="_Xl6YNxqNEeqM9e_wLhXVnA">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YNhqNEeqM9e_wLhXVnA" containerData="2960" selectedElement="_Xl6YNxqNEeqM9e_wLhXVnA">
               <children xsi:type="basic:PartStack" xmi:id="_Xl6YNxqNEeqM9e_wLhXVnA" elementId="topLeft" containerData="9000" selectedElement="_Xl6YOBqNEeqM9e_wLhXVnA">
                 <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YOBqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_Xl7AlhqNEeqM9e_wLhXVnA" closeable="true">
@@ -102,16 +102,16 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YPxqNEeqM9e_wLhXVnA" containerData="8457" selectedElement="_JZ5msC1rEeqM9tZeKD1uJg" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Xl6YPxqNEeqM9e_wLhXVnA" containerData="7040" selectedElement="_JZ5msC1rEeqM9tZeKD1uJg" horizontal="true">
               <children xsi:type="basic:PartSashContainer" xmi:id="_JZ5msC1rEeqM9tZeKD1uJg" containerData="6024" selectedElement="_Xl6YRRqNEeqM9e_wLhXVnA">
-                <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YQBqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.editorss" containerData="8523" ref="_Xl7AiRqNEeqM9e_wLhXVnA"/>
-                <children xsi:type="basic:PartStack" xmi:id="_Xl6YRRqNEeqM9e_wLhXVnA" elementId="bottomRight" containerData="1477" selectedElement="_Xl6YTBqNEeqM9e_wLhXVnA">
+                <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YQBqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.editorss" containerData="6385" ref="_Xl7AiRqNEeqM9e_wLhXVnA"/>
+                <children xsi:type="basic:PartStack" xmi:id="_Xl6YRRqNEeqM9e_wLhXVnA" elementId="bottomRight" containerData="3615" selectedElement="_Xl6YTBqNEeqM9e_wLhXVnA">
                   <tags>Debug</tags>
                   <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YRhqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.views.AllMarkersView" ref="_Xl7A0xqNEeqM9e_wLhXVnA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
-                  <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YRxqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.views.PropertySheet" ref="_Xl7A1hqNEeqM9e_wLhXVnA" closeable="true">
+                  <children xsi:type="advanced:Placeholder" xmi:id="_Xl6YRxqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.views.PropertySheet" toBeRendered="false" ref="_Xl7A1hqNEeqM9e_wLhXVnA" closeable="true">
                     <tags>View</tags>
                     <tags>categoryTag:General</tags>
                   </children>
@@ -267,7 +267,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_Xl7A0xqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.views.AllMarkersView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Markers" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.AllMarkersView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;945&quot; org.eclipse.ui.ide.locationField=&quot;150&quot; org.eclipse.ui.ide.markerType=&quot;150&quot; org.eclipse.ui.ide.pathField=&quot;200&quot; org.eclipse.ui.ide.resourceField=&quot;589&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.allSeverityField&quot; categoryGroup=&quot;org.eclipse.ui.ide.type&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.allMarkersGenerator&quot; partName=&quot;Markers&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Maven Java EE Configuration Problem&quot;/>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;JSP Problem&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.allSeverityField=&quot;945&quot; org.eclipse.ui.ide.locationField=&quot;150&quot; org.eclipse.ui.ide.markerType=&quot;150&quot; org.eclipse.ui.ide.pathField=&quot;200&quot; org.eclipse.ui.ide.resourceField=&quot;589&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.allSeverityField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_Xl7A1BqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.views.AllMarkersView">
@@ -377,7 +377,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_Xl7BKhqNEeqM9e_wLhXVnA" elementId="org.eclipse.search.ui.views.SearchView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Search" iconURI="platform:/plugin/org.eclipse.search/icons/full/eview16/searchres.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.search2.internal.ui.SearchView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.search"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view isPinned=&quot;false&quot;>&#xD;&#xA;&lt;view IMemento.internal.id=&quot;org.eclipse.search.text.FileSearchResultPage&quot; org.eclipse.search.lastActivation=&quot;1&quot; org.eclipse.search.resultpage.layout=&quot;2&quot; org.eclipse.search.resultpage.limit=&quot;1000&quot; org.eclipse.search.resultpage.sorting=&quot;2&quot;/>&#xD;&#xA;&lt;view IMemento.internal.id=&quot;&quot; org.eclipse.search.lastActivation=&quot;0&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view isPinned=&quot;false&quot;>&#xD;&#xA;&lt;view IMemento.internal.id=&quot;&quot; org.eclipse.search.lastActivation=&quot;0&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_Xl7BKxqNEeqM9e_wLhXVnA" elementId="org.eclipse.search.ui.views.SearchView">
@@ -453,7 +453,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Xl7BPRqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0nkP1zFSEeqoavE_ZBtC5g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Xl_4bxqNEeqM9e_wLhXVnA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_nb-lJzJLEeq_UJnSOoTy0g" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_Xl_4bxqNEeqM9e_wLhXVnA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Xl7BShqNEeqM9e_wLhXVnA" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -473,7 +473,7 @@
           <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_Xl7mjhqNEeqM9e_wLhXVnA" coreExpressionId="programmatic.value"/>
         </children>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_Xl7mjxqNEeqM9e_wLhXVnA" elementId="com_sysdeo_eclipse_tomcat_actionSet">
+      <children xsi:type="menu:ToolBar" xmi:id="_Xl7mjxqNEeqM9e_wLhXVnA" elementId="com_sysdeo_eclipse_tomcat_actionSet" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Xl7mlBqNEeqM9e_wLhXVnA" elementId="org.eclipse.debug.ui.launchActionSet">
@@ -497,7 +497,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Xl7mqxqNEeqM9e_wLhXVnA" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0nkP5DFSEeqoavE_ZBtC5g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Xl_4ExqNEeqM9e_wLhXVnA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_nb-lNDJLEeq_UJnSOoTy0g" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Xl_4ExqNEeqM9e_wLhXVnA"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Xl7mthqNEeqM9e_wLhXVnA" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -695,7 +695,6 @@
     <bindings xmi:id="_Xl7nTxqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+B" command="_Xl-p8hqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nUBqNEeqM9e_wLhXVnA" keySequence="CTRL+#" command="_Xl-ptBqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nURqNEeqM9e_wLhXVnA" keySequence="ALT+CTRL+T" command="_Xl_R2RqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7nUhqNEeqM9e_wLhXVnA" keySequence="ALT+CTRL+T" command="_Xl_4cBqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nUxqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+E" command="_Xl-qBBqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nVBqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+G" command="_Xl_5DhqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nVRqNEeqM9e_wLhXVnA" keySequence="ALT+CTRL+H" command="_Xl-ppxqNEeqM9e_wLhXVnA"/>
@@ -772,7 +771,6 @@
     <bindings xmi:id="_Xl7nlBqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+F12" command="_Xl-D2BqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nlRqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+F4" command="_Xl_RCRqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nlhqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+F6" command="_Xl_SVRqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7nlxqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X G" command="_Xl-p_hqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nmBqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X J" command="_Xl_32BqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nmRqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X M" command="_Xl_RexqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nmhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X A" command="_Xl-D-xqNEeqM9e_wLhXVnA"/>
@@ -793,7 +791,6 @@
     <bindings xmi:id="_Xl7nqRqNEeqM9e_wLhXVnA" keySequence="ALT+CTRL+SHIFT+ARROW_RIGHT" command="_Xl_SHRqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nqhqNEeqM9e_wLhXVnA" keySequence="CTRL+BREAK" command="_Xl-pxxqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nqxqNEeqM9e_wLhXVnA" keySequence="ALT+X" command="_Xl_RyRqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7nrBqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X N" command="_Xl-qAhqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nrRqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X O" command="_Xl_SOhqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nrhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+X P" command="_Xl_47BqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nrxqNEeqM9e_wLhXVnA" keySequence="CTRL+SHIFT+NUMPAD_MULTIPLY" command="_Xl_SSRqNEeqM9e_wLhXVnA"/>
@@ -804,7 +801,6 @@
     <bindings xmi:id="_Xl7ntBqNEeqM9e_wLhXVnA" keySequence="ALT+CTRL+SHIFT+F12" command="_Xl_45hqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7ntRqNEeqM9e_wLhXVnA" keySequence="DEL" command="_Xl-p6xqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nthqNEeqM9e_wLhXVnA" keySequence="ALT+C" command="_Xl_Q7xqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7ntxqNEeqM9e_wLhXVnA" keySequence="ALT+T" command="_Xl_5OBqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nuBqNEeqM9e_wLhXVnA" keySequence="ALT+V" command="_Xl_RehqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nuRqNEeqM9e_wLhXVnA" keySequence="ALT+-" command="_Xl_R8xqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nuhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+E E" command="_Xl-puRqNEeqM9e_wLhXVnA"/>
@@ -818,13 +814,11 @@
     <bindings xmi:id="_Xl7nwhqNEeqM9e_wLhXVnA" keySequence="ALT+CR" command="_Xl_4IxqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nwxqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+E R" command="_Xl-qLxqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nxBqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D E" command="_Xl_5JhqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7nxRqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D G" command="_Xl_RHRqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nxhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D A" command="_Xl_4UhqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nxxqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D R" command="_Xl_RphqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nyBqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D T" command="_Xl-DyhqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nyRqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D X" command="_Xl_RmRqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nyhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D J" command="_Xl_4CRqNEeqM9e_wLhXVnA"/>
-    <bindings xmi:id="_Xl7nyxqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D N" command="_Xl-p5BqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nzBqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D O" command="_Xl_R5BqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nzRqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D P" command="_Xl_4ahqNEeqM9e_wLhXVnA"/>
     <bindings xmi:id="_Xl7nzhqNEeqM9e_wLhXVnA" keySequence="ALT+SHIFT+D Q" command="_Xl_RixqNEeqM9e_wLhXVnA"/>
@@ -1056,9 +1050,7 @@
       <tags>platform:win32</tags>
     </bindings>
   </bindingTables>
-  <bindingTables xmi:id="_Xl8NeBqNEeqM9e_wLhXVnA" elementId="org.eclipse.wst.xml.occurrences" bindingContext="_Xl8N3xqNEeqM9e_wLhXVnA">
-    <bindings xmi:id="_Xl8NeRqNEeqM9e_wLhXVnA" keySequence="F7" command="_Xl_4pRqNEeqM9e_wLhXVnA"/>
-  </bindingTables>
+  <bindingTables xmi:id="_Xl8NeBqNEeqM9e_wLhXVnA" elementId="org.eclipse.wst.xml.occurrences" bindingContext="_Xl8N3xqNEeqM9e_wLhXVnA"/>
   <bindingTables xmi:id="_Xl8NehqNEeqM9e_wLhXVnA" elementId="org.eclipse.mylyn.internal.wikitext.ui.editor.basicMarkupSourceContext" bindingContext="_Xl8N8hqNEeqM9e_wLhXVnA">
     <bindings xmi:id="_Xl8NexqNEeqM9e_wLhXVnA" keySequence="F1" command="_Xl-DyxqNEeqM9e_wLhXVnA"/>
   </bindingTables>
@@ -1823,42 +1815,6 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.wst.xsl.ui"/>
     <tags>View</tags>
     <tags>categoryTag:XML</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OoRqNEeqM9e_wLhXVnA" elementId="org.testng.eclipse.ResultView" label="TestNG" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" category="Java" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="org.testng.eclipse.ui.TestRunnerViewPart"/>
-    <persistedState key="originalCompatibilityViewBundle" value="org.testng.eclipse"/>
-    <tags>View</tags>
-    <tags>categoryTag:Java</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OohqNEeqM9e_wLhXVnA" elementId="net.sourceforge.pmd.eclipse.ui.views.violationOutline" label="Violations Outline" iconURI="platform:/plugin/net.sourceforge.pmd.eclipse.plugin/icons/icon_outline.gif" tooltip="" category="PMD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="net.sourceforge.pmd.eclipse.ui.views.ViolationOutline"/>
-    <persistedState key="originalCompatibilityViewBundle" value="net.sourceforge.pmd.eclipse.plugin"/>
-    <tags>View</tags>
-    <tags>categoryTag:PMD</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OoxqNEeqM9e_wLhXVnA" elementId="net.sourceforge.pmd.eclipse.ui.views.violationOverview" label="Violations Overview" iconURI="platform:/plugin/net.sourceforge.pmd.eclipse.plugin/icons/icon_overview.gif" tooltip="" category="PMD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="net.sourceforge.pmd.eclipse.ui.views.ViolationOverview"/>
-    <persistedState key="originalCompatibilityViewBundle" value="net.sourceforge.pmd.eclipse.plugin"/>
-    <tags>View</tags>
-    <tags>categoryTag:PMD</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OpBqNEeqM9e_wLhXVnA" elementId="net.sourceforge.pmd.eclipse.ui.views.dataflowView" label="Dataflow View" iconURI="platform:/plugin/net.sourceforge.pmd.eclipse.plugin/icons/icon_dataflow.png" tooltip="" category="PMD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="net.sourceforge.pmd.eclipse.ui.views.dataflow.DataflowView"/>
-    <persistedState key="originalCompatibilityViewBundle" value="net.sourceforge.pmd.eclipse.plugin"/>
-    <tags>View</tags>
-    <tags>categoryTag:PMD</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OpRqNEeqM9e_wLhXVnA" elementId="net.sourceforge.pmd.eclipse.ui.views.br.CPDView2" label="CPD View" iconURI="platform:/plugin/net.sourceforge.pmd.eclipse.plugin/icons/icon_cpd.gif" tooltip="" category="PMD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="net.sourceforge.pmd.eclipse.ui.views.cpd2.CPDView2"/>
-    <persistedState key="originalCompatibilityViewBundle" value="net.sourceforge.pmd.eclipse.plugin"/>
-    <tags>View</tags>
-    <tags>categoryTag:PMD</tags>
-  </descriptors>
-  <descriptors xmi:id="_Xl8OphqNEeqM9e_wLhXVnA" elementId="net.sourceforge.pmd.eclipse.plugin.astView" label="XPath Designer" iconURI="platform:/plugin/org.eclipse.ui/icons/full/eview16/defaultview_misc.png" tooltip="" category="PMD" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
-    <persistedState key="originalCompatibilityViewClass" value="net.sourceforge.pmd.eclipse.ui.views.ast.ASTView"/>
-    <persistedState key="originalCompatibilityViewBundle" value="net.sourceforge.pmd.eclipse.plugin"/>
-    <tags>View</tags>
-    <tags>categoryTag:PMD</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
