@@ -39,14 +39,10 @@ angular.module('myApp').factory('DroneCommentService', ['$http', function($http)
  
     // the commentId field was null on input and should have been set by hibernate on a successful add
     function addDroneComment(comment) {
-    	console.log("ADD   before=>");
-    	console.log(comment);
+
     	// stick droneComment in the body
-    	
         return $http.post(BASE_REST_URI + "/addComment", comment)
             .then(function (response) {
-            	console.log("ADD    after=>");
-            	console.log(response.data);
                  return response.data;
             }).catch( function(errResponse){
                 console.error('Error while adding DroneComment');

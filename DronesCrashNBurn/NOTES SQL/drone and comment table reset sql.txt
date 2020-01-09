@@ -41,6 +41,9 @@ select * from drone_comment order by drone_id, commentId;
 
 4. one big ugly block of code:
 
+select * from drone order by droneid;
+select * from drone_comment order by drone_id, commentId;
+
 truncate drone_comment;
 commit;
 delete from drone where droneId >0;

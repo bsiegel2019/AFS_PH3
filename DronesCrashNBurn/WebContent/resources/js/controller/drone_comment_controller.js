@@ -42,7 +42,7 @@ angular.module('myApp')
 	
 							function deleteDroneCommentByCommentId(id) {
 								// we always expect a null DroneComment object returned from the delete
-								// then we fetch any (0, 1, many) comments remaoning for this drone
+								// then we fetch any (0, 1, many) comments remaining for this drone
 								DroneCommentService.deleteDroneCommentByCommentId(id)
 									.then(function(d) {
 											self.comment = d;
@@ -59,37 +59,27 @@ angular.module('myApp')
 								// init the comment key fields for an add - we keep the text since linked to the view input 
 						    	self.comment.commentId = null;
 								self.comment.commentDroneId = self.holdDroneId;
-								
-						    	console.log(" AFTER INIT INSide addDroneComment");
-						    	console.log(self.comment);
-
-						    	
-						    	// we always expect a non-null DroneComment object returned from the add
+	
+								// we always expect a non-null DroneComment object returned from the add
 								// then we fetch all comments (0, 1, many) for this drone after the add to refresh the view
 								DroneCommentService.addDroneComment(self.comment)
  									.then(function(d) {
 											self.comment = d;
-									    	console.log(" DEEP INSide addDroneComment");
-									    	console.log(d);
-
 											self.fetchAllDroneCommentByDroneId(self.holdDroneId);
-											reset(); // needed to wipe the comment area after an add, else the text will repeat
+											reset(); 
 										})
 								.catch(function(errResponse) {
 										console.error('Error while adding DroneComment');
 										});
-						    	console.log(" INSide addDroneComment");
-						    	console.log(self.comment);
 						    }
 							
-						function reset() {
-							console.log("    INSIDE RESET");
+						// needed to wipe the comment area after an add, else the text will repeat
+					    function reset() {
 							self.comment = {
 									commentId : null,
 									commentDroneId : null,
 									commentText : null
 								};
-//							$scope.myForm.$setPristine(); // reset Form
   							}
 
 						} ]);

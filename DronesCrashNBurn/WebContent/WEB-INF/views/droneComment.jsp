@@ -84,7 +84,8 @@ body {
 
 		<!-- ok below here is the comment table space -->
 		<div class="generic-container"
-			data-ng-controller="DroneCommentController as droneCommentCtrl" data-ng-init="droneCommentCtrl.holdDroneId=${id}; droneCommentCtrl.fetchAllDroneCommentByDroneId(${id})">
+			data-ng-controller="DroneCommentController as droneCommentCtrl" 
+			data-ng-init="droneCommentCtrl.holdDroneId=${id}; droneCommentCtrl.fetchAllDroneCommentByDroneId(${id})">
 
 			<div class="panel panel-default">
 
@@ -122,29 +123,29 @@ body {
 
 					</table>
 					<h4>
-						<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true; self.commentId=null; self.commentText=null"
+						<button type="button" data-ng-click="droneCommentCtrl.comment.commentText=null; droneCommentCtrl.isNewCommentVisible=true"
 										class="btn btn-success"><b>Create a new Comment for this Drone</b></button>
 					</h4>
 
+					<!-- /////This DIV BELOW is for the add/edit comment area -->
 					<div data-ng-if="droneCommentCtrl.isNewCommentVisible" >
 					
 						<td><strong>Write Comment here: *</strong></td>
 						
 						<td>
 						<textarea cols="60" rows="5" data-type="text" class="form-control" 
-						name="confused" 
-						id="newCommentText" 
 						data-ng-model="droneCommentCtrl.comment.commentText" 
 						data-ng-required="true" 
 						placeholder="Enter new Drone Comment here"></textarea>
 						</td>
 
 						<td>
-						<button type="submit" data-ng-click="droneCommentCtrl.addDroneComment(); droneCommentCtrl.isNewCommentVisible=false" class="btn btn-primary"><b>Add the New Comment</b></button>
+						<button id="createNewComment" data-ng-disabled="!droneCommentCtrl.comment.commentText" type="submit" data-ng-click="droneCommentCtrl.addDroneComment(); droneCommentCtrl.isNewCommentVisible=false" class="btn btn-primary"><b>Submit New Comment</b></button>
 						</td>
 	
 						<td><button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=false; droneCommentCtrl.reset()" class="btn btn-danger custom-width"><b>Cancel</b></button></td>
 					</div>
+					<!-- \\\\\\This DIV ABOVE is for the add/edit comment area -->
 					
 				</div>
 				

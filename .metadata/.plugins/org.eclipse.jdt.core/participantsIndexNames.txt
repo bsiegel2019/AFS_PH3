@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2228102946.index
+\TextB\src
 C:\Users\bernard.siegel\projects\eclipse-workspace-ph2git\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\872096073.index
 \DronesCrashNBurn\src
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\942157312.index
@@ -13,8 +15,12 @@ C:\Users\bernard.siegel\projects\eclipse-workspace-ph2git\.metadata\.plugins\org
 \DronesCrashNBurn\src
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\872096073.index
 \DronesCrashNBurn\src
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2759222444.index
+\SubmittingTextAreas\src
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1336118593.index
 \DronesCrashNBurn\src
+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\276084601.index
+\SubmittingTextAreas\src
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3637287498.index
 \DronesCrashNBurn\src
 C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4094198240.index
