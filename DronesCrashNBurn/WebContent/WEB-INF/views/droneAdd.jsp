@@ -7,13 +7,14 @@
 <head>
 <title>Drone Add</title>
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 <link rel="icon" href="data:,">
 
 <style type="text/css">
 body {
-	background-image: url("${contextPath}/resources/images/drone_add_background.jpg");
+	background-image:
+		url("${contextPath}/resources/images/drone_add_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;
@@ -34,20 +35,17 @@ body {
 			<table>
 				<tr>
 					<td><label>Drone Owner Name *</label></td>
-					<td><form:input path="droneOwnerName" required="required"
-							type="text" placeholder="Enter Drone Owner Name" /></td>
+					<td><form:input path="droneOwnerName" required="required" type="text" placeholder="Enter Drone Owner Name" /></td>
 				</tr>
 
 				<tr>
 					<td><form:label path="droneName">Drone Name *</form:label></td>
-					<td><form:input path="droneName" required="required"
-							type="text" placeholder="Enter Drone Name" /></td>
+					<td><form:input path="droneName" required="required" type="text" placeholder="Enter Drone Name" /></td>
 				</tr>
 
 				<tr>
 					<td><form:label path="droneType">Drone Type *</form:label></td>
-					<td><form:select path="droneType" class="form-control"
-							required="required" placeholder="Select Drone Type">
+					<td><form:select path="droneType" class="form-control" required="required" placeholder="Select Drone Type">
 							<option data-placeholder="Select Drone Type"></option>
 							<!-- Note: this empty option with required forces a selection -->
 							<option>Glider</option>
@@ -58,14 +56,19 @@ body {
 
 				<tr>
 					<td><form:label path="droneSpan">Drone Span (Wing/Rotor)</form:label></td>
-					<td><form:input path="droneSpan" type="text"
-							placeholder="Enter Drone Wing Span or Rotor DiameterxRotors" /></td>
+					<td><form:input path="droneSpan" type="text" placeholder="Enter Drone Wing Span or Rotor DiameterxRotors" /></td>
+				</tr>
+
+				<tr>
+					<td><form:label path="droneFirstFlownDate">Drone First Flight</form:label></td>
+					<td><form:input type="date" path="droneFirstFlownDate" id="firstFlown" /></td>
 				</tr>
 
 				<tr>
 					<td><form:label path="droneStatus">Drone Status</form:label></td>
 					<td><form:input path="droneStatus" type="text"
-							placeholder="Enter Drone Status (flyable, on bench, RIP, whatever)" /></td>
+							placeholder="Enter Drone Status (flyable, on bench, RIP, whatever)"
+						/></td>
 				</tr>
 
 				<tr>
@@ -85,5 +88,6 @@ body {
 		</form:form>
 
 	</div>
+
 </body>
 </html>

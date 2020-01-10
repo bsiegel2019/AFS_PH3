@@ -13,5 +13,4 @@ public interface DroneService {
 	Drone addDrone(Drone drone);
 
 	Long deleteDroneById(Long id);
-
 }

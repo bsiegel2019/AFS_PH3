@@ -1,11 +1,15 @@
 package com.drones.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "DRONE")
@@ -29,6 +33,13 @@ public class Drone {
 	@Column(name = "DRONE_SPAN", nullable = true)
 	private String droneSpan;
 
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+//	@DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+	// yyyy-MM-dd'T'HH:mm:ss.SSSXXX
+	// yyyy-MM-dd'T'HH:mm:ss.SSSCST
+	@Column(name = "DRONE_FIRST_FLOWN", nullable = true)
+	private Date droneFirstFlownDate;
+
 	@Column(name = "DRONE_STATUS", nullable = true)
 	private String droneStatus;
 
@@ -36,7 +47,6 @@ public class Drone {
 	private String droneImage; // figure out type later
 
 	public Drone() {
-		this.droneImage = "future feature BTW";
 	}
 
 	public Drone(Long droneId, String droneOwnerName, String droneName, String droneType, String droneSpan,
@@ -90,6 +100,14 @@ public class Drone {
 		this.droneSpan = droneSpan;
 	}
 
+	public Date getDroneFirstFlownDate() {
+		return droneFirstFlownDate;
+	}
+
+	public void setDroneFirstFlownDate(Date droneFirstFlownDate) {
+		this.droneFirstFlownDate = droneFirstFlownDate;
+	}
+
 	public String getDroneStatus() {
 		return droneStatus;
 	}
@@ -131,8 +149,8 @@ public class Drone {
 	@Override
 	public String toString() {
 		return "Drone [droneId=" + droneId + ", droneOwnerName=" + droneOwnerName + ", droneName=" + droneName
-				+ ", droneType=" + droneType + ", droneSpan=" + droneSpan + ", droneStatus=" + droneStatus
-				+ ", droneImage=" + droneImage + "]";
+				+ ", droneType=" + droneType + ", droneSpan=" + droneSpan + ", " + "droneFirstFlownDate="
+				+ droneFirstFlownDate + ", droneStatus=" + droneStatus + ", droneImage=" + droneImage + "]";
 	}
 
 }

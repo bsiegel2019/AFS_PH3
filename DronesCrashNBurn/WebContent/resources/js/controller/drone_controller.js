@@ -17,6 +17,7 @@ angular.module('myApp')
 								droneName : '',
 								droneType : '',
 								droneSpan : '',
+								droneFirstFlownDate : '',
 								droneStatus : '',
 								droneImage : ''
 							};
@@ -45,6 +46,10 @@ angular.module('myApp')
 								DroneService.fetchDroneByDroneId(id)
 										.then(function(d) {
 													self.drone = d;
+													
+													// TODO remove
+													console.log("inside fetch drone by id - loking at date");
+													console.log(self.drone.droneFirstFlownDate);
 												})
 										.catch(function(errResponse) {
 												console.error('Error while fetching a Drone by Id');
@@ -67,13 +72,14 @@ angular.module('myApp')
 
 							function reset() {
 								self.drone = {
-									droneId : null,
-									droneOwnerName : '',
-									droneName : '',
-									droneType : '',
-									droneSpan : '',
-									droneStatus : '',
-									droneImage : 'TBD'
+										droneId : null,
+										droneOwnerName : '',
+										droneName : '',
+										droneType : '',
+										droneSpan : '',
+										droneFirstFlownDate : '',
+										droneStatus : '',
+										droneImage : 'TBD'
 								};
 								$scope.myForm.$setPristine(); // reset Form
 							}

@@ -7,13 +7,14 @@
 <head>
 <title>DronesCrashNBurn Crashing</title>
 
-<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />
 
 <link rel="icon" href="data:,">
 
 <style type="text/css">
 body {
-	background-image: url("${contextPath}/resources/images/crashnburn_background.jpg");
+	background-image:
+		url("${contextPath}/resources/images/crashnburn_background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 100% 100%;

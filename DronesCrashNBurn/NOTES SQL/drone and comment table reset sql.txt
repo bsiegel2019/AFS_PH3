@@ -1,7 +1,7 @@
 
 execute to reset tables to base state
 
-1. wipe data contents:
+1. wipe data contents: - DOES NOT DESTROY TABLES
 
 truncate drone_comment;
 commit;
@@ -19,8 +19,8 @@ INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_
  VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
 INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
  VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "Flying ballistically - two comments for dummy 3", "resources/images/rotorcraft_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "2020/01/31", "Flying ballistically - two comments for dummy 3", null");
 INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
  VALUES ("DB Talker", "Big Text", "Glider", "too much text", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
 commit;
@@ -52,14 +52,15 @@ ALTER TABLE drone AUTO_INCREMENT = 1;
 commit;
 ALTER TABLE drone_comment AUTO_INCREMENT = 1;
 commit;
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "Flying ballistically - two comments for dummy 3", "resources/images/rotorcraft_example.jpg");
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Talker", "Big Text", "Glider", "too much text", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "2001/12/31", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", null, "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "2020/01/31", "Flying ballistically - two comments for dummy 3", null);
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Talker", "Big Text", "Glider", "too much text", "1991/01/01", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
+
 commit;
 select * from drone;
 INSERT INTO `drone_comment`(drone_id, drone_comment_text)
@@ -71,6 +72,8 @@ INSERT INTO `drone_comment`(drone_id, drone_comment_text)
 INSERT INTO `drone_comment`(drone_id, drone_comment_text)
  VALUES (3, "DB Comment B for drone id 3 Loves this Lawn Mower");
 commit;
+
+select * from drone order by droneid;
 select * from drone_comment order by drone_id, commentId;
 
 

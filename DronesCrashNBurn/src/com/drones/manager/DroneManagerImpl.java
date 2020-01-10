@@ -24,7 +24,6 @@ public class DroneManagerImpl implements DroneManager {
 			LOGGER.log(Level.INFO, this.getClass().getName()
 					+ " >No Drones found for listAllDrones. Zero may happen but one or more expected!");
 		}
-
 		return returnedDrones;
 	}
 
@@ -40,7 +39,6 @@ public class DroneManagerImpl implements DroneManager {
 							+ " >addDrone(drone) FAILED with a null droneId returned from DB for Drone="
 							+ returnedDrone.toString());
 		}
-
 		return returnedDrone;
 	}
 
@@ -50,7 +48,6 @@ public class DroneManagerImpl implements DroneManager {
 			LOGGER.log(Level.INFO, this.getClass().getName()
 					+ " >No Drones found for listAllDrones. Zero may happen but one is expected!");
 		}
-
 		return returnedDrone;
 	}
 

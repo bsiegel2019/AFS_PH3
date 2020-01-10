@@ -9,44 +9,37 @@ GRANT ALL PRIVILEGES ON dronescrashnburn.* TO 'root'@'localhost';
 --executed ok
 
 3. create the drone table
+
 CREATE TABLE DRONE(
     droneId INT NOT NULL auto_increment, 
     drone_owner_name VARCHAR(50) NOT NULL,
     drone_name VARCHAR(50) NOT NULL,
     drone_type VARCHAR(50) NOT NULL,
     drone_span VARCHAR(50),
+    drone_first_flown DATE null,
     drone_status VARCHAR(50),
     drone_image VARCHAR(50),
     PRIMARY KEY (droneId)
 );
 
 4. inspect records in drone table
+
 select * from drone;
 
 5. create a dummy drone set
-Basic syntax
-Let's look at the basic syntax of the SQL INSERT command shown below. 
-INSERT INTO `table_name`(column_1,column_2,...) VALUES (value_1,value_2,...);
-HERE 
-INSERT INTO `table_name` is the command that tells MySQL server to add new row into a table named `table_name`.
-(column_1,column_2,...) specifies the columns to be updated in the  new row
-VALUES (value_1,value_2,...) specifies the values to be added into the new row
+droneId is auto gen'ed
 
-5A. droneId is auto gen'ed
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "2001/12/31", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
 
-5B. droneId is auto gen'ed
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", null, "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
 
-5C. droneId is auto gen'ed
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "Flying ballistically - two comments for dummy 3", "resources/images/rotorcraft_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "2020/01/31", "Flying ballistically - two comments for dummy 3", null);
 
-5D. droneId is auto gen'ed
-INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_status, drone_image)
- VALUES ("DB Talker", "Big Text", "Glider", "too much text", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Talker", "Big Text", "Glider", "too much text", "1991/01/01", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
 
 6. detect drones with no comments
 select * from drone

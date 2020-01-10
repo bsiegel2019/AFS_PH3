@@ -11,8 +11,7 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
         fetchDroneByDroneId : fetchDroneByDroneId,
         deleteDrones:deleteDrones
    };
-
-    return factory;
+   return factory;
 
     // The catch was important to close the promise, otherwise strange things happed after sync add
     function fetchAllDrones() {

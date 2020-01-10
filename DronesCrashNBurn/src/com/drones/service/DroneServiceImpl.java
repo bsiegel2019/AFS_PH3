@@ -13,8 +13,6 @@ import com.drones.model.Drone;
 @Transactional
 public class DroneServiceImpl implements DroneService {
 
-//BEGIN HIB MODS HERE
-
 	@Autowired
 	private DroneDAO droneDao;
 
@@ -27,7 +25,6 @@ public class DroneServiceImpl implements DroneService {
 	}
 
 	public Drone addDrone(Drone drone) {
-
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneSpan())) {
 			drone.setDroneSpan("Not provided");
@@ -38,34 +35,31 @@ public class DroneServiceImpl implements DroneService {
 			drone.setDroneStatus("Not provided");
 		}
 
-		// since I don't have a drone image capability - YET
-		String tmpDroneType = drone.getDroneType();
-		if (tmpDroneType == null) {
-			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
-		} else {
-			switch (tmpDroneType) {
-			case "Glider":
-				drone.setDroneImage("resources/images/glider_example.jpg");
-				break;
-			case "Sport":
-				drone.setDroneImage("resources/images/sport_example.jpg");
-				break;
-			case "Rotorcraft":
-				drone.setDroneImage("resources/images/rotorcraft_example.jpg");
-				break;
-			default:
-				drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
-				break;
-			}
-		}
-
+//		// since I don't have a drone image capability - YET
+//		String tmpDroneType = drone.getDroneType();
+//		if (tmpDroneType == null) {
+//			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
+//		} else {
+//			switch (tmpDroneType) {
+//			case "Glider":
+//				drone.setDroneImage("resources/images/glider_example.jpg");
+//				break;
+//			case "Sport":
+//				drone.setDroneImage("resources/images/sport_example.jpg");
+//				break;
+//			case "Rotorcraft":
+//				drone.setDroneImage("resources/images/rotorcraft_example.jpg");
+//				break;
+//			default:
+//				drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
+//				break;
+//			}
+//		}
 		return droneDao.addDrone(drone);
 	}
 
 	public Long deleteDroneById(Long id) {
 		return droneDao.deleteDroneById(id);
 	}
-
-// END HIB MODS HERE
 
 }
