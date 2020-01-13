@@ -1,5 +1,6 @@
 package com.drones.service;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +35,10 @@ public class DroneServiceImpl implements DroneService {
 		if ("".equals(drone.getDroneStatus())) {
 			drone.setDroneStatus("Not provided");
 		}
+
+		// fixes TZ regradless of where input/where output
+		drone.setDroneFirstFlownDate(
+				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));
 
 //		// since I don't have a drone image capability - YET
 //		String tmpDroneType = drone.getDroneType();

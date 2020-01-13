@@ -67,8 +67,7 @@ body {
 			</tr>
 			<tr>
 				<td>Drone First Flight:</td>
-				<td>${drone.droneFirstFlownDate}</td>
-				<td><fmt:formatDate pattern="yyyy/MM/dd" value="${drone.droneFirstFlownDate}" /></td>
+				<td><fmt:formatDate value="${drone.droneFirstFlownDate}" pattern="yyyy/MM/dd"  /></td>
 			</tr>
 			<tr>
 				<td>Drone Status:</td>

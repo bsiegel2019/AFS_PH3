@@ -34,9 +34,6 @@ public class Drone {
 	private String droneSpan;
 
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-//	@DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSZ")
-	// yyyy-MM-dd'T'HH:mm:ss.SSSXXX
-	// yyyy-MM-dd'T'HH:mm:ss.SSSCST
 	@Column(name = "DRONE_FIRST_FLOWN", nullable = true)
 	private Date droneFirstFlownDate;
 

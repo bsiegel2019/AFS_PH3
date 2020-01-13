@@ -96,7 +96,7 @@ body {
 							<tr>
 								<th width="10%">Comment ID</th>
 								<th width="10%">Drone ID</th>
-								<th width="60%">Comment</th>
+								<th width="50%">Comment</th>
 								<th width="10%"></th>
 							</tr>
 						</thead>
