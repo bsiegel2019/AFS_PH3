@@ -14,4 +14,5 @@ public interface DroneCommentDAO {
 
 	Long deleteDroneCommentByCommentId(Long commentId);
 
+	// TODO FIX: edit/update not impl'ed in view/js layers
 }

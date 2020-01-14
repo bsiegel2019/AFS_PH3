@@ -60,4 +60,5 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 		return new Long(query.executeUpdate()); // we expect 0 or 1
 	}
 
+	// TODO FIX: edit/update not impl'ed in view/js layers
 }

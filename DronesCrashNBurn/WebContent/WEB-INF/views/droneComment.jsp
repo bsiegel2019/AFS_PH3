@@ -66,7 +66,7 @@ body {
 								<td>{{droneCtrl.drone.droneStatus}}</td>
 
 								<td><img height=100 width=auto data-ng-src="${contextPath}/{{droneCtrl.drone.droneImage}}"
-									alt="OOPSIE! Whereis the thumbnail image?"
+									alt="OOPSIE! Where is the thumbnail image?"
 								></td>
 							</tr>
 						</tbody>
@@ -96,7 +96,8 @@ body {
 							<tr>
 								<th width="10%">Comment ID</th>
 								<th width="10%">Drone ID</th>
-								<th width="50%">Comment</th>
+								<th width="60%">Comment</th>
+								<th width="20%"></th>
 								<th width="10%"></th>
 							</tr>
 						</thead>
@@ -108,7 +109,7 @@ body {
 								<td>{{comment.commentText}}</td>
 								<td>
 									<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true" class="btn btn-warning">
-										<b>Edit</b>
+										<b>Edit - NOT IMPL</b>
 									</button>
 
 									<button type="button" data-ng-click="droneCommentCtrl.deleteDroneCommentByCommentId(comment.commentId)"

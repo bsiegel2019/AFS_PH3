@@ -13,13 +13,10 @@ import com.drones.model.DroneComment;
 @Transactional
 public class DroneCommentServiceImpl implements DroneCommentService {
 
-	// BEGIN HIB MODS HERE
-
 	@Autowired
 	private DroneCommentDAO droneCommentDao;
 
-	// expected to have a valid drone id
-	// NOTE: returns ArrayList of 0..n comments
+	// expected to have a valid drone id - returns ArrayList of 0..n comments
 	@Override
 	public List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId) {
 		return droneCommentDao.findAllDroneCommentByDroneId(commentDroneId);
@@ -39,16 +36,11 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 		return droneCommentDao.addDroneComment(droneComment);
 	}
 
-	// expected to have a valid comment id
-	// NOTE: returns Boolean true ONLY if delete was successful
+	// expected to have a valid comment id - returns Boolean true ONLY if delete was successful
 	@Override
 	public Long deleteDroneCommentByCommentId(Long commentId) {
 		return droneCommentDao.deleteDroneCommentByCommentId(commentId);
 	}
-
-	// END HIB MODS HERE
-
-	private static List<DroneComment> droneComments; // TODO deleted by ph2
 
 	// expected to have valid comment id entry, entry for drone id and comment text
 	// NOTE: returns input comment if write by unique comment id is successful, if none/error then null
@@ -56,13 +48,9 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 	public DroneComment updateDroneCommentByCommentId(DroneComment droneComment) {
 		DroneComment returnComment = null; // only set to droneComment when successful update
 
-		for (int commentIndex = 0; commentIndex < droneComments.size(); commentIndex++) {
-			if ((droneComments.get(commentIndex).getCommentId()).equals(droneComment.getCommentId())) {
-				droneComments.set(commentIndex, droneComment);
-				returnComment = droneComment;
-				break;
-			}
-		}
+		// TODO FIX: edit/update not impl'ed in view/js layers - call DAO
+		returnComment = droneComment;
+
 		return returnComment;
 	}
 

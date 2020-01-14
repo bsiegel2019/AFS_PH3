@@ -59,7 +59,7 @@ body {
 			<tr>
 				<td>Drone Type:</td>
 				<td>${drone.droneType}</td>
-				<td><img src="${contextPath}/${droneTypeSilhouette}" alt="OOPSIE! Whereis the image?" width="100" height="40"></td>
+				<td><img src="${contextPath}/${droneTypeSilhouette}" alt="OOPSIE! Where is the image?" width="100" height="40"></td>
 			</tr>
 			<tr>
 				<td>Drone Span (Wing/Rotor):</td>

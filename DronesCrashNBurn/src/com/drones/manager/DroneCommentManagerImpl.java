@@ -34,4 +34,5 @@ public class DroneCommentManagerImpl implements DroneCommentManager {
 		return droneCommentService.deleteDroneCommentByCommentId(commentId);
 	}
 
+	// TODO FIX: edit/update not impl'ed in view/js layers
 }

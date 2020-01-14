@@ -33,7 +33,7 @@ angular.module('myApp').factory('DroneCommentService', ['$http', function($http)
                  return response.data;
             }).catch( function(errResponse){
                 console.error('Error while deleting DroneComment');
-                console.error(error);
+                console.error(errResponse);
             });
     }
  
@@ -50,11 +50,7 @@ angular.module('myApp').factory('DroneCommentService', ['$http', function($http)
             });
     }
 
-    
-    
-    
-    
-    
+	// TODO FIX: edit/update not impl'ed in view/js layers
 }]);
 
 })();

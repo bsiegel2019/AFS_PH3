@@ -24,7 +24,8 @@ public class DroneCommentController {
 	private static final Logger LOGGER = Logger.getLogger(DroneCommentController.class.getName());
 
 	@Autowired
-	DroneCommentManager droneCommentManager; // Service which will do all data retrieval/manipulation work for comment
+	private DroneCommentManager droneCommentManager; // Service which will do all data retrieval/manipulation work for
+														// comment
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ModelAndView droneComment(@PathVariable("id") Long id) {
@@ -37,12 +38,10 @@ public class DroneCommentController {
 
 		List<DroneComment> droneComments = droneCommentManager.findAllDroneCommentByDroneId(id);
 
-		// no comments (empty, null list) is ok
+		// no comments (empty, null list) is ok but log info about it
 		if (null == droneComments) {
-			LOGGER.log(Level.INFO, this.getClass().getName()
-					+ " >No DroneComments found for findAllDroneCommentByDroneId(" + id + ").");
+			LOGGER.log(Level.INFO, " >No DroneComments found for findAllDroneCommentByDroneId(" + id + ").");
 		}
-
 		return new ResponseEntity<List<DroneComment>>(droneComments, HttpStatus.OK);
 	}
 
@@ -52,12 +51,10 @@ public class DroneCommentController {
 
 		DroneComment droneComment = droneCommentManager.findDroneCommentByCommentId(id);
 
-		// no comment (empty, null) is ok
+		// no comments (empty, null list) is ok but log info about it
 		if (null == droneComment) {
-			LOGGER.log(Level.INFO,
-					this.getClass().getName() + " >No DroneComment found for findDroneCommentByCommentId(" + id + ").");
+			LOGGER.log(Level.INFO, " >No DroneComment found for findDroneCommentByCommentId(" + id + ").");
 		}
-
 		return new ResponseEntity<DroneComment>(droneComment, HttpStatus.OK);
 	}
 
@@ -67,15 +64,12 @@ public class DroneCommentController {
 
 		Long returnedCommentDeleteRowCount = droneCommentManager.deleteDroneCommentByCommentId(id);
 
-		// we expect 1, 0 maybe, anything else is bad
+		// we expect 1, 0 or anything else is bad
 		if (1 == returnedCommentDeleteRowCount) {
 			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.OK);
-		} else {
-			LOGGER.log(Level.INFO, this.getClass().getName()
-					+ " >No DroneComment found for deleteDroneCommentByCommentId(" + id + ").");
-			return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.NO_CONTENT);
 		}
-
+		LOGGER.log(Level.SEVERE, " >No DroneComment found for deleteDroneCommentByCommentId(" + id + ").");
+		return new ResponseEntity<DroneComment>(new DroneComment(), HttpStatus.BAD_REQUEST);
 	}
 
 	// -------------------Add a Comment ----------
@@ -86,12 +80,11 @@ public class DroneCommentController {
 
 		// the commentId field was null on input and should have been set by hibernate on a successful add
 		if (null == addReturnedDroneComment.getCommentId()) {
-			LOGGER.log(Level.INFO,
-					this.getClass().getName() + " >No DroneCommentId found for addDroneCommentId - ADD failed");
+			LOGGER.log(Level.SEVERE, " >No DroneCommentId found for addDroneCommentId - ADD failed");
 			return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.UNPROCESSABLE_ENTITY);
 		}
-
 		return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.OK);
 	}
 
+	// TODO FIX: edit/update not impl'ed in view/js layers
 }

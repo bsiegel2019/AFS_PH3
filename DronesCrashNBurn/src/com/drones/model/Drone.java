@@ -15,8 +15,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name = "DRONE")
 public class Drone {
 
-	public static final String ERRONEOUS_DRONE_TYPE_IMAGE = "resources/images/crashnburn_background2.jpg";
-
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long droneId;
@@ -30,17 +28,17 @@ public class Drone {
 	@Column(name = "DRONE_TYPE", nullable = false)
 	private String droneType; // pulldown Glider/Sport/Rotor
 
-	@Column(name = "DRONE_SPAN", nullable = true)
+	@Column(name = "DRONE_SPAN")
 	private String droneSpan;
 
 	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-	@Column(name = "DRONE_FIRST_FLOWN", nullable = true)
+	@Column(name = "DRONE_FIRST_FLOWN")
 	private Date droneFirstFlownDate;
 
-	@Column(name = "DRONE_STATUS", nullable = true)
+	@Column(name = "DRONE_STATUS")
 	private String droneStatus;
 
-	@Column(name = "DRONE_IMAGE", nullable = true)
+	@Column(name = "DRONE_IMAGE")
 	private String droneImage; // figure out type later
 
 	public Drone() {

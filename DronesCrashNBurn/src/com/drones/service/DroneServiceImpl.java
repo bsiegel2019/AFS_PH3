@@ -36,30 +36,11 @@ public class DroneServiceImpl implements DroneService {
 			drone.setDroneStatus("Not provided");
 		}
 
+		// TODO remove - fix this date issue
 		// fixes TZ regradless of where input/where output
 		drone.setDroneFirstFlownDate(
 				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));
 
-//		// since I don't have a drone image capability - YET
-//		String tmpDroneType = drone.getDroneType();
-//		if (tmpDroneType == null) {
-//			drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
-//		} else {
-//			switch (tmpDroneType) {
-//			case "Glider":
-//				drone.setDroneImage("resources/images/glider_example.jpg");
-//				break;
-//			case "Sport":
-//				drone.setDroneImage("resources/images/sport_example.jpg");
-//				break;
-//			case "Rotorcraft":
-//				drone.setDroneImage("resources/images/rotorcraft_example.jpg");
-//				break;
-//			default:
-//				drone.setDroneImage(Drone.ERRONEOUS_DRONE_TYPE_IMAGE);
-//				break;
-//			}
-//		}
 		return droneDao.addDrone(drone);
 	}
 

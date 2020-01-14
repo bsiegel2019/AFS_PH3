@@ -9,7 +9,6 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
 		<spring-webmvc.version>4.2.9.RELEASE</spring-webmvc.version>
 		<springframework.version>4.2.9.RELEASE</springframework.version>
 		<validation-api.version>1.1.0.Final</validation-api.version>
@@ -18,12 +17,10 @@
 		<jstl.version>1.2</jstl.version>
 		<hibernate.version>5.1.17.Final</hibernate.version>
 		<mysql.version>8.0.11</mysql.version>
-
 	</properties>
 
 	<build>
 		<sourceDirectory>src</sourceDirectory>
-
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -54,7 +51,6 @@
 			<artifactId>spring-orm</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>
-
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
@@ -75,21 +71,16 @@
 			<artifactId>jstl</artifactId>
 			<version>${jstl.version}</version>
 		</dependency>
-
-		<!-- Hibernate -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
 			<version>${hibernate.version}</version>
 		</dependency>
-
-		<!-- MySQL -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.version}</version>
 		</dependency>
-
 	</dependencies>
 
 </project>

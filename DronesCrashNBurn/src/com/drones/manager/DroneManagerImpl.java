@@ -21,8 +21,7 @@ public class DroneManagerImpl implements DroneManager {
 	public List<Drone> findAllDrones() {
 		List<Drone> returnedDrones = droneService.findAllDrones();
 		if (returnedDrones.isEmpty()) {
-			LOGGER.log(Level.INFO, this.getClass().getName()
-					+ " >No Drones found for listAllDrones. Zero may happen but one or more expected!");
+			LOGGER.log(Level.INFO, " >No Drones found for listAllDrones. Zero may happen but one or more expected!");
 		}
 		return returnedDrones;
 	}
@@ -34,10 +33,8 @@ public class DroneManagerImpl implements DroneManager {
 		// the hibernate/mysql addDrone process was to insert the MySQL auto-gen id value into droneId field
 		// and return the drone object with that id - if the droneId is null then something failed
 		if (null == returnedDrone.getDroneId()) {
-			LOGGER.log(Level.SEVERE,
-					this.getClass().getName()
-							+ " >addDrone(drone) FAILED with a null droneId returned from DB for Drone="
-							+ returnedDrone.toString());
+			LOGGER.log(Level.SEVERE, " >addDrone(drone) FAILED with a null droneId returned from DB for Drone="
+					+ returnedDrone.toString());
 		}
 		return returnedDrone;
 	}
@@ -45,8 +42,7 @@ public class DroneManagerImpl implements DroneManager {
 	public Drone findDroneByDroneId(Long id) {
 		Drone returnedDrone = droneService.findDroneByDroneId(id);
 		if (null == returnedDrone) {
-			LOGGER.log(Level.INFO, this.getClass().getName()
-					+ " >No Drones found for listAllDrones. Zero may happen but one is expected!");
+			LOGGER.log(Level.INFO, " >No Drones found for listAllDrones. Zero may happen but one is expected!");
 		}
 		return returnedDrone;
 	}

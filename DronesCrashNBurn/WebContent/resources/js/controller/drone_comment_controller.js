@@ -81,7 +81,8 @@ angular.module('myApp')
 									commentText : null
 								};
   							}
-
+					    
+						// TODO FIX: edit/update not impl'ed in view/js layers
 						} ]);
 
 })();
