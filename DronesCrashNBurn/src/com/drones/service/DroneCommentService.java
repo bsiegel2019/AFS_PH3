@@ -19,6 +19,5 @@ public interface DroneCommentService {
 	Long deleteDroneCommentByCommentId(Long commentId);
 
 	// expected to have valid comment id entry, entry for drone id and comment text
-	DroneComment updateDroneCommentByCommentId(DroneComment droneComment);
-
+	DroneComment updateDroneComment(DroneComment droneComment);
 }

@@ -32,6 +32,10 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 	}
 	// END copied in from abstractdao
 
+	public void update(Object entity) {
+		getSession().update(entity);
+	}
+
 	@Override
 	@SuppressWarnings("unchecked") // the cast from List to List<DroneComment>
 	public List<DroneComment> findAllDroneCommentByDroneId(Long commentDroneId) {
@@ -60,5 +64,10 @@ public class DroneCommentDAOImpl implements DroneCommentDAO {
 		return new Long(query.executeUpdate()); // we expect 0 or 1
 	}
 
-	// TODO FIX: edit/update not impl'ed in view/js layers
+	@Override
+	public DroneComment updateDroneComment(DroneComment droneComment) {
+		update(droneComment);
+		return droneComment;
+	}
+
 }

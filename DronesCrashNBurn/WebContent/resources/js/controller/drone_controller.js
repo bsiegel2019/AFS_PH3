@@ -36,8 +36,9 @@ angular.module('myApp')
 										.then(function(d) {
 													self.drones = d;
 												})
-										.catch(function(errResponse) {
+										.catch(function(error) {
 												console.error('Error while fetching Drones');
+								                console.error(error);
 												});
 							}
 
@@ -47,15 +48,17 @@ angular.module('myApp')
 										.then(function(d) {
 													self.drone = d;
 										})
-										.catch(function(errResponse) {
+										.catch(function(error) {
 												console.error('Error while fetching a Drone by Id');
+								                console.error(error);
 												});
 							}
 
 							function deleteDrones(id) {
 								DroneService.deleteDrones(id)
-										.then(fetchAllDrones, function(errResponse) {
+										.then(fetchAllDrones, function(error) {
 													console.error('Error while deleting Drone');
+									                console.error(error);
 												});
 							}
 

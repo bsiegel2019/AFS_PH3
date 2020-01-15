@@ -26,6 +26,7 @@ angular.module('myApp')
 							self.fetchAllDroneCommentByDroneId = fetchAllDroneCommentByDroneId;
 							self.deleteDroneCommentByCommentId = deleteDroneCommentByCommentId;
 							self.addDroneComment = addDroneComment;
+							self.updateDroneComment = updateDroneComment;
 							self.reset = reset;
 							
 							// this is for the comment page - get all comments for a drone id
@@ -35,8 +36,9 @@ angular.module('myApp')
 										.then(function(d) {
 													self.comments = d;
 												})
-										.catch(function(errResponse) {
+										.catch(function(error) {
 												console.error('Error while fetching Comments by Drone Id');
+								                console.error(error);
 												});
 							}
 	
@@ -48,8 +50,9 @@ angular.module('myApp')
 											self.comment = d;
 											self.fetchAllDroneCommentByDroneId(self.holdDroneId);
 										})
-								.catch(function(errResponse) {
+								.catch(function(error) {
 										console.error('Error while deleting DroneComment');
+						                console.error(error);
 										});
 						}
 							
@@ -60,6 +63,12 @@ angular.module('myApp')
 						    	self.comment.commentId = null;
 								self.comment.commentDroneId = self.holdDroneId;
 	
+						    	// TODO remove
+						    	console.log("insIdE addDroneComment=>");
+						    	console.log(self.comment.commentId);
+						    	console.log(self.comment.commentDroneId);
+						    	console.log(self.comment.commentText);
+
 								// we always expect a non-null DroneComment object returned from the add
 								// then we fetch all comments (0, 1, many) for this drone after the add to refresh the view
 								DroneCommentService.addDroneComment(self.comment)
@@ -68,8 +77,32 @@ angular.module('myApp')
 											self.fetchAllDroneCommentByDroneId(self.holdDroneId);
 											reset(); 
 										})
-								.catch(function(errResponse) {
+								.catch(function(error) {
 										console.error('Error while adding DroneComment');
+						                console.error(error);
+										});
+						    }
+							
+						    // the commentId field and commentDroneId must NOT be null on input for an update
+						    function updateDroneComment() {
+						    	
+						    	// TODO remove
+						    	console.log("INSiDe updateDroneComment=>");
+						    	console.log(self.comment.commentId);
+						    	console.log(self.comment.commentDroneId);
+						    	console.log(self.comment.commentText);
+
+						    	// we always expect a non-null DroneComment object with no null fields
+								// then we fetch all comments (0, 1, many) for this drone after the update to refresh the view
+								DroneCommentService.updateDroneComment(self.comment)
+ 									.then(function(d) {
+											self.comment = d;
+											self.fetchAllDroneCommentByDroneId(self.holdDroneId);
+											reset(); 
+										})
+								.catch(function(error) {
+										console.error('Error while updatinging DroneComment');
+						                console.error(error);
 										});
 						    }
 							

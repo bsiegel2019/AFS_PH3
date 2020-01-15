@@ -18,8 +18,8 @@ public class DroneCommentManagerImpl implements DroneCommentManager {
 		return droneCommentService.addDroneComment(droneComment);
 	}
 
-	public DroneComment updateDroneCommentByCommentId(DroneComment droneComment) {
-		return droneCommentService.updateDroneCommentByCommentId(droneComment);
+	public DroneComment updateDroneComment(DroneComment droneComment) {
+		return droneCommentService.updateDroneComment(droneComment);
 	}
 
 	public DroneComment findDroneCommentByCommentId(Long commentId) {
@@ -34,5 +34,4 @@ public class DroneCommentManagerImpl implements DroneCommentManager {
 		return droneCommentService.deleteDroneCommentByCommentId(commentId);
 	}
 
-	// TODO FIX: edit/update not impl'ed in view/js layers
 }

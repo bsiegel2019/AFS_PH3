@@ -29,7 +29,7 @@ angular.module('myApp').factory('DroneService', ['$http', function($http){
         return $http.delete(BASE_REST_URI + "/" + id)
             .then(function (response) {
                 return response.data;
-            }).catch( function(errResponse){
+            }).catch( function(error){
                 console.error('Error while deleting Drone');
                 console.error(error);
             });

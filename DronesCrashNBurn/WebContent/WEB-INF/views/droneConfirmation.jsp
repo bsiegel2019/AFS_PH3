@@ -2,7 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:choose>
 
@@ -59,7 +59,7 @@ body {
 			<tr>
 				<td>Drone Type:</td>
 				<td>${drone.droneType}</td>
-				<td><img src="${contextPath}/${droneTypeSilhouette}" alt="OOPSIE! Where is the image?" width="100" height="40"></td>
+				<td><img src="${contextPath}/${droneTypeSilhouette}" alt="No drone image provided" width="100" height="40"></td>
 			</tr>
 			<tr>
 				<td>Drone Span (Wing/Rotor):</td>
@@ -67,7 +67,7 @@ body {
 			</tr>
 			<tr>
 				<td>Drone First Flight:</td>
-				<td><fmt:formatDate value="${drone.droneFirstFlownDate}" pattern="yyyy/MM/dd"  /></td>
+				<td><fmt:formatDate value="${drone.droneFirstFlownDate}" pattern="yyyy/MM/dd" /></td>
 			</tr>
 			<tr>
 				<td>Drone Status:</td>
@@ -82,8 +82,9 @@ body {
 
 		</table>
 
-		<br> <a href="${contextPath}/droneCentral">Land at Drone Central</a> <br> <br> <img height=auto
-			width=500 src="${contextPath}/${drone.droneImage}" class="img-thumbnail img-responsive" alt="No Image Provided"
+		<br>
+		<a href="${contextPath}/droneCentral">Land at Drone Central</a> <br> <br> <img height=auto width=500
+			src="${contextPath}/${drone.droneImage}" class="img-thumbnail img-responsive" alt="No drone image provided"
 		>
 
 	</div>

@@ -66,7 +66,7 @@ body {
 								<td>{{droneCtrl.drone.droneStatus}}</td>
 
 								<td><img height=100 width=auto data-ng-src="${contextPath}/{{droneCtrl.drone.droneImage}}"
-									alt="OOPSIE! Where is the thumbnail image?"
+									alt="No drone image provided"
 								></td>
 							</tr>
 						</tbody>
@@ -108,14 +108,12 @@ body {
 								<td>{{comment.commentDroneId}}</td>
 								<td>{{comment.commentText}}</td>
 								<td>
-									<button type="button" data-ng-click="droneCommentCtrl.isNewCommentVisible=true" class="btn btn-warning">
-										<b>Edit - NOT IMPL</b>
-									</button>
+									<button type="button"
+										data-ng-click="droneCommentCtrl.comment.commentId=comment.commentId; droneCommentCtrl.comment.commentDroneId=comment.commentDroneId; droneCommentCtrl.comment.commentText=comment.commentText; droneCommentCtrl.isNewCommentVisible=true"
+										class="btn btn-warning"><b>Edit</b></button>
 
 									<button type="button" data-ng-click="droneCommentCtrl.deleteDroneCommentByCommentId(comment.commentId)"
-										class="btn btn-danger custom-width"
-									>
-										<b>Discard</b>
+										class="btn btn-danger custom-width"><b>Discard</b>
 									</button>
 								</td>
 							</tr>
@@ -136,17 +134,17 @@ body {
 
 						<td><strong>Write Comment here: *</strong></td>
 
-						<td><textarea cols="60" rows="5" data-type="text" class="form-control"
+						<td><textarea cols="60" rows="5" data-type="text" class="form-control" 
 								data-ng-model="droneCommentCtrl.comment.commentText" data-ng-required="true"
 								placeholder="Enter new Drone Comment here"
 							></textarea></td>
 
 						<td>
 							<button id="createNewComment" data-ng-disabled="!droneCommentCtrl.comment.commentText" type="submit"
-								data-ng-click="droneCommentCtrl.addDroneComment(); droneCommentCtrl.isNewCommentVisible=false"
+								data-ng-click="droneCommentCtrl.updateDroneComment(); droneCommentCtrl.isNewCommentVisible=false"
 								class="btn btn-primary"
 							>
-								<b>Submit New Comment</b>
+								<b>{{ !droneCommentCtrl.comment.commentText ? 'Submit New Comment' : 'Submit Edited Comment' }}</b>
 							</button>
 						</td>
 

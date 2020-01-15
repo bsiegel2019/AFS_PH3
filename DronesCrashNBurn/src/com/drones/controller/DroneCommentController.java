@@ -24,8 +24,7 @@ public class DroneCommentController {
 	private static final Logger LOGGER = Logger.getLogger(DroneCommentController.class.getName());
 
 	@Autowired
-	private DroneCommentManager droneCommentManager; // Service which will do all data retrieval/manipulation work for
-														// comment
+	private DroneCommentManager droneCommentManager;
 
 	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
 	public ModelAndView droneComment(@PathVariable("id") Long id) {
@@ -86,5 +85,18 @@ public class DroneCommentController {
 		return new ResponseEntity<DroneComment>(addReturnedDroneComment, HttpStatus.OK);
 	}
 
-	// TODO FIX: edit/update not impl'ed in view/js layers
+	// -------------------Update a Comment ----------
+	@RequestMapping(value = "/updateComment", method = RequestMethod.POST)
+	public ResponseEntity<DroneComment> updateDroneComment(@RequestBody DroneComment droneComment) {
+
+		DroneComment updateReturnedDroneComment = droneCommentManager.updateDroneComment(droneComment);
+
+		// update failed if null comment returned
+		if (null == updateReturnedDroneComment) {
+			LOGGER.log(Level.SEVERE, " >No DroneComment found for updateDroneCommentId - UPDATE failed");
+			return new ResponseEntity<DroneComment>(updateReturnedDroneComment, HttpStatus.UNPROCESSABLE_ENTITY);
+		}
+		return new ResponseEntity<DroneComment>(updateReturnedDroneComment, HttpStatus.OK);
+	}
+
 }

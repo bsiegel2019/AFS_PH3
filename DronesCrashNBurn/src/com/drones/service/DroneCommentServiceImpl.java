@@ -45,13 +45,8 @@ public class DroneCommentServiceImpl implements DroneCommentService {
 	// expected to have valid comment id entry, entry for drone id and comment text
 	// NOTE: returns input comment if write by unique comment id is successful, if none/error then null
 	@Override
-	public DroneComment updateDroneCommentByCommentId(DroneComment droneComment) {
-		DroneComment returnComment = null; // only set to droneComment when successful update
-
-		// TODO FIX: edit/update not impl'ed in view/js layers - call DAO
-		returnComment = droneComment;
-
-		return returnComment;
+	public DroneComment updateDroneComment(DroneComment droneComment) {
+		return droneCommentDao.updateDroneComment(droneComment);
 	}
 
 }
