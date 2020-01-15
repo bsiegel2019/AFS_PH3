@@ -122,7 +122,7 @@ body {
 					</table>
 					<h4>
 						<button type="button"
-							data-ng-click="droneCommentCtrl.comment.commentText=null; droneCommentCtrl.isNewCommentVisible=true"
+							data-ng-click="droneCommentCtrl.comment.commentId=comment.commentId; droneCommentCtrl.comment.commentText=null; droneCommentCtrl.isNewCommentVisible=true"
 							class="btn btn-success"
 						>
 							<b>Create a new Comment for this Drone</b>
@@ -140,11 +140,11 @@ body {
 							></textarea></td>
 
 						<td>
-							<button id="createNewComment" data-ng-disabled="!droneCommentCtrl.comment.commentText" type="submit"
-								data-ng-click="droneCommentCtrl.updateDroneComment(); droneCommentCtrl.isNewCommentVisible=false"
+							<button data-ng-disabled="!droneCommentCtrl.comment.commentText" type="submit"
+								data-ng-click="!droneCommentCtrl.comment.commentId ? droneCommentCtrl.addDroneComment() : droneCommentCtrl.updateDroneComment()"
 								class="btn btn-primary"
 							>
-								<b>{{ !droneCommentCtrl.comment.commentText ? 'Submit New Comment' : 'Submit Edited Comment' }}</b>
+								<b>{{ !droneCommentCtrl.comment.commentId ? 'Submit New Comment' : 'Submit Edited Comment' }}</b>
 							</button>
 						</td>
 

@@ -54,7 +54,7 @@ angular.module('myApp')
 										console.error('Error while deleting DroneComment');
 						                console.error(error);
 										});
-						}
+							}
 							
 						    // the commentId field was null on input and should have been set by hibernate on a successful add
 						    function addDroneComment() {
@@ -63,12 +63,6 @@ angular.module('myApp')
 						    	self.comment.commentId = null;
 								self.comment.commentDroneId = self.holdDroneId;
 	
-						    	// TODO remove
-						    	console.log("insIdE addDroneComment=>");
-						    	console.log(self.comment.commentId);
-						    	console.log(self.comment.commentDroneId);
-						    	console.log(self.comment.commentText);
-
 								// we always expect a non-null DroneComment object returned from the add
 								// then we fetch all comments (0, 1, many) for this drone after the add to refresh the view
 								DroneCommentService.addDroneComment(self.comment)
@@ -81,16 +75,11 @@ angular.module('myApp')
 										console.error('Error while adding DroneComment');
 						                console.error(error);
 										});
+								self.isNewCommentVisible = false; // needed to turn off the comment area
 						    }
 							
 						    // the commentId field and commentDroneId must NOT be null on input for an update
 						    function updateDroneComment() {
-						    	
-						    	// TODO remove
-						    	console.log("INSiDe updateDroneComment=>");
-						    	console.log(self.comment.commentId);
-						    	console.log(self.comment.commentDroneId);
-						    	console.log(self.comment.commentText);
 
 						    	// we always expect a non-null DroneComment object with no null fields
 								// then we fetch all comments (0, 1, many) for this drone after the update to refresh the view
@@ -104,6 +93,7 @@ angular.module('myApp')
 										console.error('Error while updatinging DroneComment');
 						                console.error(error);
 										});
+								self.isNewCommentVisible = false; // needed to turn off the comment area
 						    }
 							
 						// needed to wipe the comment area after an add, else the text will repeat
@@ -115,7 +105,6 @@ angular.module('myApp')
 								};
   							}
 					    
-						// TODO FIX: edit/update not impl'ed in view/js layers
 						} ]);
 
 })();
