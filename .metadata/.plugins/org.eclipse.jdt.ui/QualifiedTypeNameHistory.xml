@@ -19,4 +19,5 @@
 <fullyQualifiedTypeName name="org.hibernate.query.Query"/>
 <fullyQualifiedTypeName name="com.drones.dao.DroneDAO"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="javax.persistence.Transient"/>
 </qualifiedTypeNameHistroy>
