@@ -25,6 +25,7 @@ public class DroneServiceImpl implements DroneService {
 		return droneDao.findDroneByDroneId(id);
 	}
 
+	@SuppressWarnings("deprecation")
 	public Drone addDrone(Drone drone) {
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneSpan())) {
@@ -36,7 +37,6 @@ public class DroneServiceImpl implements DroneService {
 			drone.setDroneStatus("Not provided");
 		}
 
-		// TODO remove - fix this date issue
 		// fixes TZ regradless of where input/where output
 		drone.setDroneFirstFlownDate(
 				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));

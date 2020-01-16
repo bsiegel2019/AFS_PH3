@@ -1,11 +1,15 @@
 package com.drones.model;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Table(name = "DRONE_COMMENT")
@@ -17,6 +21,10 @@ public class DroneComment {
 
 	@Column(name = "DRONE_ID", nullable = false)
 	private Long commentDroneId;
+
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
+	@Column(name = "COMMENT_DATE")
+	private Date commentDate;
 
 	@Column(name = "DRONE_COMMENT_TEXT", nullable = false)
 	private String commentText;
@@ -62,6 +70,14 @@ public class DroneComment {
 		return result;
 	}
 
+	public Date getCommentDate() {
+		return commentDate;
+	}
+
+	public void setCommentDate(Date commentDate) {
+		this.commentDate = commentDate;
+	}
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -78,8 +94,8 @@ public class DroneComment {
 
 	@Override
 	public String toString() {
-		return "DroneComment [commentId=" + commentId + ", commentDroneId=" + commentDroneId + ", commentText="
-				+ commentText + "]";
+		return "DroneComment [commentId=" + commentId + ", commentDroneId=" + commentDroneId + ", commentDate="
+				+ commentDate + ", commentText=" + commentText + "]";
 	}
 
 }

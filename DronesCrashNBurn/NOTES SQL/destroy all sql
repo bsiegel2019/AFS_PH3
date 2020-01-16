@@ -14,7 +14,6 @@ commit;
 drop table drone;
 commit;
 
-
 CREATE TABLE DRONE(
     droneId INT NOT NULL auto_increment, 
     drone_owner_name VARCHAR(50) NOT NULL,
@@ -26,10 +25,11 @@ CREATE TABLE DRONE(
     drone_image VARCHAR(50),
     PRIMARY KEY (droneId)
 );
-commit;
+
 CREATE TABLE DRONE_COMMENT(
     commentId INT NOT NULL auto_increment,
     drone_id INT NOT NULL,
+    comment_date date null,
     drone_comment_text VARCHAR(16000) NOT NULL,
     CONSTRAINT fk_droneId
     FOREIGN KEY (drone_id) 
@@ -38,5 +38,6 @@ CREATE TABLE DRONE_COMMENT(
         ON UPDATE no action,
     PRIMARY KEY (commentId)
 );
+    
 commit;
 

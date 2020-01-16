@@ -81,6 +81,7 @@ public class DroneController {
 	@RequestMapping(value = "/drones/{id}", method = RequestMethod.GET)
 	public ResponseEntity<Drone> findDroneByDroneId(@PathVariable("id") Long id) {
 		Drone drone = droneManager.findDroneByDroneId(id);
+
 		if (null == drone) {
 			LOGGER.log(Level.SEVERE, " >No Drone found for findDroneByDroneId(" + id + "). One was expected!");
 			return new ResponseEntity<Drone>(HttpStatus.NOT_FOUND);

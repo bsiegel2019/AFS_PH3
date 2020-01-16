@@ -47,7 +47,6 @@ public class DroneCommentController {
 	// -------------------Retrieve a Comment by comment id----------
 	@RequestMapping(value = "/droneComment/{id}", method = RequestMethod.GET)
 	public ResponseEntity<DroneComment> findDroneCommentByCommentId(@PathVariable("id") Long id) {
-
 		DroneComment droneComment = droneCommentManager.findDroneCommentByCommentId(id);
 
 		// no comments (empty, null list) is ok but log info about it
@@ -74,7 +73,6 @@ public class DroneCommentController {
 	// -------------------Add a Comment ----------
 	@RequestMapping(value = "/addComment", method = RequestMethod.POST)
 	public ResponseEntity<DroneComment> addDroneComment(@RequestBody DroneComment droneComment) {
-
 		DroneComment addReturnedDroneComment = droneCommentManager.addDroneComment(droneComment);
 
 		// the commentId field was null on input and should have been set by hibernate on a successful add

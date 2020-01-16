@@ -17,6 +17,7 @@ angular.module('myApp')
 							self.comment = {
 									commentId : null,
 									commentDroneId : null,
+									commentDate : null,
 									commentText : null
 								};
 
@@ -101,6 +102,7 @@ angular.module('myApp')
 							self.comment = {
 									commentId : null,
 									commentDroneId : null,
+									commentDate : null,
 									commentText : null
 								};
   							}

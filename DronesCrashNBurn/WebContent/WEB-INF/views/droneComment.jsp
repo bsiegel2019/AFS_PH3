@@ -94,11 +94,11 @@ body {
 					<table class="table">
 						<thead>
 							<tr>
+								<th width="5%">Comment ID</th>
+								<th width="5%">Drone ID</th>
+								<th width="10%">Comment Date</th>
+								<th width="50%">Comment</th>
 								<th width="10%">Comment ID</th>
-								<th width="10%">Drone ID</th>
-								<th width="60%">Comment</th>
-								<th width="20%"></th>
-								<th width="10%"></th>
 							</tr>
 						</thead>
 
@@ -106,14 +106,20 @@ body {
 							<tr data-ng-repeat="comment in droneCommentCtrl.comments">
 								<td>{{comment.commentId}}</td>
 								<td>{{comment.commentDroneId}}</td>
+								<td>{{comment.commentDate | date: 'yyyy/MM/dd'}}</td>
 								<td>{{comment.commentText}}</td>
 								<td>
 									<button type="button"
 										data-ng-click="droneCommentCtrl.comment.commentId=comment.commentId; droneCommentCtrl.comment.commentDroneId=comment.commentDroneId; droneCommentCtrl.comment.commentText=comment.commentText; droneCommentCtrl.isNewCommentVisible=true"
-										class="btn btn-warning"><b>Edit</b></button>
+										class="btn btn-warning"
+									>
+										<b>Edit</b>
+									</button>
 
 									<button type="button" data-ng-click="droneCommentCtrl.deleteDroneCommentByCommentId(comment.commentId)"
-										class="btn btn-danger custom-width"><b>Discard</b>
+										class="btn btn-danger custom-width"
+									>
+										<b>Discard</b>
 									</button>
 								</td>
 							</tr>
@@ -134,10 +140,12 @@ body {
 
 						<td><strong>Write Comment here: *</strong></td>
 
-						<td><textarea cols="60" rows="5" data-type="text" class="form-control" 
+						<td><textarea cols="60" rows="5" data-type="text" class="form-control"
 								data-ng-model="droneCommentCtrl.comment.commentText" data-ng-required="true"
 								placeholder="Enter new Drone Comment here"
 							></textarea></td>
+
+						<td><input type="date" data-ng-model="droneCommentCtrl.comment.commentDate"  /></td>
 
 						<td>
 							<button data-ng-disabled="!droneCommentCtrl.comment.commentText" type="submit"

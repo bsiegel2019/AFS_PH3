@@ -43,6 +43,7 @@ body {
 </head>
 
 <body>
+<p>DATEX: ${drone.droneFirstFlownDate}</p>
 	<div align="center">
 
 		<h2>Airborne!</h2>
