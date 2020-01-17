@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>DronesCrashNBurn</project>
-		<project>Spring4HibernateExample</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>

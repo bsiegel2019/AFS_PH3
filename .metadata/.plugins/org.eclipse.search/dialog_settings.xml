@@ -12,7 +12,6 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
-			<item value="net.sourceforge.pmd.eclipse.plugin.page1"/>
 		</list>
 		<list key="Search.enabledPageIds">
 			<item value="org.eclipse.rse.internal.files.ui.search.searchPage"/>
@@ -22,7 +21,6 @@
 			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.wst.jsdt.ui.JavaSearchPage"/>
 			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
-			<item value="net.sourceforge.pmd.eclipse.plugin.page1"/>
 		</list>
 	</section>
 	<section name="TextSearchPage">
@@ -31,12 +29,15 @@
 		<item key="WHOLE_WORD" value="false"/>
 		<item key="SEARCH_DERIVED" value="false"/>
 		<item key="SEARCH_IN_BINARIES" value="false"/>
-		<item key="HISTORY_SIZE" value="12"/>
+		<item key="HISTORY_SIZE" value="7"/>
+		<section name="EXTENSIONS">
+			<item key="0" value="*"/>
+		</section>
 		<section name="HISTORY0">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="simpledate"/>
+			<item key="textPattern" value="localhost"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -44,15 +45,11 @@
 			<list key="workingSets">
 			</list>
 		</section>
-		<section name="EXTENSIONS">
-			<item key="0" value="*"/>
-			<item key="1" value=""/>
-		</section>
 		<section name="HISTORY1">
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="console.log"/>
+			<item key="textPattern" value="8080"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -64,7 +61,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="System.out"/>
+			<item key="textPattern" value="URI"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -76,7 +73,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="findDroneCommentByCommentId"/>
+			<item key="textPattern" value="80"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -85,11 +82,11 @@
 			</list>
 		</section>
 		<section name="HISTORY4">
-			<item key="ignoreCase" value="true"/>
+			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="   drone_first_flown DATE null,"/>
-			<item key="scope" value="3"/>
+			<item key="textPattern" value="DronesCrashNBurnBE"/>
+			<item key="scope" value="0"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -97,11 +94,11 @@
 			</list>
 		</section>
 		<section name="HISTORY5">
-			<item key="ignoreCase" value="true"/>
+			<item key="ignoreCase" value="false"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="DATEZ"/>
-			<item key="scope" value="0"/>
+			<item key="textPattern" value="DronesCrashNBurnBe"/>
+			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
 			</list>
@@ -112,67 +109,7 @@
 			<item key="ignoreCase" value="true"/>
 			<item key="isRegExSearch" value="false"/>
 			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="hibernate.properties"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY7">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value=".BAD"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY8">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="updateDroneCommentByCommentId"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY9">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="(errResponse)"/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY10">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="console.error("/>
-			<item key="scope" value="3"/>
-			<list key="fileNamePatterns">
-				<item value="*"/>
-			</list>
-			<list key="workingSets">
-			</list>
-		</section>
-		<section name="HISTORY11">
-			<item key="ignoreCase" value="true"/>
-			<item key="isRegExSearch" value="false"/>
-			<item key="isWholeWord" value="false"/>
-			<item key="textPattern" value="errResponse"/>
+			<item key="textPattern" value="DronesCrashNBurn"/>
 			<item key="scope" value="3"/>
 			<list key="fileNamePatterns">
 				<item value="*"/>
@@ -185,8 +122,8 @@
 		<item key="scope" value="3"/>
 	</section>
 	<section name="DialogBounds_SearchDialog">
-		<item key="DIALOG_X_ORIGIN" value="866"/>
-		<item key="DIALOG_Y_ORIGIN" value="347"/>
+		<item key="DIALOG_X_ORIGIN" value="786"/>
+		<item key="DIALOG_Y_ORIGIN" value="291"/>
 		<item key="DIALOG_WIDTH" value="846"/>
 		<item key="DIALOG_HEIGHT" value="553"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
@@ -195,24 +132,6 @@
 		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 	<section name="org.eclipse.search.text.FileSearchResultPage">
-		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
-	</section>
-	<section name="ReplaceDialog2">
-		<list key="replace_with">
-			<item value="(error)"/>
-			<item value=".isNewCommentVisible"/>
-			<item value="droneTypeSilhouette"/>
-			<item value="data-ng-repeat"/>
-			<item value="data-ng-init"/>
-			<item value="data-ng-href"/>
-			<item value="data-ng-controller"/>
-		</list>
-	</section>
-	<section name="org.eclipse.jdt.ui.JavaSearchResultPage">
-		<item key="org.eclipse.jdt.search.resultpage.limit" value="1000"/>
-		<item key="org.eclipse.jdt.search.resultpage.limit_enabled" value="TRUE"/>
-	</section>
-	<section name="">
 		<item key="org.eclipse.search.resultpage.limit" value="1000"/>
 	</section>
 </section>

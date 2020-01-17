@@ -17,7 +17,7 @@ public class DroneWebAppInitializer implements WebApplicationInitializer {
 		// Create the 'root' Spring application context
 		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
 		rootContext.scan("com.drones");
-		rootContext.setDisplayName("DronesCrashNBurn");
+		rootContext.setDisplayName("DronesCrashNBurnBE");
 		container.addListener(new ContextLoaderListener(rootContext));
 
 		// Register and map the dispatcher servlet using the rootContext

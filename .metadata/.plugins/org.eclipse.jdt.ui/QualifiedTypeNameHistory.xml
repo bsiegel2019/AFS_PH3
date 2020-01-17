@@ -1,23 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.drones.service.DroneService"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer"/>
-<fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter"/>
-<fullyQualifiedTypeName name="java.util.logging.Logger"/>
-<fullyQualifiedTypeName name="com.drones.model.DroneComment"/>
-<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
-<fullyQualifiedTypeName name="java.util.logging.Level"/>
-<fullyQualifiedTypeName name="java.lang.Class"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.HibernateTransactionManager"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate4.LocalSessionFactoryBean"/>
-<fullyQualifiedTypeName name="org.springframework.orm.hibernate5.HibernateTransactionManager"/>
-<fullyQualifiedTypeName name="org.hibernate.query.Query"/>
-<fullyQualifiedTypeName name="com.drones.dao.DroneDAO"/>
-<fullyQualifiedTypeName name="javax.persistence.Transient"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

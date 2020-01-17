@@ -4,7 +4,7 @@
 
 angular.module('myApp').factory('DroneService', ['$http', function($http){
 		
-     var BASE_REST_URI='/DronesCrashNBurn/drones';
+     var BASE_REST_URI='/DronesCrashNBurnBE/drones';
 
     var factory = {
         fetchAllDrones: fetchAllDrones,

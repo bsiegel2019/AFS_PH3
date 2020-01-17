@@ -1,1 +1,1 @@
-INDEX VERSION 1.4+C:\Users\bernard.siegel\projects\AFS-PH2GIT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+INDEX VERSION 1.4+C:\Users\bernard.siegel\projects\AFS-PH3GIT\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes

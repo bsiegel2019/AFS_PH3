@@ -4,7 +4,7 @@
 
 angular.module('myApp').factory('DroneCommentService', ['$http', function($http){
 		
-     var BASE_REST_URI='/DronesCrashNBurn/droneComment';
+     var BASE_REST_URI='/DronesCrashNBurnBE/droneComment';
 
      var factory = {
         fetchAllDroneCommentByDroneId : fetchAllDroneCommentByDroneId,
