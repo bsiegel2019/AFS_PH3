@@ -1,0 +1,13 @@
+
+select 
+    d.droneId, 
+    d.drone_owner_name, 
+    d.drone_name, 
+    d.drone_type, 
+    d.drone_span, 
+    d.drone_status,
+    d.drone_image, 
+    dc.drone_comment_text
+from drone d, DRONE_COMMENT dc
+where d.droneId = dc.drone_id
+order by d.droneId;

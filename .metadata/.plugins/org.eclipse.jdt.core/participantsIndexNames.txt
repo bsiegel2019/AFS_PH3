@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Users\bernard.siegel\projects\AFS-PH3GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3285235451.index
+\DronesCrashNBurnFE\src
 C:\Users\bernard.siegel\projects\AFS-PH3GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2727468478.index
 \DronesCrashNBurnBE\src
 C:\Users\bernard.siegel\projects\AFS-PH3GIT\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2159059977.index
