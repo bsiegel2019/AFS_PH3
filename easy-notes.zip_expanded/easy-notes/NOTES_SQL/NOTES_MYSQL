@@ -1,0 +1,6 @@
+1. create db/schema:
+CREATE SCHEMA `notes_app` ;
+
+2. Note: user is root/root
+
+3. x
