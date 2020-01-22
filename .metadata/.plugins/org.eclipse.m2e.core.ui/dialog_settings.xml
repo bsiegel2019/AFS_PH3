@@ -44,13 +44,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="DronesCrashNBurnBE"/>
 		</list>
 		<list key="name">
-			<item value="DronesCrashNBurnBE"/>
 		</list>
 		<list key="artifactId">
-			<item value="DronesCrashNBurnBE"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -61,7 +58,6 @@
 			<item value="[name]"/>
 		</list>
 		<list key="version">
-			<item value="0.0.3-SNAPSHOT"/>
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
