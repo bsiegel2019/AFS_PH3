@@ -1,0 +1,5 @@
+windows PowerShell:
+cd C:\Users\bernard.siegel\projects\AFS-PH3GIT\DroneXBE
+
+java -jar target\DroneXBE-0.0.1-SNAPSHOT.jar
+

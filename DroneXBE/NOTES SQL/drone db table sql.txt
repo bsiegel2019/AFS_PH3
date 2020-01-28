@@ -1,0 +1,47 @@
+ASSUME user is root/root
+
+1. create schema dronescrashnburn manually
+CREATE SCHEMA `dronescrashnburn`;
+--executed ok
+
+2. ensure user root really does have all priv
+GRANT ALL PRIVILEGES ON dronescrashnburn.* TO 'root'@'localhost';
+--executed ok
+
+3. create the drone table
+
+CREATE TABLE DRONE(
+    droneId INT NOT NULL auto_increment, 
+    drone_owner_name VARCHAR(50) NOT NULL,
+    drone_name VARCHAR(50) NOT NULL,
+    drone_type VARCHAR(50) NOT NULL,
+    drone_span VARCHAR(50),
+    drone_first_flown DATE null,
+    drone_status VARCHAR(50),
+    drone_image VARCHAR(50),
+    PRIMARY KEY (droneId)
+);
+
+4. inspect records in drone table
+
+select * from drone;
+
+5. create a dummy drone set
+droneId is auto gen'ed
+
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("Eagle Ed", "Super Sportster", "Sport", "60 in", "2001/12/31", "crashed, not fixable - one comment for dummy 1", "resources/images/sport_example.jpg");
+
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Crash Siegel", "Clound Bound", "Glider", "4 meter", null, "repaired - no comment for dummy 2", "resources/images/glider_example.jpg");
+
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Mr. NoBody", "Lawn Mower", "Rotorcraft", "4x12 in", "2020/01/31", "Flying ballistically - two comments for dummy 3", null);
+
+INSERT INTO `drone`(drone_owner_name, drone_name, drone_type, drone_span, drone_first_flown, drone_status, drone_image)
+ VALUES ("DB Talker", "Big Text", "Glider", "too much text", "1991/01/01", "Hot air - one BIG comment for dummy 4", "resources/images/glider_example.jpg");
+
+6. detect drones with no comments
+select * from drone
+where drone.droneId 
+not in (select drone_id from drone_comment);

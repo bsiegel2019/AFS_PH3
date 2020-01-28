@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\bernard.siegel\projects\AFS-PH3GIT\ExpenseApp\src\main\java\net\codejava"/>
+			<item value="C:\Users\bernard.siegel\projects\AFS-PH3GIT\ExpenseApp\src\main\java\net\codejava\ExpenseApp.java"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -44,10 +46,15 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.dronex"/>
+			<item value="com.drone"/>
+			<item value="net.codejava"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="DroneXBE"/>
+			<item value="ExpenseApp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

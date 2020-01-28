@@ -1,0 +1,20 @@
+server:
+  port: 9090
+  contextPath: /DronesCrashNBurnBE
+---
+spring:
+  profiles: local,default,prod
+datasource:
+  sampleapp:
+    url: jdbc:mysql://localhost:3306/dronescrashnburn?useSSL=false
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: false
+      format_sql: false
+      dialect: org.hibernate.dialect.MySQLDialect
+  
