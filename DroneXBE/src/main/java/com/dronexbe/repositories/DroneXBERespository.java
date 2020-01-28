@@ -8,12 +8,20 @@ import org.springframework.data.repository.CrudRepository;
 import com.dronexbe.model.Drone;
 
 public interface DroneXBERespository extends CrudRepository<Drone, Long> {
-
+	
+	//	List<Drone> findAllDrones(); - this from DroneDAO	
 	public List<Drone> findAll();
 
+	//	Drone findDroneByDroneId(Long id); - this from Drone DAO
 	public Optional<Drone> findById(Long id);
 
-//   @Query("SELECT e FROM Expense e WHERE e.amount >= :amount")
-//   public List<Expense> listItemsWithPriceOver(@Param("amount") float amount);
+	//	Drone addDrone(Drone drone); - this from DroneDAO
+	 @SuppressWarnings("unchecked")
+	public Drone save(Drone drone);
 
+	 //	Long deleteDroneById(Long id); - it does not return a count
+	 void deleteById(Long id);
+	
+	 // added - it returns long, not Long
+	 long count();
 }

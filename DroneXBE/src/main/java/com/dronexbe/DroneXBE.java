@@ -40,7 +40,7 @@ public class DroneXBE implements CommandLineRunner {
 			droneY = new Drone();
 		}
 		System.out.println("\nERK> A DroneY=" + findThis + " >" + droneY);
-		
+
 		findThis = new Long(987);
 		droneX = droneRepository.findById(findThis);
 		System.out.println("\nERK> A DroneX=" + findThis + " >" + droneX);
@@ -52,39 +52,21 @@ public class DroneXBE implements CommandLineRunner {
 		}
 		System.out.println("\nERK> A DroneZ=" + findThis + " >" + droneZ);
 
-		
-//		repository.save(new Expense("breakfast", 5));
-
-//		Iterable<Expense> iterator = repository.findAll();
-
-//		System.out.println("All expense items: ");
-//		iterator.forEach(item -> System.out.println(item));
-
-//		List<Expense> breakfast = repository.findByItem("breakfast");
-//		System.out.println("\nHow does my breakfast cost?: ");
-//		breakfast.forEach(item -> System.out.println(item));
-
-//		List<Expense> expensiveItems = repository.listItemsWithPriceOver(200);
-//		System.out.println("\nExpensive Items: ");
-//		expensiveItems.forEach(item -> System.out.println(item));
-
-//		List<Expense> apples = repository.findByItem("Some apples");
-//		System.out.println("\nHow about them apples: ");
-//		System.out.println("How many apples: " + calc_cnt(apples));
-//		System.out.println("How costly them apples: " + calc_cost(apples));
+		// save a drone?
+		Drone testDrone = new Drone(null, "droneOwnerName HAHA", "droneName HAHA", "Glider", "2 inch",
+				"crashed and trashed", "resources/images/nu.jpg");
+		Long beforeCnt = new Long(droneRepository.count());
+		System.out.println("\nERK> BeforeCnt=" + beforeCnt + ", A Drone to SAVE =" + testDrone);
+		testDrone = droneRepository.save(testDrone);
+		Long duringCnt = new Long(droneRepository.count());
+		System.out.println("\nERK>  DuringCnt=" + duringCnt + ", A Drone to SAVED=" + testDrone);
+		Long deleteThisId = testDrone.getDroneId();
+		droneRepository.deleteById(deleteThisId);
+		Long afterCnt = new Long(droneRepository.count());
+		Optional<Drone> droneA = droneRepository.findById(deleteThisId);
+		System.out.println("\nERK> A DroneA=" + deleteThisId + " >" + droneA);
+		System.out.println("\nERK>  AfterCnt=" + afterCnt + ", A Drone DeletED=" + droneA);
 
 	}
-
-//	int calc_cnt(List<Expense> apples) {
-//		return apples.size();
-//	};
-//
-//	float calc_cost(List<Expense> apples) {
-//		float costX = 0;
-//		for (int i = 0; i < apples.size(); i++) {
-//			costX = costX + apples.get(i).getAmount();
-//		}
-//		return costX;
-//	};
 
 }
