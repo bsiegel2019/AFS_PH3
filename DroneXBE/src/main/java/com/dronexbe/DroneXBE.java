@@ -1,5 +1,7 @@
 package com.dronexbe;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.dronexbe.model.Drone;
+import com.dronexbe.model.DroneComment;
+import com.dronexbe.repositories.DroneCommentXBERespository;
 import com.dronexbe.repositories.DroneXBERespository;
 
 @SpringBootApplication
@@ -15,6 +19,9 @@ public class DroneXBE implements CommandLineRunner {
 
 	@Autowired
 	DroneXBERespository droneRepository;
+
+	@Autowired
+	DroneCommentXBERespository droneCommentRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(DroneXBE.class, args);
@@ -67,6 +74,17 @@ public class DroneXBE implements CommandLineRunner {
 		System.out.println("\nERK> A DroneA=" + deleteThisId + " >" + droneA);
 		System.out.println("\nERK>  AfterCnt=" + afterCnt + ", A Drone DeletED=" + droneA);
 
+		System.out.println("\nZERK> begin DroneComment");
+		Long findThisComment = new Long(4);
+		Optional<DroneComment> droneCommentX = droneCommentRepository.findById(findThisComment);
+		System.out.println("\nZERK> A DroneComment=" + findThisComment + " >" + droneCommentX);
+		Long commentXCnt = new Long(droneCommentRepository.count());
+		System.out.println("\nZERK> commentXCnt=" + commentXCnt);
+		
+		Long drone_id = new Long(3);
+		List<DroneComment> DCList = droneCommentRepository.findAllByCommentDroneId(drone_id);
+		System.out.println("ZERK> All Drone Comments for: " + drone_id + ">>" + DCList);
+	
 	}
 
 }
