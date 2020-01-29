@@ -47,8 +47,8 @@ public class DroneServiceImpl implements DroneService {
 
 		// fixes TZ regradless of where input/where output
 		// TODO is this need after FE/BE split?
-		drone.setDroneFirstFlownDate(
-				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));
+//		drone.setDroneFirstFlownDate(
+//				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));
 
 		// this save does the add and returns an updated drone with the id
 		return droneRepository.save(drone);

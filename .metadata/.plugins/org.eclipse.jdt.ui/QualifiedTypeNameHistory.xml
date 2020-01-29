@@ -7,5 +7,9 @@
 <fullyQualifiedTypeName name="com.dronexbe.repositories.DroneXBERespository"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.Optional"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="com.dronexbe.manager.DroneManager"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 <fullyQualifiedTypeName name="com.dronexbe.model.Drone"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
 </qualifiedTypeNameHistroy>
