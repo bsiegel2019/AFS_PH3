@@ -33,9 +33,10 @@ public class DroneComment {
 	public DroneComment() {
 	}
 
-	public DroneComment(Long commentId, Long droneId, String commentText) {
+	public DroneComment(Long commentId, Long droneId, Date commentDate, String commentText) {
 		this.commentId = commentId;
 		this.commentDroneId = droneId;
+		this.commentDate = commentDate;
 		this.commentText = commentText;
 	}
 

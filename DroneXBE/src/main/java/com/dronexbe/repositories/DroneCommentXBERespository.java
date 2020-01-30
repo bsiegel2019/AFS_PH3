@@ -9,14 +9,6 @@ import com.dronexbe.model.DroneComment;
 
 public interface DroneCommentXBERespository extends CrudRepository<DroneComment, Long> {
 
-	//
-//	DroneComment addDroneComment(DroneComment droneComment);
-//
-//	Long deleteDroneCommentByCommentId(Long commentId);
-//
-//	DroneComment updateDroneComment(DroneComment droneComment);
-	//
-
 	// TODO service layer needs to translate from Opt to DC...
 	// this was: findDroneCommentByCommentId
 	public Optional<DroneComment> findById(Long id);
@@ -27,37 +19,14 @@ public interface DroneCommentXBERespository extends CrudRepository<DroneComment,
 	// this was: findAllDroneCommentByDroneId
 	public List<DroneComment> findAllByCommentDroneId(Long drone_id);
 
-	// below is drone repo stuff
+	// TODO
+	// this is also used for update from the service layer
+	@SuppressWarnings("unchecked")
+	public DroneComment save(DroneComment droneComment);
 
-//	//	List<Drone> findAllDrones(); - this from DroneDAO	
-//	public List<Drone> findAll();
-//
-//	//	Drone addDrone(Drone drone); - this from DroneDAO
-//	 @SuppressWarnings("unchecked")
-//	public Drone save(Drone drone);
-//
-//	 //	Long deleteDroneById(Long id); - it does not return a count
-//	 void deleteById(Long id);
-//	
-
-// TODO remove garbage below
-//	@Override
-//	public DroneComment addDroneComment(DroneComment droneComment) {
-//		persist(droneComment);
-//		return droneComment;
-//	}
-//
-//	@Override
-//	public Long deleteDroneCommentByCommentId(Long commentId) {
-//		Query query = getSession().createSQLQuery("delete from drone_comment where commentId = :commentId");
-//		query.setString("commentId", String.valueOf(commentId));
-//		return new Long(query.executeUpdate()); // we expect 0 or 1
-//	}
-//
-//	@Override
-//	public DroneComment updateDroneComment(DroneComment droneComment) {
-//		update(droneComment);
-//		return droneComment;
-//	}
+	// TODO
+	// Long deleteDroneCommentByCommentId(Long commentId); 
+	// it does not return a count
+	void deleteById(Long id);
 
 }
