@@ -1,6 +1,5 @@
 package com.dronexbe.service;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,7 +20,7 @@ public class DroneServiceImpl implements DroneService {
 		return droneRepository.findAll();
 	}
 
-	// returns a drone if one found by the is OR returns a null 
+	// returns a drone if one found by the is OR returns a null
 	// ctrlr deals with this
 	public Drone findDroneByDroneId(Long id) {
 		Optional<Drone> droneX = droneRepository.findById(id);
@@ -33,7 +32,6 @@ public class DroneServiceImpl implements DroneService {
 	}
 
 	// returns a drone with an inserted unique id
-	@SuppressWarnings("deprecation")
 	public Drone addDrone(Drone drone) {
 		// if the optional field was not provided/null, fill with a meaningful string
 		if ("".equals(drone.getDroneSpan())) {
@@ -46,7 +44,6 @@ public class DroneServiceImpl implements DroneService {
 		}
 
 		// fixes TZ regradless of where input/where output
-		// TODO is this need after FE/BE split?
 //		drone.setDroneFirstFlownDate(
 //				new Date(drone.getDroneFirstFlownDate().getTime() + new Date().getTimezoneOffset() * 60 * 1000));
 
@@ -64,6 +61,10 @@ public class DroneServiceImpl implements DroneService {
 		Long afterCnt = new Long(droneRepository.count());
 
 		return (beforeCnt - afterCnt); // if delete ok then = 1
+	}
+
+	public Long howManyDrones() {
+		return droneRepository.count();
 	}
 
 }

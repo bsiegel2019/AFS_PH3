@@ -51,4 +51,8 @@ public class DroneManagerImpl implements DroneManager {
 	public Long deleteDroneById(Long id) {
 		return droneService.deleteDroneById(id);
 	}
+
+	public Long howManyDrones() {
+		return droneService.howManyDrones();
+	}
 }

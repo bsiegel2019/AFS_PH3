@@ -79,4 +79,11 @@ public class DroneController {
 		return new ResponseEntity<Drone>(drone, HttpStatus.OK);
 	}
 
+	// -------------------Count All Drones----------
+	@RequestMapping(value = "/countDrones", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<Long> howManyDrones() {
+		Long countedDrones = droneManager.howManyDrones();
+		return new ResponseEntity<Long>(countedDrones, HttpStatus.OK);
+	}
+
 }

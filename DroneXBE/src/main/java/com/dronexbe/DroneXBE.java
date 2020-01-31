@@ -32,6 +32,9 @@ public class DroneXBE implements CommandLineRunner {
 
 		boolean testDroneProcesses = false;
 		if (testDroneProcesses) {
+			Long beginCnt =  droneRepository.count();
+			System.out.println("ERK> BEGIN All Drones: " + beginCnt);
+
 			Iterable<Drone> iterator = droneRepository.findAll();
 			System.out.println("ERK> All Drones: ");
 			iterator.forEach(drone -> System.out.println(drone));
@@ -39,7 +42,7 @@ public class DroneXBE implements CommandLineRunner {
 			Long findThis = new Long(2);
 			Optional<Drone> droneX = droneRepository.findById(findThis);
 			System.out.println("\nERK> A Drone=" + findThis + " >" + droneX);
-			findThis = new Long(3);
+			findThis = new Long(1);
 			droneX = droneRepository.findById(findThis);
 			System.out.println("\nERK> A DroneX=" + findThis + " >" + droneX);
 			Drone droneY = null;
@@ -75,20 +78,26 @@ public class DroneXBE implements CommandLineRunner {
 			Optional<Drone> droneA = droneRepository.findById(deleteThisId);
 			System.out.println("\nERK> A DroneA=" + deleteThisId + " >" + droneA);
 			System.out.println("\nERK>  AfterCnt=" + afterCnt + ", A Drone DeletED=" + droneA);
+			
+			Long endCnt =  droneRepository.count();
+			System.out.println("ERK>  END  All Drones: " + endCnt);
 		} else {
 			System.out.println("\nERK> Skipping Drone Tests");			
 		}
 
-		boolean testDroneCommentProcesses = true;
+		boolean testDroneCommentProcesses = false;
 		if (testDroneCommentProcesses) {
+			Long beginCommentCnt =  droneCommentRepository.count();
+			System.out.println("ERK> BEGIN All Drone Comments: " + beginCommentCnt);
+
 			System.out.println("\nZERK> begin DroneComment");
-			Long findThisComment = new Long(4);
+			Long findThisComment = new Long(5);
 			Optional<DroneComment> droneCommentX = droneCommentRepository.findById(findThisComment);
 			System.out.println("\nZERK> A DroneComment=" + findThisComment + " >" + droneCommentX);
 			Long commentXCnt = new Long(droneCommentRepository.count());
 			System.out.println("\nZERK> commentXCnt=" + commentXCnt);
 
-			Long drone_id = new Long(3);
+			Long drone_id = new Long(1);
 			List<DroneComment> DCList = droneCommentRepository.findAllByCommentDroneId(drone_id);
 			System.out.println("ZERK> All Drone Comments for: " + drone_id + ">>" + DCList);
 			
@@ -117,14 +126,14 @@ public class DroneXBE implements CommandLineRunner {
 			System.out.println("\nZERK>  Found=" + droneCommentUpdated);
 			
 			Long deleteThisCommentId = droneCommentUpdated.getCommentId();
-			deleteThisCommentId = new Long(20); // special test case
 			droneCommentRepository.deleteById(deleteThisCommentId);
 			Long afterCommentCnt = new Long(droneCommentRepository.count());
 			Optional<DroneComment> droneCommentA = droneCommentRepository.findById(deleteThisCommentId);
 			System.out.println("\nERK> A DroneCommentA=" + deleteThisCommentId + " >" + droneCommentA);
 			System.out.println("\nERK>  AfterCommentCnt=" + afterCommentCnt + ", A Drone Comment DeletED=" + droneCommentA);
 	
-			
+			Long endCommentCnt =  droneCommentRepository.count();
+			System.out.println("ERK>  END  All Drones: " + endCommentCnt);		
 		} else {
 			System.out.println("\nZERK> Skipping Drone Comment Tests");			
 		}

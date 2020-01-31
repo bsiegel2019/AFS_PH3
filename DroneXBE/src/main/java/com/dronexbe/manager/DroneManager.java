@@ -13,4 +13,6 @@ public interface DroneManager {
 	Drone findDroneByDroneId(Long id);
 
 	Long deleteDroneById(Long id);
+	
+	Long howManyDrones();
 }
